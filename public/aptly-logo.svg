@@ -1,0 +1,13 @@
+<svg width="140" height="40" viewBox="0 0 140 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left circle (dark navy blue ring) -->
+  <path d="M20 8C13.3726 8 8 13.3726 8 20C8 26.6274 13.3726 32 20 32C26.6274 32 32 26.6274 32 20C32 13.3726 26.6274 8 20 8ZM20 28C15.5817 28 12 24.4183 12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20C28 24.4183 24.4183 28 20 28Z" fill="#1e3a8a"/>
+  
+  <!-- Right circle (solid teal) -->
+  <circle cx="28" cy="20" r="12" fill="#0d9488"/>
+  
+  <!-- Overlapping section (bright yellow) -->
+  <path d="M20 12C15.5817 12 12 15.5817 12 20C12 24.4183 15.5817 28 20 28C22.3869 28 24.5 27.2143 26.1421 25.8579C24.5 27.2143 22.3869 28 20 28C15.5817 28 12 24.4183 12 20C12 15.5817 15.5817 12 20 12Z" fill="#fbbf24"/>
+  
+  <!-- Text "aptly" -->
+  <text x="48" y="26" fill="#1e3a8a" fontSize="18" fontWeight="600" fontFamily="Space Grotesk, sans-serif">aptly</text>
+</svg> 

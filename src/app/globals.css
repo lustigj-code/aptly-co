@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global font family - Arial sans-serif for all text */
+* {
+  font-family: Arial, sans-serif !important;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring var(--duration, 2s) cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+  background: radial-gradient(circle, rgba(var(--pulse-color, 59, 130, 246), 0.7) 0%, transparent 70%);
+}
+
+@keyframes button-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-button-pulse {
+  animation: button-pulse var(--duration, 2s) ease-in-out infinite;
+}
+
+@keyframes first {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+@keyframes second {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(-30px, 50px) scale(1.1);
+  }
+  66% {
+    transform: translate(20px, -20px) scale(0.9);
+  }
+}
+
+@keyframes third {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, 50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, -20px) scale(0.9);
+  }
+}
+
+@keyframes fourth {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(-30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(20px, 20px) scale(0.9);
+  }
+}
+
+@keyframes fifth {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, 50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, -20px) scale(0.9);
+  }
+}
+
+.animate-first {
+  animation: first 4s ease-in-out infinite;
+}
+
+.animate-second {
+  animation: second 4s ease-in-out infinite;
+}
+
+.animate-third {
+  animation: third 4s ease-in-out infinite;
+}
+
+.animate-fourth {
+  animation: fourth 4s ease-in-out infinite;
+}
+
+.animate-fifth {
+  animation: fifth 4s ease-in-out infinite;
+}
+
+@keyframes aurora {
+  0% {
+    background-position: 50% 50%, 50% 50%;
+  }
+  100% {
+    background-position: 350% 50%, 350% 50%;
+  }
+}
+
+.animate-aurora {
+  animation: aurora 60s linear infinite;
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

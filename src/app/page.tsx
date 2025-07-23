@@ -90,7 +90,7 @@ export default function Home() {
             Prepare for the jobs of{" "}
             <Cover>tomorrow, today!</Cover>
           </h1>
-          <p className="text-2xl sm:text-3xl font-light mb-10 text-blue-100/90 max-w-3xl mx-auto">
+          <p className="text-2xl sm:text-3xl font-light mb-10 text-white/90 max-w-3xl mx-auto">
             Digital learning solutions that engage and deliver results
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-20">
@@ -104,7 +104,7 @@ export default function Home() {
           
           {/* Partners Section - moved here */}
           <div className="text-center">
-            <h2 className="text-xl uppercase tracking-widest text-blue-100/80 mb-8 font-medium">
+            <h2 className="text-xl uppercase tracking-widest text-white/80 mb-8 font-medium">
               Trusted by leading organizations
             </h2>
             <div className="flex justify-center">

@@ -138,7 +138,7 @@ export default function CoursesPage() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       </div>
                       
-                      <h3 className="text-lg font-bold text-white mb-3 line-clamp-2 group-hover:text-blue-300 transition-colors duration-300">
+                      <h3 className="text-lg font-bold text-white mb-3 line-clamp-2 group-hover:text-[#7AB8BD] transition-colors duration-300">
                         {course.title}
                       </h3>
                       
@@ -146,7 +146,7 @@ export default function CoursesPage() {
                         {course.description}
                       </p>
                       
-                      <div className="mt-4 flex items-center text-blue-400 text-sm font-medium group-hover:text-blue-300 transition-colors duration-300">
+                      <div className="mt-4 flex items-center text-[#7AB8BD] text-sm font-medium group-hover:text-[#7AB8BD] transition-colors duration-300">
                         Learn More
                         <svg className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

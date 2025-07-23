@@ -40,7 +40,7 @@ export default function ServicesPage() {
               Solutions
             </span>
           </h1>
-          <p className="text-xl sm:text-2xl font-light text-blue-100/90 max-w-3xl mx-auto mb-8">
+          <p className="text-xl sm:text-2xl font-light text-white/90 max-w-3xl mx-auto mb-8">
             Comprehensive digital learning services to transform how your organization educates and develops talent
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -61,7 +61,7 @@ export default function ServicesPage() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-white mb-6">
               Our Services
             </h2>
-            <p className="text-xl font-light text-blue-100/80 max-w-2xl mx-auto">
+            <p className="text-xl font-light text-white/80 max-w-2xl mx-auto">
               End-to-end learning solutions designed for modern organizations
             </p>
           </div>
@@ -73,15 +73,15 @@ export default function ServicesPage() {
                 className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-500 p-8"
               >
                 <div className="text-5xl mb-6">{service.icon}</div>
-                <h3 className="text-2xl font-medium text-white mb-4 group-hover:text-blue-200 transition-colors">
+                <h3 className="text-2xl font-medium text-white mb-4 group-hover:text-[#7AB8BD] transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-blue-100/70 mb-6 leading-relaxed">
+                <p className="text-white/70 mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 <ul className="space-y-2">
                   {service.features.map((feature, j) => (
-                    <li key={j} className="flex items-center text-blue-100/80">
+                    <li key={j} className="flex items-center text-white/80">
                       <span className="text-blue-400 mr-2">✓</span>
                       {feature}
                     </li>
@@ -100,7 +100,7 @@ export default function ServicesPage() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-white mb-6">
               Our Process
             </h2>
-            <p className="text-xl font-light text-blue-100/80 max-w-2xl mx-auto">
+            <p className="text-xl font-light text-white/80 max-w-2xl mx-auto">
               A proven methodology to deliver exceptional learning experiences
             </p>
           </div>
@@ -111,7 +111,7 @@ export default function ServicesPage() {
                 1
               </div>
               <h3 className="text-xl font-medium text-white mb-3">Discovery</h3>
-              <p className="text-blue-100/70">
+              <p className="text-white/70">
                 We analyze your needs and objectives to understand your learning goals
               </p>
             </div>
@@ -120,7 +120,7 @@ export default function ServicesPage() {
                 2
               </div>
               <h3 className="text-xl font-medium text-white mb-3">Design</h3>
-              <p className="text-blue-100/70">
+              <p className="text-white/70">
                 Our experts create a customized learning strategy and content plan
               </p>
             </div>
@@ -129,7 +129,7 @@ export default function ServicesPage() {
                 3
               </div>
               <h3 className="text-xl font-medium text-white mb-3">Develop</h3>
-              <p className="text-blue-100/70">
+              <p className="text-white/70">
                 We build and test your learning solution with quality assurance
               </p>
             </div>
@@ -138,7 +138,7 @@ export default function ServicesPage() {
                 4
               </div>
               <h3 className="text-xl font-medium text-white mb-3">Deploy</h3>
-              <p className="text-blue-100/70">
+              <p className="text-white/70">
                 Launch your solution with ongoing support and optimization
               </p>
             </div>
@@ -155,7 +155,7 @@ export default function ServicesPage() {
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-white mb-6">
                 Ready to Transform Your Learning?
               </h2>
-              <p className="text-xl font-light text-blue-100/80 mb-8 max-w-2xl mx-auto">
+              <p className="text-xl font-light text-white/80 mb-8 max-w-2xl mx-auto">
                 Let&apos;s discuss how we can help you create impactful learning experiences for your organization.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
