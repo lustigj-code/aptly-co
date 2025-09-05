@@ -1,5 +1,3 @@
-"use client";
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { 
   Container, 
@@ -15,12 +13,6 @@ import {
 import { getFeaturedCourses } from '@/lib/data/courses';
 import { AptlyLogo } from '@/components/AptlyLogo';
 
-// Clean animations - subtle and professional
-const fadeInUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 }
-};
-
 export default function HomePage() {
   const featuredCourses = getFeaturedCourses();
 
@@ -29,13 +21,7 @@ export default function HomePage() {
       {/* Hero Section - Clean and Powerful */}
       <Section background="gradient" spacing="xl" className="relative overflow-hidden">
         <Container size="lg">
-          <motion.div 
-            initial="hidden"
-            animate="visible"
-            variants={fadeInUp}
-            transition={{ duration: 0.6 }}
-            className="text-center max-w-4xl mx-auto"
-          >
+          <div className="text-center max-w-4xl mx-auto">
             <Badge variant="info" size="md">Partner with Meta & Google</Badge>
             
             <Heading as="h1" size="3xl" className="mt-6 mb-6">
@@ -56,7 +42,7 @@ export default function HomePage() {
                 Talk to Advisor
               </Button>
             </div>
-          </motion.div>
+          </div>
         </Container>
       </Section>
 
@@ -87,13 +73,7 @@ export default function HomePage() {
 
           <Grid cols={{ default: 1, md: 2, lg: 3 }} gap="lg">
             {featuredCourses.map((course) => (
-              <motion.div
-                key={course.id}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-              >
+              <div key={course.id}>
                 <Card variant="bordered" className="h-full hover:border-teal/40 transition-colors">
                   <div className="aspect-video relative mb-6 overflow-hidden rounded-xl">
                     <Image
@@ -120,7 +100,7 @@ export default function HomePage() {
                     Learn More
                   </Button>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </Grid>
 

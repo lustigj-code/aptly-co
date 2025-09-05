@@ -1,6 +1,5 @@
 "use client";
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { 
   Container, 
@@ -87,12 +86,7 @@ export default function ProgramsPage() {
           {/* Programs Grid */}
           <Grid cols={{ default: 1, md: 2, lg: 3 }} gap="lg">
             {filteredCourses.map((course, idx) => (
-              <motion.div
-                key={course.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-              >
+              <div key={course.id}>
                 <Card variant="bordered" className="h-full hover:border-teal/40 transition-all group">
                   <div className="aspect-video relative mb-6 overflow-hidden rounded-xl">
                     <Image
@@ -132,7 +126,7 @@ export default function ProgramsPage() {
                     </Button>
                   </div>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </Grid>
         </Container>

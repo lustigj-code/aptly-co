@@ -1,5 +1,4 @@
 "use client";
-import { motion } from 'framer-motion';
 import { 
   Container, 
   Section, 
@@ -107,13 +106,7 @@ export default function BusinessPage() {
 
           <Grid cols={{ default: 1, md: 3 }} gap="lg">
             {solutions.map((solution, idx) => (
-              <motion.div
-                key={solution.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-              >
+              <div key={solution.title}>
                 <Card variant="bordered" padding="lg" className="h-full">
                   <Heading as="h3" size="lg" weight="medium" className="mb-4">
                     {solution.title}
@@ -130,7 +123,7 @@ export default function BusinessPage() {
                     ))}
                   </ul>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </Grid>
         </Container>

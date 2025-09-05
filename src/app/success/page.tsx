@@ -1,5 +1,4 @@
 "use client";
-import { motion } from 'framer-motion';
 import { 
   Container, 
   Section, 
@@ -132,13 +131,7 @@ export default function SuccessStoriesPage() {
             {successStories
               .filter(story => story.featured)
               .map((story, idx) => (
-                <motion.div
-                  key={story.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: idx * 0.1 }}
-                >
+                <div key={story.id}>
                   <Card variant="bordered" padding="lg" className="h-full">
                     <Badge variant="success" size="sm">{story.timeline} to success</Badge>
                     
@@ -160,7 +153,7 @@ export default function SuccessStoriesPage() {
                       Program: {story.program}
                     </div>
                   </Card>
-                </motion.div>
+                </div>
               ))}
           </Grid>
         </Container>
