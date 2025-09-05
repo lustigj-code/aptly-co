@@ -58,7 +58,7 @@ export const TypewriterEffect = ({
   useEffect(() => {
     if (scope.current) {
       const spans = scope.current.querySelectorAll("span");
-      spans.forEach((span) => {
+      spans.forEach((span: Element) => {
         (span as HTMLElement).style.opacity = "0";
         (span as HTMLElement).style.display = "none";
       });

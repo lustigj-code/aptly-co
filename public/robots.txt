@@ -1,0 +1,19 @@
+# Robots.txt for Aptly.co
+
+User-agent: *
+Allow: /
+
+# Directories
+Allow: /about
+Allow: /courses
+Allow: /study-app
+Allow: /services
+Allow: /insights
+Allow: /faq
+Allow: /careers
+
+# Disallow API routes
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://aptly.co/sitemap.xml

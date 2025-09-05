@@ -1,5 +1,9 @@
-import Image from "next/image";
+'use client';
+
 import Link from "next/link";
+import { motion } from 'framer-motion';
+import { BrandGradientBackground } from "@/components/ui/brand-gradient-background";
+import { BrandButton } from "@/components/ui/brand-button";
 
 const articles = [
   {
@@ -54,157 +58,200 @@ const articles = [
 
 export default function InsightsPage() {
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-8 bg-gradient-to-b from-[#0A0C2A] via-[#3B3366] to-[#0A0C2A]">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-light text-white mb-6 leading-tight">
-            Learning{" "}
-            <span className="bg-gradient-to-r from-[#7AB8BD] to-[#F1D632] bg-clip-text text-transparent">
-              Insights
-            </span>
-          </h1>
-          <p className="text-xl sm:text-2xl font-light text-blue-100/90 max-w-3xl mx-auto mb-8">
-            Expert perspectives on the future of education, technology, and professional development
-          </p>
-        </div>
-      </section>
+    <div className="min-h-screen relative">
+      <BrandGradientBackground />
+      
+      <div className="relative z-10">
+        {/* Hero Section */}
+        <section className="pt-32 pb-16 px-8">
+          <div className="max-w-7xl mx-auto text-center">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight"
+              style={{ fontFamily: 'DM Sans, sans-serif' }}
+            >
+              Learning{" "}
+              <span className="text-[#21A8B0]">
+                Insights
+              </span>
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-lg md:text-xl text-[#DEF2F2] max-w-4xl mx-auto leading-relaxed"
+              style={{ fontFamily: 'DM Sans, sans-serif' }}
+            >
+              Expert perspectives on the future of education, technology, and professional development
+            </motion.p>
+          </div>
+        </section>
 
-      {/* Featured Article */}
-      <section className="py-20 px-4 sm:px-8 bg-gradient-to-b from-[#0A0C2A] to-[#3B3366]">
-        <div className="max-w-6xl mx-auto">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-600/20 rounded-3xl blur-3xl"></div>
-            <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-12">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 text-sm rounded-full">
+        {/* Featured Article */}
+        <section className="pb-24 px-8">
+          <div className="max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-12"
+            >
+              <div className="flex items-center gap-3 mb-6">
+                <span className="px-4 py-2 bg-[#21A8B0]/20 text-[#21A8B0] text-sm rounded-full font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                   Featured
                 </span>
-                <span className="text-blue-100/60 text-sm">March 15, 2024</span>
+                <span className="text-[#DEF2F2] text-sm" style={{ fontFamily: 'DM Sans, sans-serif' }}>March 15, 2024</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-light text-white mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                 The Future of Digital Learning in 2024
               </h2>
-              <p className="text-xl text-blue-100/80 mb-6 leading-relaxed">
-                Explore the latest trends and technologies shaping the future of education and professional development. From AI-powered personalization to immersive learning experiences, discover what&apos;s next in digital learning.
+              <p className="text-lg text-[#DEF2F2] mb-8 leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                Explore the latest trends and technologies shaping the future of education and professional development. From AI-powered personalization to immersive learning experiences, discover what is next in digital learning.
               </p>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full"></div>
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-lg">S</span>
+                  </div>
                   <div>
-                    <div className="text-white font-medium">Sarah Johnson</div>
-                    <div className="text-blue-100/60 text-sm">5 min read</div>
+                    <div className="text-white font-bold" style={{ fontFamily: 'DM Sans, sans-serif' }}>Sarah Johnson</div>
+                    <div className="text-[#DEF2F2] text-sm" style={{ fontFamily: 'DM Sans, sans-serif' }}>5 min read</div>
                   </div>
                 </div>
-                <button className="px-6 py-3 bg-white/10 border border-white/20 rounded-lg text-white font-medium hover:bg-white/20 transition-all">
+                <BrandButton
+                  href="/insights/future-digital-learning-2024"
+                  variant="outline"
+                >
                   Read More
-                </button>
+                </BrandButton>
               </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Articles Grid */}
+        <section className="py-24 px-8">
+          <div className="max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                Latest Articles
+              </h2>
+              <p className="text-lg md:text-xl text-[#DEF2F2] max-w-2xl mx-auto" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                Stay updated with the latest insights and trends in learning and development
+              </p>
+            </motion.div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {articles.slice(1).map((article, i) => (
+                <motion.div
+                  key={article.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.5 + i * 0.1 }}
+                  className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-[#21A8B0]/30 transition-all duration-300 p-8 h-full flex flex-col"
+                >
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="px-3 py-1 bg-[#21A8B0]/20 text-[#21A8B0] text-xs rounded-full font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                      {article.category}
+                    </span>
+                    <span className="text-[#DEF2F2] text-xs" style={{ fontFamily: 'DM Sans, sans-serif' }}>{article.readTime}</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors flex-grow" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                    {article.title}
+                  </h3>
+                  <p className="text-[#DEF2F2] mb-6 leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                    {article.excerpt}
+                  </p>
+                  <div className="flex items-center justify-between mt-auto">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">{article.author.charAt(0)}</span>
+                      </div>
+                      <span className="text-[#DEF2F2] text-sm font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>{article.author}</span>
+                    </div>
+                    <span className="text-[#DEF2F2] text-xs" style={{ fontFamily: 'DM Sans, sans-serif' }}>{article.date}</span>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Articles Grid */}
-      <section className="py-20 px-4 sm:px-8 bg-gradient-to-b from-[#3B3366] to-[#0A0C2A]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-white mb-6">
-              Latest Articles
-            </h2>
-            <p className="text-xl font-light text-blue-100/80 max-w-2xl mx-auto">
-              Stay updated with the latest insights and trends in learning and development
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {articles.slice(1).map((article, i) => (
-              <div
-                key={article.title}
-                className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-500 p-6"
-              >
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">
-                    {article.category}
-                  </span>
-                  <span className="text-blue-100/60 text-xs">{article.readTime}</span>
-                </div>
-                <h3 className="text-xl font-medium text-white mb-3 group-hover:text-blue-200 transition-colors">
-                  {article.title}
-                </h3>
-                <p className="text-blue-100/70 mb-4 text-sm leading-relaxed">
-                  {article.excerpt}
-                </p>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <div className="w-6 h-6 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full"></div>
-                    <span className="text-blue-100/60 text-sm">{article.author}</span>
-                  </div>
-                  <span className="text-blue-100/60 text-xs">{article.date}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="py-20 px-4 sm:px-8 bg-gradient-to-b from-[#0A0C2A] to-[#3B3366]">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-purple-600/30 rounded-3xl blur-3xl"></div>
-            <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-white mb-6">
+        {/* Newsletter Section */}
+        <section className="py-24 px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-12"
+            >
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                 Stay Updated
               </h2>
-              <p className="text-xl font-light text-blue-100/80 mb-8 max-w-2xl mx-auto">
+              <p className="text-lg md:text-xl text-[#DEF2F2] mb-8 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                 Get the latest insights delivered to your inbox. No spam, just valuable content.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-100/50 focus:outline-none focus:border-blue-400"
+                  className="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-[#DEF2F2]/50 focus:outline-none focus:border-[#21A8B0] transition-colors"
+                  style={{ fontFamily: 'DM Sans, sans-serif' }}
                 />
-                <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg text-white font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300">
+                <BrandButton
+                  href="/subscribe"
+                  variant="primary"
+                >
                   Subscribe
-                </button>
+                </BrandButton>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-8 bg-gradient-to-b from-[#3B3366] to-[#0A0C2A]">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-purple-600/30 rounded-3xl blur-3xl"></div>
-            <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-white mb-6">
+        {/* CTA Section */}
+        <section className="py-24 px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.9 }}
+              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-12"
+            >
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                 Ready to Learn More?
               </h2>
-              <p className="text-xl font-light text-blue-100/80 mb-8 max-w-2xl mx-auto">
+              <p className="text-lg md:text-xl text-[#DEF2F2] mb-8 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                 Explore our courses and start your learning journey today.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <BrandButton
                   href="/courses"
-                  className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg text-white font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300"
+                  variant="primary"
+                  size="lg"
                 >
                   Browse Courses
-                </Link>
-                <Link
+                </BrandButton>
+                <BrandButton
                   href="/"
-                  className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white font-medium hover:bg-white/20 transition-all duration-300"
+                  variant="outline"
+                  size="lg"
                 >
                   Back to Home
-                </Link>
+                </BrandButton>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 } 

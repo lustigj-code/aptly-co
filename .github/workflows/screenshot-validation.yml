@@ -1,0 +1,209 @@
+name: Screenshot Validation
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'src/**/*.tsx'
+      - 'src/**/*.jsx'
+      - 'src/**/*.css'
+      - 'src/app/globals.css'
+      - 'tailwind.config.js'
+      - 'src/components/**'
+      - 'src/app/**'
+
+env:
+  SCREENSHOT_BASE_URL: http://localhost:3000
+
+jobs:
+  visual-regression:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [20.x]
+    
+    steps:
+      - name: Checkout base branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.base_ref }}
+          path: base
+      
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          path: pr
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+          cache-dependency-path: pr/package-lock.json
+      
+      - name: Install dependencies (base)
+        working-directory: base
+        run: npm ci
+      
+      - name: Install dependencies (PR)
+        working-directory: pr
+        run: npm ci
+      
+      - name: Install Playwright browsers
+        working-directory: pr
+        run: npm run playwright:install
+      
+      - name: Build base branch
+        working-directory: base
+        run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_URL: ${{ env.SCREENSHOT_BASE_URL }}
+      
+      - name: Build PR branch
+        working-directory: pr
+        run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_URL: ${{ env.SCREENSHOT_BASE_URL }}
+      
+      - name: Start base server
+        working-directory: base
+        run: |
+          npm start &
+          sleep 10
+          curl --retry 10 --retry-delay 2 --retry-connrefused http://localhost:3000
+      
+      - name: Capture base screenshots
+        working-directory: pr
+        run: |
+          mkdir -p screenshots/before
+          for page in home about courses study-app faq; do
+            npm run screenshot quick-capture ${page}_base http://localhost:3000
+            mv screenshots/history/${page}_base_*.png screenshots/before/${page}.png
+          done
+      
+      - name: Stop base server
+        run: |
+          pkill -f "next start" || true
+          sleep 5
+      
+      - name: Start PR server
+        working-directory: pr
+        run: |
+          npm start &
+          sleep 10
+          curl --retry 10 --retry-delay 2 --retry-connrefused http://localhost:3000
+      
+      - name: Capture PR screenshots
+        working-directory: pr
+        run: |
+          mkdir -p screenshots/after
+          for page in home about courses study-app faq; do
+            npm run screenshot quick-capture ${page}_pr http://localhost:3000
+            mv screenshots/history/${page}_pr_*.png screenshots/after/${page}.png
+          done
+      
+      - name: Compare screenshots
+        working-directory: pr
+        run: |
+          echo "## Visual Regression Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          CHANGES_DETECTED=false
+          
+          for page in home about courses study-app faq; do
+            echo "### Page: ${page}" >> $GITHUB_STEP_SUMMARY
+            
+            # Run comparison
+            if npm run screenshot compare screenshots/before/${page}.png screenshots/after/${page}.png > comparison_output.txt 2>&1; then
+              echo "✅ No visual changes detected" >> $GITHUB_STEP_SUMMARY
+            else
+              CHANGES_DETECTED=true
+              echo "❌ Visual changes detected!" >> $GITHUB_STEP_SUMMARY
+              echo '```' >> $GITHUB_STEP_SUMMARY
+              cat comparison_output.txt >> $GITHUB_STEP_SUMMARY
+              echo '```' >> $GITHUB_STEP_SUMMARY
+            fi
+            echo "" >> $GITHUB_STEP_SUMMARY
+          done
+          
+          if [ "$CHANGES_DETECTED" = true ]; then
+            echo "⚠️ **Visual changes were detected. Please review the differences above.**" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          else
+            echo "✅ **All pages are visually identical!**" >> $GITHUB_STEP_SUMMARY
+          fi
+      
+      - name: Upload screenshot artifacts
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshot-comparison
+          path: |
+            pr/screenshots/before/
+            pr/screenshots/after/
+            pr/screenshots/diff/
+          retention-days: 7
+      
+      - name: Comment PR with results
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const comment = `## 📸 Visual Regression Test Failed
+            
+            Visual changes were detected in this PR. Please review the screenshot comparisons.
+            
+            **Artifacts:** Check the [Actions tab](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) for screenshot comparisons.
+            
+            **To accept these changes:**
+            1. Review the visual differences carefully
+            2. If the changes are intentional, update the base screenshots
+            3. Re-run the workflow
+            
+            **To fix unintended changes:**
+            1. Review the code changes that caused the visual regression
+            2. Fix the styling issues
+            3. Push the fixes to trigger a new test run`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+
+  # Optional: Run on staging/preview deployments
+  preview-validation:
+    runs-on: ubuntu-latest
+    if: github.event.deployment_status.state == 'success'
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Install Playwright
+        run: npm run playwright:install
+      
+      - name: Validate preview deployment
+        run: |
+          npm run screenshot:validate \
+            --base-url ${{ github.event.deployment_status.target_url }} \
+            --threshold 2.0
+      
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview-screenshots
+          path: screenshots/
+          retention-days: 7

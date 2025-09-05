@@ -1,0 +1,22 @@
+{
+  "name": "Aptly - Learning That Sticks",
+  "short_name": "Aptly",
+  "description": "Digital learning solutions that engage and deliver results. Master your Meta certification with AI-powered study tools.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0C2A",
+  "theme_color": "#7AB8BD",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/aptly-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/aptly-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

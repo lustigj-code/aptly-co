@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { motion, MotionProps, type AnimationProps } from "motion/react";
+import { motion, MotionProps } from "motion/react";
 import React from "react";
 
 const animationProps = {
@@ -10,7 +10,7 @@ const animationProps = {
   whileTap: { scale: 0.95 },
   transition: {
     repeat: Infinity,
-    repeatType: "loop",
+    repeatType: "loop" as const,
     repeatDelay: 1,
     type: "spring",
     stiffness: 20,
@@ -23,7 +23,7 @@ const animationProps = {
       mass: 0.5,
     },
   },
-} as AnimationProps;
+};
 
 interface ShinyButtonProps
   extends Omit<React.HTMLAttributes<HTMLElement>, keyof MotionProps>,
@@ -43,7 +43,9 @@ export const ShinyButton = React.forwardRef<
         "relative cursor-pointer rounded-lg px-6 py-2 font-medium backdrop-blur-xl border transition-shadow duration-300 ease-in-out hover:shadow dark:bg-[radial-gradient(circle_at_50%_0%,var(--primary)/10%_0%,transparent_60%)] dark:hover:shadow-[0_0_20px_var(--primary)/10%]",
         className,
       )}
-      {...animationProps}
+      initial={{ scale: 0.8 }}
+      animate={{ scale: 1 }}
+      whileTap={{ scale: 0.95 }}
       {...props}
     >
       <span

@@ -14,7 +14,7 @@ export default function HeroScrollDemo() {
               <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 With Aptly Study
               </span>
-            </h1>
+            </h1>1
           </>
         }
       >

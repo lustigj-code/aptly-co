@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
+import { AptlyLogo } from "@/components/AptlyLogo";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -22,20 +22,15 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-transparent">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <Link href="/" className="flex items-center gap-2">
-            {/* Aptly Logo with dynamic contrast adjustment */}
-            <Image
-              src="/aptly-logo.svg"
-              alt="Aptly Logo"
-              width={140}
-              height={40}
-              className="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity"
-            />
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-brand">
+      <div className="container-width">
+        <div className="flex justify-between items-center h-20">
+          <Link href="/" className="flex items-center">
+            <AptlyLogo variant="horizontal" size="md" colorScheme="default" />
           </Link>
-          <div className="hidden md:flex space-x-6">
+          
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center space-x-2">
             {navItems.map(({ label, href }) => {
               const isActive =
                 (href === "/" && pathname === "/") ||
@@ -44,10 +39,10 @@ export default function Navbar() {
                 <Link
                   key={href}
                   href={href}
-                  className={`transition text-base font-medium px-2 py-1 rounded-md ${
+                  className={`relative transition-all duration-200 text-sm font-medium px-4 py-2 rounded-brand ${
                     isActive
-                      ? "text-[#7AB8BD] bg-white/10"
-                      : "text-white/80 hover:text-[#7AB8BD] hover:bg-white/10"
+                      ? "text-white bg-navy"
+                      : "text-navy hover:text-teal hover:bg-light-teal"
                   }`}
                 >
                   {label}
@@ -55,17 +50,22 @@ export default function Navbar() {
               );
             })}
           </div>
-          <div className="md:hidden">
+          
+          {/* Mobile Menu Button */}
+          <div className="lg:hidden">
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="text-white/80 hover:text-[#7AB8BD] p-2"
+              className="text-navy hover:text-teal p-3 focus:outline-none focus:ring-2 focus:ring-teal focus:ring-offset-2 rounded-brand transition-all duration-200"
+              aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
             >
               {mobileOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
+        
+        {/* Mobile Navigation */}
         {mobileOpen && (
-          <div className="md:hidden bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-4 mb-4">
+          <div className="lg:hidden bg-light-teal rounded-brand p-6 mb-6 shadow-brand">
             <div className="flex flex-col space-y-2">
               {navItems.map(({ label, href }) => {
                 const isActive =
@@ -76,10 +76,10 @@ export default function Navbar() {
                     key={href}
                     href={href}
                     onClick={() => setMobileOpen(false)}
-                    className={`transition text-base font-medium px-3 py-2 rounded-md ${
+                    className={`transition-all duration-200 text-base font-medium px-4 py-3 rounded-brand ${
                       isActive
-                        ? "text-[#7AB8BD] bg-white/10"
-                        : "text-white/80 hover:text-[#7AB8BD] hover:bg-white/10" 
+                        ? "text-white bg-navy"
+                        : "text-navy hover:text-white hover:bg-teal" 
                     }`}
                   >
                     {label}
@@ -92,4 +92,4 @@ export default function Navbar() {
       </div>
     </nav>
   );
-} 
+}

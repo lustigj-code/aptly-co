@@ -48,96 +48,55 @@ export default function FeaturesSectionDemo() {
     },
   ];
   return (
-    <div className="relative z-20 py-20 lg:py-60 max-w-7xl mx-auto">
-      <div className="px-8">
-        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
+    <div className="relative z-20">
+      <div className="text-center flow" style={{marginBottom: 'var(--space-10)'}}>
+        <h4 className="text-3xl sm:text-4xl lg:text-5xl font-bold high-contrast-text">
           Everything you need to succeed
         </h4>
 
-        <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
+        <p className="text-lg sm:text-xl medium-contrast-text max-w-3xl mx-auto">
           From professional certificates to interactive learning modules, Aptly provides
           comprehensive digital learning solutions for the modern workforce.
         </p>
       </div>
 
-      <div className="relative ">
-        <BentoGrid
-          className="mt-12"
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
-            gridTemplateRows: 'repeat(3, auto)', // let rows fit content
-            gridTemplateAreas: `
-              'hero hero reviews reviews'
-              'hero hero started started'
-              'community community community community'
-            `,
-            gap: '1.25rem',
-          }}
-        >
-          {/* Featured Programs - hero card */}
-          <BentoCard
-            title="Featured Programs"
-            description={features[0].description}
-            accent="#21a8b0"
-            gridArea="hero"
-            background={<span className="absolute -right-10 -top-10 w-32 h-32 rounded-full opacity-40 blur-2xl" style={{ background: '#21a8b0' }} />}
-            className="flex flex-col justify-center items-center p-8"
-          >
-            <div className="flex-1 flex flex-col justify-center items-center w-full">
-              <SkeletonOne />
-            </div>
-          </BentoCard>
-          {/* Student Reviews */}
-          <BentoCard
-            title="Student Reviews"
-            description={features[1].description}
-            accent="#ffde00"
-            gridArea="reviews"
-            background={<span className="absolute -right-10 -top-10 w-32 h-32 rounded-full opacity-40 blur-2xl" style={{ background: '#ffde00' }} />}
-            className="flex flex-col justify-start p-4"
-          >
-            <div className="mt-2 flex-1 flex flex-col justify-start">
-              <SkeletonTwo />
-            </div>
-          </BentoCard>
-          {/* Ready to Get Started? */}
-          <BentoCard
-            title="Take the next step toward your future"
-            description="Join thousands of learners preparing for the future of work with our expert-led programs."
-            accent="#0A004A"
-            gridArea="started"
-            background={<span className="absolute -right-10 -top-10 w-32 h-32 rounded-full opacity-40 blur-2xl" style={{ background: '#0A004A' }} />}
-            className="flex flex-col justify-center items-center p-8"
-          >
-            <div className="flex flex-col items-center justify-center w-full gap-6">
-              <AptlyGlowButton />
-            </div>
-          </BentoCard>
-          {/* Global Learning Community - full width */}
-          <BentoCard
-            title="Global Learning Community"
-            description={features[3].description}
-            accent="#21a8b0"
-            gridArea="community"
-            background={<span className="absolute -right-10 -top-10 w-32 h-32 rounded-full opacity-40 blur-2xl" style={{ background: '#21a8b0' }} />}
-            className="flex flex-col justify-start p-4"
-          >
-            <div className="mt-2 flex-1 flex flex-col justify-start">
-              <SkeletonFour />
-            </div>
-          </BentoCard>
-        </BentoGrid>
-        {/* Responsive stacking for mobile */}
-        <style jsx>{`
-          @media (max-width: 1023px) {
-            .mt-12 > div[style] {
-              display: flex !important;
-              flex-direction: column !important;
-              gap: 1.25rem !important;
-            }
-          }
-        `}</style>
+      {/* Visual Harmony Grid Layout */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" style={{gap: 'var(--space-3)'}}>
+        {/* Featured Programs */}
+        <div className="lg:col-span-3 feature-card group">
+          <div className="text-center flow">
+            <h5 className="text-2xl font-bold high-contrast-text">Featured Programs</h5>
+            <p className="medium-contrast-text">Discover our most popular learning experiences designed to prepare you for the jobs of tomorrow.</p>
+            <SkeletonOne />
+          </div>
+        </div>
+
+        {/* Student Reviews */}
+        <div className="sm:col-span-1 lg:col-span-1 feature-card group">
+          <div className="flow-tight">
+            <h5 className="text-xl font-bold high-contrast-text">Student Reviews</h5>
+            <p className="medium-contrast-text text-sm">Hear from our graduates who have successfully transitioned into their dream careers.</p>
+            <SkeletonTwo />
+          </div>
+        </div>
+
+        {/* Ready to Get Started */}
+        <div className="sm:col-span-1 lg:col-span-1 feature-card group">
+          <div className="flow-tight">
+            <h5 className="text-xl font-bold high-contrast-text">Take the next step</h5>
+            <p className="medium-contrast-text text-sm">Join thousands of learners preparing for the future of work.</p>
+            <SkeletonThree />
+          </div>
+        </div>
+
+        {/* Global Learning Community */}
+        <div className="sm:col-span-2 lg:col-span-1 feature-card group">
+          <div className="flow-tight">
+            <h5 className="text-xl font-bold high-contrast-text">Global Learning Community</h5>
+            <p className="medium-contrast-text text-sm">Join thousands of learners worldwide preparing for the future of work with our expert-led programs.</p>
+            <SkeletonFour />
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -235,7 +194,7 @@ export const SkeletonTwo = () => {
       role: "Digital Marketing Graduate",
       content: "Aptly's courses helped me land my dream job in digital marketing. The content was practical, up-to-date, and engaging!",
       icon: (
-        <svg className="w-5 h-5 text-[#21a8b0]" fill="currentColor" viewBox="0 0 24 24">
+        <svg className="w-5 h-5 text-[#7AB8BD]" fill="currentColor" viewBox="0 0 24 24">
           <path d="M20 6L9 17l-5-5"/>
         </svg>
       ),
@@ -245,7 +204,7 @@ export const SkeletonTwo = () => {
       role: "Data Analyst",
       content: "The Meta Data Analyst program was exactly what I needed to transition into tech. Highly recommend!",
       icon: (
-        <svg className="w-5 h-5 text-[#ffde00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-5 h-5 text-[#F1D632]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
         </svg>
       ),
@@ -255,7 +214,7 @@ export const SkeletonTwo = () => {
       role: "Social Media Manager",
       content: "Professional, comprehensive, and results-driven. Aptly delivers on their promise of job-ready skills.",
       icon: (
-        <svg className="w-5 h-5 text-[#0A004A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-5 h-5 text-[#0A0C2A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
         </svg>
       ),
@@ -294,10 +253,10 @@ export const SkeletonFour = () => {
       {/* Left content: animated word, description, and global stats/features */}
       <div className="flex-1 flex flex-col justify-center items-start gap-4 min-w-[200px]">
         <AnimatedWordCycler words={["Connect", "Collaborate", "Grow"]} className="mb-1" />
-        <p className="text-base text-blue-100/90 mb-2 max-w-md">
+        <p className="text-base text-white/90 mb-2 max-w-md">
           Our community spans every continent and brings together diverse perspectives for a richer learning experience.
         </p>
-        <ul className="text-blue-200/90 text-sm space-y-2 pl-4 list-disc">
+        <ul className="text-white/80 text-sm space-y-2 pl-4 list-disc">
           
         </ul>
       </div>
@@ -362,7 +321,7 @@ const CourseGridItem = ({ title, image, link }: CourseGridItemProps) => {
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-            className="text-blue-600 dark:text-blue-400 text-lg font-medium hover:underline mt-1"
+            className="text-[#7AB8BD] dark:text-[#7AB8BD] text-lg font-medium hover:underline mt-1"
               >
                 Learn More →
               </a>

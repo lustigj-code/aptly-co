@@ -3,13 +3,13 @@ import React from "react";
 import { motion } from "motion/react";
 
 export default function ColourfulText({ text }: { text: string }) {
-  const colors = [
+  const colors = React.useMemo(() => [
     "rgb(59, 130, 246)", // Blue
     "rgb(147, 51, 234)", // Purple
     "rgb(34, 197, 94)",  // Green
     "rgb(239, 68, 68)",  // Red
     "rgb(245, 158, 11)", // Orange
-  ];
+  ], []);
 
   const [currentColors, setCurrentColors] = React.useState(colors);
   const [count, setCount] = React.useState(0);

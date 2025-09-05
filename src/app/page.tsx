@@ -1,147 +1,242 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect } from "react";
-import SubtleLogo from "@/components/SubtleLogo";
-import FeaturesSectionDemo from "@/components/ui/features-section-demo-3";
-import ColourfulText from "@/components/ui/colourful-text";
-import { ShootingStars } from "@/components/ui/shooting-stars";
-import { StarsBackground } from "@/components/ui/stars-background";
-import { Cover } from "@/components/ui/cover";
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { 
+  Container, 
+  Section, 
+  Heading, 
+  Button, 
+  Grid, 
+  Card, 
+  Stat,
+  Badge,
+  Divider 
+} from '@/design-system';
+import { getFeaturedCourses } from '@/lib/data/courses';
+import { AptlyLogo } from '@/components/AptlyLogo';
 
-const partners = [
-  {
-    src: "https://uploads.teachablecdn.com/attachments/5z8z0OfkRZCllESTK927_Partners+%281%29.png",
-    alt: "Aptly's partners: Coursera, Google, and Meta",
-  },
-];
+// Clean animations - subtle and professional
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+};
 
-const courses = [
-  {
-    title: "Meta Social Media Marketing Professional Certificate Program",
-    link: "https://www.coursera.org/professional-certificates/facebook-social-media-marketing",
-  },
-  {
-    title: "Meta Marketing Analytics Professional Certificate Program",
-    link: "https://www.coursera.org/professional-certificates/facebook-marketing-analytics",
-  },
-  {
-    title: "Meta Data Analyst Professional Certificate Program",
-    link: "https://www.coursera.org/professional-certificates/meta-data-analyst",
-  },
-];
-
-const placeholderVideo = "https://www.w3schools.com/howto/rain.mp4";
-
-function BackToTopButton() {
-  useEffect(() => {
-    const handleScroll = () => {
-      const btn = document.getElementById("back-to-top");
-      if (btn) btn.style.opacity = window.scrollY > 300 ? "1" : "0";
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-  return (
-    <button
-      id="back-to-top"
-      aria-label="Back to top"
-      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="fixed bottom-6 right-6 z-50 bg-white/70 text-neutral-900 rounded-full shadow-lg p-3 opacity-0 transition-opacity duration-300 hover:bg-white focus:outline-none focus:ring-2 focus:ring-blue-400"
-      style={{ pointerEvents: "auto" }}
-    >
-      <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 15l-6-6-6 6" /></svg>
-    </button>
-  );
-}
-
-export default function Home() {
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.AOS) {
-    
-    }
-  }, []);
+export default function HomePage() {
+  const featuredCourses = getFeaturedCourses();
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section with Video Background */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src={placeholderVideo} type="video/mp4" />
-        </video>
-        
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0A0C2A]"></div>
-        
-        {/* Subtle Logo in Background */}
-        <div className="absolute top-20 right-8">
-          <SubtleLogo size="lg" variant="gradient" />
-        </div>
-        
-        {/* Hero Content */}
-        <div className="relative z-10 text-center text-white px-4 sm:px-8 max-w-5xl mx-auto">
-          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-8 leading-tight font-sans text-white">
-            Prepare for the jobs of{" "}
-            <Cover>tomorrow, today!</Cover>
-          </h1>
-          <p className="text-2xl sm:text-3xl font-light mb-10 text-white/90 max-w-3xl mx-auto">
-            Digital learning solutions that engage and deliver results
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-20">
-            <Link
-              href="/courses"
-              className="inline-block px-12 py-5 rounded-full bg-white/80 text-neutral-900 font-bold text-xl shadow-xl border border-white/30 backdrop-blur hover:bg-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300"
-            >
-              Browse Courses
-            </Link>
+    <main className="min-h-screen bg-navy">
+      {/* Hero Section - Clean and Powerful */}
+      <Section background="gradient" spacing="xl" className="relative overflow-hidden">
+        <Container size="lg">
+          <motion.div 
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-4xl mx-auto"
+          >
+            <Badge variant="info" size="md">Partner with Meta & Google</Badge>
+            
+            <Heading as="h1" size="3xl" className="mt-6 mb-6">
+              Transform Your Career with
+              <span className="block text-teal">Industry-Leading Certifications</span>
+            </Heading>
+            
+            <p className="text-xl text-light-teal mb-10 leading-relaxed">
+              Join 50,000+ professionals who have advanced their careers through 
+              our partnership programs with the world&apos;s leading tech companies.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" variant="primary">
+                Browse Programs
+              </Button>
+              <Button size="lg" variant="outline">
+                Talk to Advisor
+              </Button>
+            </div>
+          </motion.div>
+        </Container>
+      </Section>
+
+      {/* Trust Indicators - Clean Stats */}
+      <Section background="navy" spacing="md">
+        <Container size="lg">
+          <Grid cols={{ default: 2, md: 4 }} gap="md">
+            <Stat value="50K+" label="Active Learners" />
+            <Stat value="95%" label="Completion Rate" />
+            <Stat value="87%" label="Job Placement" />
+            <Stat value="4.8" label="Rating" />
+          </Grid>
+        </Container>
+      </Section>
+
+      {/* Featured Programs - Clean Cards */}
+      <Section background="light-navy" spacing="xl">
+        <Container size="lg">
+          <div className="text-center mb-12">
+            <Heading as="h2" size="2xl" className="mb-4">
+              Professional Certificate Programs
+            </Heading>
+            <p className="text-lg text-light-teal max-w-2xl mx-auto">
+              6-month programs designed with industry leaders. 
+              Graduate job-ready with portfolio projects and career coaching.
+            </p>
           </div>
-          
-          {/* Partners Section - moved here */}
+
+          <Grid cols={{ default: 1, md: 2, lg: 3 }} gap="lg">
+            {featuredCourses.map((course) => (
+              <motion.div
+                key={course.id}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <Card variant="bordered" className="h-full hover:border-teal/40 transition-colors">
+                  <div className="aspect-video relative mb-6 overflow-hidden rounded-xl">
+                    <Image
+                      src={course.image}
+                      alt={course.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <Badge variant="success">Professional Certificate</Badge>
+                  <Heading as="h3" size="lg" weight="medium" className="mt-4 mb-3">
+                    {course.title}
+                  </Heading>
+                  <p className="text-light-teal mb-6 line-clamp-2">
+                    {course.description}
+                  </p>
+                  <Button 
+                    href={course.link} 
+                    variant="secondary" 
+                    size="sm" 
+                    external
+                    className="w-full"
+                  >
+                    Learn More
+                  </Button>
+                </Card>
+              </motion.div>
+            ))}
+          </Grid>
+
+          <div className="text-center mt-10">
+            <Button href="/programs" variant="outline">
+              View All Programs
+            </Button>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Value Proposition - The Aptly Advantage */}
+      <Section background="navy" spacing="xl">
+        <Container size="lg">
+          <Grid cols={{ default: 1, lg: 2 }} gap="lg" className="items-center">
+            <div>
+              <Heading as="h2" size="2xl" className="mb-6">
+                The Aptly Advantage
+              </Heading>
+              <p className="text-lg text-light-teal mb-8">
+                We don&apos;t just teach skills - we transform careers. 
+                Our comprehensive approach ensures you&apos;re job-ready from day one.
+              </p>
+              
+              <div className="space-y-4">
+                {[
+                  "Industry-designed curriculum updated quarterly",
+                  "1-on-1 career coaching and interview preparation",
+                  "Real projects from actual companies",
+                  "Direct referrals to partner companies",
+                  "Lifetime access to course materials"
+                ].map((feature, idx) => (
+                  <div key={idx} className="flex items-start">
+                    <div className="w-6 h-6 rounded-full bg-teal/20 flex items-center justify-center mt-0.5 mr-4 flex-shrink-0">
+                      <span className="text-teal text-sm">✓</span>
+                    </div>
+                    <p className="text-white">{feature}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative">
+              <Card variant="default" padding="lg">
+                <div className="text-center">
+                  <Heading as="h3" size="xl" className="mb-4">
+                    Success Story
+                  </Heading>
+                  <blockquote className="text-light-teal italic mb-6">
+                    &ldquo;Aptly&apos;s Meta certificate program helped me transition 
+                    from retail to a data analyst role at a Fortune 500 company. 
+                    The career support was invaluable.&rdquo;
+                  </blockquote>
+                  <div className="text-white font-medium">Sarah Chen</div>
+                  <div className="text-muted-teal text-sm">Data Analyst, Microsoft</div>
+                </div>
+              </Card>
+            </div>
+          </Grid>
+        </Container>
+      </Section>
+
+      {/* Learning Methodology */}
+      <Section background="white" spacing="xl">
+        <Container size="lg">
+          <div className="text-center mb-12">
+            <Heading as="h2" size="2xl" color="navy" className="mb-4">
+              How It Works
+            </Heading>
+            <p className="text-lg text-rich-black max-w-2xl mx-auto">
+              Your journey from enrollment to employment in four simple steps
+            </p>
+          </div>
+
+          <Grid cols={{ default: 1, md: 2, lg: 4 }} gap="md">
+            {[
+              { step: "1", title: "Choose Program", desc: "Select from our curated certificates" },
+              { step: "2", title: "Learn & Build", desc: "Complete projects with expert guidance" },
+              { step: "3", title: "Get Certified", desc: "Earn industry-recognized credentials" },
+              { step: "4", title: "Land Your Job", desc: "Leverage our placement support" }
+            ].map((item) => (
+              <div key={item.step} className="text-center">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-navy to-teal text-white text-2xl font-bold flex items-center justify-center mx-auto mb-4">
+                  {item.step}
+                </div>
+                <Heading as="h3" size="md" color="navy" weight="medium" className="mb-2">
+                  {item.title}
+                </Heading>
+                <p className="text-rich-black text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </Grid>
+        </Container>
+      </Section>
+
+      {/* CTA Section */}
+      <Section background="gradient" spacing="lg">
+        <Container size="md">
           <div className="text-center">
-            <h2 className="text-xl uppercase tracking-widest text-white/80 mb-8 font-medium">
-              Trusted by leading organizations
-            </h2>
-            <div className="flex justify-center">
-              <Image
-                src={partners[0].src}
-                alt={partners[0].alt}
-                width={400}
-                height={100}
-                className="object-contain h-24 w-auto"
-              />
+            <Heading as="h2" size="2xl" className="mb-6">
+              Ready to Transform Your Career?
+            </Heading>
+            <p className="text-lg text-light-teal mb-8">
+              Join thousands of successful graduates. Start your journey today.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" variant="primary">
+                Get Started
+              </Button>
+              <Button size="lg" variant="outline">
+                Download Career Guide
+              </Button>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Features Section Demo with Aptly Navy Blue Background and Shooting Stars */}
-      <section className="relative py-20 bg-[#1e3a8a] bg-opacity-30">
-        <div className="absolute inset-0 -z-10">
-          <ShootingStars 
-            starColor="#ffffff" 
-            trailColor="#4a90e2"
-            minDelay={800}
-            maxDelay={3000}
-          />
-          <StarsBackground 
-            starDensity={0.0001}
-            allStarsTwinkle={true}
-            twinkleProbability={0.6}
-          />
-        </div>
-        <div className="relative z-10">
-          <FeaturesSectionDemo />
-        </div>
-      </section>
-
-      {/* Back to Top Button */}
-      <BackToTopButton />
-    </div>
+        </Container>
+      </Section>
+    </main>
   );
 }
