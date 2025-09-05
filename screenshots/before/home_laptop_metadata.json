@@ -26,5 +26,19 @@
       "fullPage": true,
       "deviceScaleFactor": 2
     }
+  },
+  {
+    "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/home_laptop_2025-09-05T21-22-59-664Z.png",
+    "timestamp": "2025-09-05T21-22-59-664Z",
+    "url": "http://localhost:3000/",
+    "hash": "6fffb86fc2a0d245ec28c657e60588bf2b6119de295b0386f222890e9ea0b3cd",
+    "metadata": {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "fullPage": true,
+      "deviceScaleFactor": 2
+    }
   }
 ]
