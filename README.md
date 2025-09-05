@@ -179,4 +179,4 @@ For support, please contact the development team or create an issue in the repos
 
 ---
 
-Built with ❤️ by the Aptly team
+Built with ❤️ by the Aptly team# Trigger Vercel deployment after GitHub connection
