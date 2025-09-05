@@ -1,0 +1,30 @@
+[
+  {
+    "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/courses_desktop_2025-09-05T20-55-47-277Z.png",
+    "timestamp": "2025-09-05T20-55-47-277Z",
+    "url": "http://localhost:3000/courses",
+    "hash": "c7b632036bc575107e3713deaa445a3ca9c7a4653f3b8dd8e27bb5bd5b3da109",
+    "metadata": {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fullPage": true,
+      "deviceScaleFactor": 2
+    }
+  },
+  {
+    "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/courses_desktop_2025-09-05T21-02-17-971Z.png",
+    "timestamp": "2025-09-05T21-02-17-971Z",
+    "url": "http://localhost:3000/courses",
+    "hash": "87c085e3f5449fdc610f2ca065d83c4b3375882872bb7c43a96610881c55d667",
+    "metadata": {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fullPage": true,
+      "deviceScaleFactor": 2
+    }
+  }
+]

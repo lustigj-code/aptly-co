@@ -1,0 +1,30 @@
+[
+  {
+    "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/faq_laptop_2025-09-05T20-55-59-013Z.png",
+    "timestamp": "2025-09-05T20-55-59-013Z",
+    "url": "http://localhost:3000/faq",
+    "hash": "b820a382349c154415ca24ba30b8cfa81b77da0919471de2d84064f87a3759cb",
+    "metadata": {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "fullPage": true,
+      "deviceScaleFactor": 2
+    }
+  },
+  {
+    "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/faq_laptop_2025-09-05T21-02-29-644Z.png",
+    "timestamp": "2025-09-05T21-02-29-644Z",
+    "url": "http://localhost:3000/faq",
+    "hash": "067b0a9290316024afcd4f700af1ea079c80a6078243ee710650a97a86a3c1cf",
+    "metadata": {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "fullPage": true,
+      "deviceScaleFactor": 2
+    }
+  }
+]

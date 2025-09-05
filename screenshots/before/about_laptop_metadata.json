@@ -1,0 +1,30 @@
+[
+  {
+    "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/about_laptop_2025-09-05T20-55-43-531Z.png",
+    "timestamp": "2025-09-05T20-55-43-531Z",
+    "url": "http://localhost:3000/about",
+    "hash": "278baab7e046ab79c6070fe9928c3855b3421c8758ddd86608dbfea8a36c4464",
+    "metadata": {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "fullPage": true,
+      "deviceScaleFactor": 2
+    }
+  },
+  {
+    "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/about_laptop_2025-09-05T21-02-14-300Z.png",
+    "timestamp": "2025-09-05T21-02-14-300Z",
+    "url": "http://localhost:3000/about",
+    "hash": "c02664545f24efef6a17b8678c2cab174a27b5e53e06fffd8ecf6171122fc547",
+    "metadata": {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "fullPage": true,
+      "deviceScaleFactor": 2
+    }
+  }
+]
