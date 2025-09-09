@@ -54,5 +54,19 @@
       "fullPage": true,
       "deviceScaleFactor": 2
     }
+  },
+  {
+    "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/home_mobile_2025-09-09T17-30-33-583Z.png",
+    "timestamp": "2025-09-09T17-30-33-583Z",
+    "url": "http://localhost:3000/",
+    "hash": "978838ce5bed7947f220e14e2e94dc35ede09dcdeb1e83d7cea7fd6b6c12cd7f",
+    "metadata": {
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "fullPage": true,
+      "deviceScaleFactor": 2
+    }
   }
 ]
