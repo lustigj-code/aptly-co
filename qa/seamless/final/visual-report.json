@@ -1,0 +1,104 @@
+{
+  "timestamp": "2025-09-09T17:27:54.416Z",
+  "scores": {
+    "seamless": 86,
+    "changesAboveFold": 0,
+    "changesTotal": 0,
+    "assessment": "PASS"
+  },
+  "segmentation": {
+    "totalSections": 7,
+    "hardBreaks": 0,
+    "borders": 0,
+    "details": [
+      {
+        "section": 1,
+        "classes": " py-24  relative overflow-hidden",
+        "hasHardBackground": false,
+        "hasBorder": false,
+        "height": 545
+      },
+      {
+        "section": 2,
+        "classes": " py-20  section-soft-fade",
+        "hasHardBackground": false,
+        "hasBorder": false,
+        "height": 498
+      },
+      {
+        "section": 3,
+        "classes": " py-24  section-soft-fade",
+        "hasHardBackground": false,
+        "hasBorder": false,
+        "height": 943
+      },
+      {
+        "section": 4,
+        "classes": " py-24  section-soft-fade",
+        "hasHardBackground": false,
+        "hasBorder": false,
+        "height": 552
+      },
+      {
+        "section": 5,
+        "classes": " py-20  ",
+        "hasHardBackground": false,
+        "hasBorder": false,
+        "height": 307
+      },
+      {
+        "section": 6,
+        "classes": " py-24  section-soft-fade",
+        "hasHardBackground": false,
+        "hasBorder": false,
+        "height": 468
+      },
+      {
+        "section": 7,
+        "classes": " py-20  ",
+        "hasHardBackground": false,
+        "hasBorder": false,
+        "height": 390
+      }
+    ]
+  },
+  "accessibility": {
+    "contrastIssues": 7,
+    "details": [
+      {
+        "element": "BUTTON",
+        "text": "Browse Programs",
+        "ratio": "2.88",
+        "required": "4.5"
+      },
+      {
+        "element": "BUTTON",
+        "text": "Get Started",
+        "ratio": "2.88",
+        "required": "4.5"
+      },
+      {
+        "element": "BUTTON",
+        "text": "Subscribe",
+        "ratio": "2.88",
+        "required": "4.5"
+      },
+      {
+        "element": "A",
+        "text": "",
+        "ratio": "1.16",
+        "required": "4.5"
+      },
+      {
+        "element": "A",
+        "text": "",
+        "ratio": "1.16",
+        "required": "4.5"
+      }
+    ]
+  },
+  "screenshots": {
+    "desktop": "home-desktop-final.png",
+    "mobile": "home-mobile-final.png"
+  }
+}

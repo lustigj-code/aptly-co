@@ -1,0 +1,474 @@
+{
+  "meta": {
+    "version": "2024",
+    "title": "Aptly Brand Guidelines",
+    "source": "docs/aptly-brand-guidelines-2024.pdf",
+    "extracted": "2024-09-09",
+    "sha256": "13229ef563a371188e84d26aa3779a378df49d01001fabd2dbd5cd319d8f270e",
+    "size": 19259998
+  },
+  
+  "logo": {
+    "concept": "Venn diagram representing the intersection of highest quality course content and excellent student service",
+    "variants": {
+      "horizontal": {
+        "description": "For left/right alignment",
+        "min_height_print": "5mm",
+        "min_height_web": "24px"
+      },
+      "vertical": {
+        "description": "For central alignment",
+        "min_height_print": "7mm",
+        "min_height_web": "24px"
+      },
+      "icon": {
+        "description": "Where long version not recognizable due to size",
+        "usage": "Social media profile icons, small spaces"
+      },
+      "wordmark": {
+        "description": "Text only version for pairing with client logos"
+      }
+    },
+    "clearspace": {
+      "rule": "Minimum clearspace equals logo height",
+      "with_client_logos": "Minimum space equals wordmark length divided by 2, heights must be equal"
+    },
+    "backgrounds": {
+      "allowed": ["Navy", "Teal", "White"],
+      "intersection_color": "Yellow (#FFDE00)",
+      "monochrome": "Available for B&W printing only"
+    },
+    "forbidden": [
+      "Stand-alone color usage",
+      "Graphic effects",
+      "Complex backgrounds",
+      "Rotation",
+      "Color changes",
+      "Opacity changes",
+      "Proportion changes",
+      "Font/kerning changes",
+      "Shrinking or deformation"
+    ]
+  },
+  
+  "typography": {
+    "primary_font": {
+      "name": "DM Sans",
+      "source": "Google Fonts",
+      "description": "Low-contrast geometric sans serif design for smaller text sizes",
+      "weights": [
+        {
+          "name": "Regular",
+          "value": 400,
+          "usage": "Body text, general content"
+        },
+        {
+          "name": "Medium", 
+          "value": 500,
+          "usage": "Subheadings, emphasis"
+        },
+        {
+          "name": "Bold",
+          "value": 700,
+          "usage": "Headlines, strong emphasis"
+        }
+      ],
+      "character_set": "Latin Extended glyph set, supports English and Western European languages",
+      "designer": "Colophon Foundry (UK), based on Indian Type Foundry's Poppins",
+      "weight_range": "Thin to ExtraBlack (100-1000) with optical size axis"
+    },
+    "hierarchy": {
+      "h1": {
+        "mobile": "36px",
+        "desktop": "60px",
+        "weight": 700,
+        "line_height": 1.1
+      },
+      "h2": {
+        "mobile": "24px",
+        "desktop": "36px", 
+        "weight": 700,
+        "line_height": 1.25
+      },
+      "h3": {
+        "mobile": "24px",
+        "desktop": "30px",
+        "weight": 500,
+        "line_height": 1.25
+      },
+      "h4": {
+        "mobile": "20px",
+        "desktop": "24px",
+        "weight": 500,
+        "line_height": 1.5
+      },
+      "body": {
+        "mobile": "16px",
+        "desktop": "16px",
+        "weight": 400,
+        "line_height": 1.5
+      }
+    }
+  },
+  
+  "color_palette": {
+    "primary": {
+      "navy": {
+        "hex": "#0A004A",
+        "rgb": [10, 0, 74],
+        "cmyk": [100, 95, 37, 48],
+        "usage": "Primary background, main brand color"
+      },
+      "teal": {
+        "hex": "#21A8B0", 
+        "rgb": [33, 168, 176],
+        "cmyk": [74, 9, 33, 0],
+        "usage": "Primary accent, call-to-action elements"
+      },
+      "yellow": {
+        "hex": "#FFDE00",
+        "rgb": [255, 222, 0],
+        "cmyk": [2, 9, 91, 0],
+        "usage": "Highlights only, logo intersection"
+      }
+    },
+    "secondary": {
+      "light_navy": {
+        "hex": "#3B336E",
+        "rgb": [59, 51, 110],
+        "cmyk": [92, 90, 24, 12],
+        "usage": "Secondary backgrounds"
+      },
+      "muted_teal": {
+        "hex": "#69BCC1",
+        "rgb": [105, 188, 193], 
+        "cmyk": [59, 5, 27, 0],
+        "usage": "Subtle accents"
+      },
+      "light_teal": {
+        "hex": "#DEF2F2",
+        "rgb": [222, 242, 242],
+        "cmyk": [15, 0, 7, 0],
+        "usage": "Light backgrounds"
+      }
+    },
+    "neutrals": {
+      "white": {
+        "hex": "#FFFFFF",
+        "rgb": [255, 255, 255],
+        "usage": "Text on dark backgrounds"
+      },
+      "light_grey": {
+        "hex": "#E6E6E6",
+        "rgb": [230, 230, 230],
+        "cmyk": [0, 0, 0, 10],
+        "usage": "Borders, dividers"
+      },
+      "grey": {
+        "hex": "#CCCCCC", 
+        "rgb": [204, 204, 204],
+        "cmyk": [0, 0, 0, 20],
+        "usage": "Secondary text"
+      },
+      "rich_black": {
+        "hex": "#333333",
+        "rgb": [51, 51, 51],
+        "cmyk": [0, 0, 0, 80],
+        "usage": "Text on light backgrounds"
+      }
+    },
+    "tertiary": {
+      "red": {
+        "hex": "#E84133",
+        "rgb": [255, 73, 73],
+        "cmyk": [0, 85, 80, 0],
+        "usage": "Error states, alerts"
+      },
+      "orange": {
+        "hex": "#EC6726",
+        "rgb": [158, 98, 255],
+        "cmyk": [0, 70, 90, 0],
+        "usage": "Warning states"
+      }
+    },
+    "illustrations": {
+      "light_orange": {
+        "hex": "#E08534",
+        "rgb": [224, 133, 52],
+        "cmyk": [0, 58, 96, 0]
+      },
+      "light_red": {
+        "hex": "#D15549", 
+        "rgb": [209, 85, 73],
+        "cmyk": [3, 82, 72, 0]
+      },
+      "green": {
+        "hex": "#88B644",
+        "rgb": [136, 182, 68],
+        "cmyk": [58, 0, 100, 0]
+      },
+      "light_purple": {
+        "hex": "#5C54D2",
+        "rgb": [92, 84, 210],
+        "cmyk": [79, 70, 0, 0]
+      },
+      "pink": {
+        "hex": "#ED9FE2",
+        "rgb": [237, 159, 226],
+        "cmyk": [14, 45, 0, 0]
+      },
+      "dark_grey": {
+        "hex": "#9B9B9A",
+        "rgb": [155, 155, 154],
+        "cmyk": [40, 30, 32, 10]
+      }
+    },
+    "skin_tones": {
+      "light_pink": {
+        "hex": "#FDE4D2",
+        "rgb": [253, 228, 210],
+        "cmyk": [0, 13, 18, 0]
+      },
+      "light_orange": {
+        "hex": "#FDCE96",
+        "rgb": [253, 206, 150],
+        "cmyk": [0, 23, 45, 0]
+      },
+      "pink": {
+        "hex": "#EF9E92",
+        "rgb": [239, 158, 146],
+        "cmyk": [2, 48, 37, 0]
+      },
+      "orange": {
+        "hex": "#FDAE7D",
+        "rgb": [253, 174, 125],
+        "cmyk": [0, 40, 52, 0]
+      },
+      "light_brown": {
+        "hex": "#97503C",
+        "rgb": [151, 80, 60],
+        "cmyk": [28, 70, 72, 27]
+      },
+      "brown": {
+        "hex": "#7D524E",
+        "rgb": [125, 82, 78],
+        "cmyk": [35, 61, 52, 40]
+      }
+    }
+  },
+  
+  "gradient": {
+    "brand_gradient": {
+      "angle": 135,
+      "tool": "https://cssgradient.io/",
+      "stops": [
+        {
+          "position": "0%",
+          "color": "#0A004A",
+          "name": "Navy"
+        },
+        {
+          "position": "25%",
+          "color": "#3B336E", 
+          "name": "Light Navy"
+        },
+        {
+          "position": "50%",
+          "color": "#21A8B0",
+          "name": "Teal"
+        },
+        {
+          "position": "75%",
+          "color": "#69BCC1",
+          "name": "Muted Teal"
+        },
+        {
+          "position": "100%",
+          "color": "#DEF2F2",
+          "name": "Light Teal"
+        }
+      ],
+      "usage": "Backgrounds, overlays, interactive elements",
+      "direction": "Consistent direction and ratio required",
+      "text_contrast": "Ensure high contrast when placing text over gradient",
+      "forbidden": [
+        "Altering gradient colors",
+        "Introducing new gradients", 
+        "Using in ways that create visual clutter"
+      ]
+    },
+    "image_overlay": {
+      "purpose": "Ensure text readability on images",
+      "gradient": "Dark gradient overlay",
+      "usage": "Sparingly, only when necessary for text accessibility"
+    }
+  },
+  
+  "spacing": {
+    "grid_system": "8px grid system",
+    "units": {
+      "space_1": "8px",
+      "space_2": "16px", 
+      "space_3": "24px",
+      "space_4": "32px",
+      "space_6": "48px",
+      "space_8": "64px",
+      "space_10": "80px",
+      "space_12": "96px"
+    },
+    "containers": {
+      "max_width": "1280px",
+      "padding_mobile": "24px",
+      "padding_desktop": "48px"
+    },
+    "sections": {
+      "padding_mobile": "64px",
+      "padding_desktop": "80px"
+    }
+  },
+  
+  "layout": {
+    "grid": {
+      "desktop": 12,
+      "tablet": 4,
+      "mobile": 2,
+      "gap": "24px"
+    },
+    "breakpoints": {
+      "sm": "640px",
+      "md": "768px", 
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1536px"
+    }
+  },
+  
+  "components": {
+    "buttons": {
+      "primary": {
+        "background": "Navy (#0A004A)",
+        "text": "White (#FFFFFF)",
+        "border_radius": "24px",
+        "min_height": "48px",
+        "hover": "10% opacity increase",
+        "forbidden": ["Shadows", "Gradients"]
+      },
+      "secondary": {
+        "background": "Teal (#21A8B0)", 
+        "text": "White (#FFFFFF)",
+        "border_radius": "24px",
+        "min_height": "48px",
+        "hover": "10% opacity increase",
+        "forbidden": ["Shadows", "Gradients"]
+      }
+    },
+    "images": {
+      "border_radius": "16px for photos",
+      "overlay": "Navy gradient for text readability",
+      "style": "Professional photography only",
+      "treatment": "No stock illustrations unless brand-approved"
+    },
+    "icons": {
+      "style": "Outline icons preferred",
+      "corners": "Rounded where possible",
+      "format": "Square format",
+      "detail": "Avoid excessive detail",
+      "stroke": "Consistent stroke weights"
+    }
+  },
+  
+  "illustrations": {
+    "style": {
+      "approach": "Modern, clean, simplistic flat design",
+      "tone": "Friendly and approachable, professional",
+      "shadows": "Must include shadows in clothing",
+      "expression": "Expressive faces and hands"
+    },
+    "characters": {
+      "diversity": "Based on diversity and inclusivity",
+      "situations": "Multiple situations, abstract to realistic",
+      "features": "Rounded shapes, simplified features",
+      "consistency": "Consistent design across characters"
+    },
+    "animals": {
+      "style": "Simple, flat, modern bodies",
+      "eyes": "Always big and expressive",
+      "behavior": "Can have human behaviors (reading, studying)",
+      "context": "Always in scenes with context",
+      "gradients": "Can use gradients for depth in tails/ears"
+    },
+    "rules": {
+      "required_colors": "Must include teal, purple, and navy",
+      "color_limit": "Do not exceed 6-7 colors per illustration",
+      "shadows": "Use overlay shadows on skin and clothing",
+      "secondary_elements": "Not fully colored, use grey",
+      "organic_shapes": "Handrawn expressions required"
+    }
+  },
+  
+  "photography": {
+    "sources": "Adobe Stock for high-quality curated imagery",
+    "subjects": "People, lifestyle, digital, devices - literal representation of Aptly processes",
+    "style": "Minimalistic over busy, fewer elements for focus",
+    "diversity": "Age, race, gender, sexuality representation required",
+    "approach": "Human-driven photos",
+    "treatment": "Rounded corners on video, dark gradient overlay for text"
+  },
+  
+  "ui_guidelines": {
+    "phone_ui": "Must have phone frame in storyboards",
+    "desktop_ui": "Must have desktop frame in storyboards", 
+    "highlights": {
+      "format": "Same format for all highlights/callouts",
+      "process": [
+        "Zoom in desired area",
+        "Add rounded corner border in Aptly Yellow (#FFDE00)",
+        "Border weight: 8-12px"
+      ]
+    }
+  },
+  
+  "accessibility": {
+    "contrast": "WCAG AA compliance required",
+    "considerations": "Color blindness and visual impairments",
+    "touch_targets": "Minimum 44px for interactive elements",
+    "readability": "High contrast required for all text"
+  },
+  
+  "animation_policy_ref": "See docs/animation-policy.md for detailed animation guidelines",
+  
+  "social_media": {
+    "instagram": {
+      "style": "Blend of inspiration, education, community engagement",
+      "content": "Visual storyboard with rich colors and inclusive illustrations",
+      "posts": "Milestones, course announcements, holiday celebrations, course tips"
+    },
+    "facebook": "Same guidelines as Instagram",
+    "linkedin": {
+      "focus": "Professional engagement with employees and businesses",
+      "content": "Blog posts, industry insights, thought leadership, company updates"
+    }
+  },
+  
+  "print": {
+    "color_space": "CMYK required for all print materials",
+    "logo_requirements": "Sufficient white space to prevent cropping",
+    "merchandise": {
+      "supplier": "CustomInk typically used",
+      "requirements": "Specify logo size, placement, color accurately",
+      "process": "Review digital proofs carefully before finalizing"
+    }
+  },
+  
+  "forbidden_elements": {
+    "global": [
+      "Emojis in code or content",
+      "Non-brand colors or gradients", 
+      "Animated backgrounds (stars, particles)",
+      "Non-DM Sans fonts",
+      "Drop shadows (use subtle overlays)",
+      "Complex animations",
+      "Non-brand rounded corners"
+    ]
+  }
+}

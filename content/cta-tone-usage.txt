@@ -1,0 +1,15 @@
+src/app/page.backup.tsx:119:            Get Started Today
+src/components/ScreenshotValidator.tsx:209:                Make your changes now!
+src/components/Navigation.tsx:67:                Get Started
+src/components/Navigation.tsx:112:                  Get Started
+src/app/not-found.tsx:27:          Looks like this page took a different learning path. Let&apos;s get you back on track!
+src/lib/site-architecture.ts:19:      label: "Get Started",
+src/app/faq/page.tsx:274:                  Get Started
+src/app/global-error.tsx:24:              Something went wrong!
+src/app/page.tsx:163:                    Learn More
+src/app/page.tsx:322:                Get Started
+src/components/ui/features-section-demo-3.tsx:35:      title: "Ready to Get Started?",
+src/components/ui/features-section-demo-3.tsx:83:        {/* Ready to Get Started */}
+src/components/ui/features-section-demo-3.tsx:326:                Learn More →
+src/components/ui/features-section.tsx:78:          {/* Get Started CTA */}
+src/components/ui/brand-card.tsx:87:            Learn More

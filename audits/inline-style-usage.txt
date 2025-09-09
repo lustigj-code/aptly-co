@@ -1,0 +1,75 @@
+Binary file src/app/.page.tsx.swp matches
+src/app/faq/page.tsx:64:              style={{ fontFamily: 'DM Sans, sans-serif' }}
+src/app/faq/page.tsx:76:              style={{ fontFamily: 'DM Sans, sans-serif' }}
+src/app/faq/page.tsx:99:                    <h3 className="text-xl font-bold text-white group-hover:text-[#21A8B0] transition-colors pr-4" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:124:                        <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:145:              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:148:              <p className="text-lg md:text-xl text-[#DEF2F2] mb-8 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:180:              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:183:              <p className="text-lg md:text-xl text-[#DEF2F2] max-w-2xl mx-auto" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:201:                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:204:                  <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:221:                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:224:                  <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:241:                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:244:                  <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:262:              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:265:              <p className="text-lg md:text-xl text-[#DEF2F2] mb-8 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:65:              style={{ fontFamily: 'DM Sans, sans-serif' }}
+src/app/careers/page.tsx:77:              style={{ fontFamily: 'DM Sans, sans-serif' }}
+src/app/careers/page.tsx:114:              <h2 className="h2 text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:117:              <p className="text-lg md:text-xl text-[#DEF2F2] max-w-2xl mx-auto" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:133:                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:136:                      <p className="text-[#21A8B0] font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:141:                      <span className="px-3 py-2 bg-[#21A8B0]/20 text-[#21A8B0] text-sm rounded-full font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:146:                  <p className="text-[#DEF2F2] mb-6 leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:150:                    <span className="text-[#DEF2F2] font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>{job.location}</span>
+src/app/careers/page.tsx:174:              <h2 className="h2 text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:177:              <p className="text-lg md:text-xl text-[#DEF2F2] max-w-2xl mx-auto" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:194:                  <p className="text-[#DEF2F2] font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:212:                <h2 className="h2 text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:215:                <p className="text-lg text-[#DEF2F2] mb-6 leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:218:                <p className="text-lg text-[#DEF2F2] mb-6 leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:221:                <p className="text-lg text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:248:              <h2 className="h2 text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:251:              <p className="text-lg md:text-xl text-[#DEF2F2] mb-8 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/courses/page.tsx:38:              style={{ fontFamily: 'DM Sans, sans-serif' }}
+src/app/courses/page.tsx:47:              style={{ fontFamily: 'DM Sans, sans-serif' }}
+src/app/page.backup.tsx:35:      style={{ pointerEvents: "auto" }}
+src/components/ui/button-ripple.tsx:83:          style={{
+src/components/ui/trust-section.tsx:95:        <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: "2s" }} />
+src/components/ui/typewriter-effect.tsx:178:          style={{
+src/components/ui/gradient-mesh.tsx:25:          style={{
+src/components/ui/gradient-mesh.tsx:47:        style={{
+src/components/ui/container-scroll-animation.tsx:45:        style={{
+src/components/ui/container-scroll-animation.tsx:61:      style={{
+src/components/ui/container-scroll-animation.tsx:85:      style={{
+src/components/ui/cover.tsx:96:          style={{
+src/components/ui/shooting-stars.tsx:137:          <stop offset="0%" style={{ stopColor: trailColor, stopOpacity: 0 }} />
+src/components/ui/shooting-stars.tsx:140:            style={{ stopColor: starColor, stopOpacity: 1 }}
+src/components/ui/3d-phones-demo.tsx:11:        style={{
+src/components/ui/3d-phones-demo.tsx:25:          style={{ 
+src/components/ui/features-section-demo-3.tsx:52:      <div className="text-center flow" style={{marginBottom: 'var(--space-10)'}}>
+src/components/ui/features-section-demo-3.tsx:64:      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" style={{gap: 'var(--space-3)'}}>
+src/components/ui/features-section-demo-3.tsx:376:      style={{ width: 600, height: 600, maxWidth: "100%", aspectRatio: 1 }}
+src/components/ui/features-section-demo-3.tsx:392:      style={{ minWidth: 180, background: 'linear-gradient(90deg, rgba(124,58,237,0.7) 0%, rgba(236,72,153,0.7) 50%, rgba(253,224,71,0.7) 100%)' }}
+src/components/ui/features-section-demo-3.tsx:418:        style={{ minHeight: '1em' }}
+src/components/magicui/pulsating-button.tsx:27:      style={{
+src/components/magicui/line-shadow-text.tsx:31:      style={{ 
+src/components/magicui/shiny-button.tsx:53:        style={{
+src/components/magicui/shiny-button.tsx:61:        style={{
+src/components/magicui/bento-grid.tsx:53:        style={{ background: accent, boxShadow: `0 0 8px 2px ${accent}40` }}
+src/components/magicui/bento-grid.tsx:56:        <h3 className="font-bold text-lg md:text-xl mb-0" style={{ color: accent }}>{title}</h3>
+src/components/SubtleLogo.tsx:28:    <div className={`flex items-center ${opacityClasses[variant]} ${className}`} style={{lineHeight: 0}}>
+src/components/SubtleLogo.tsx:35:        style={{
+src/components/TestimonialCard.tsx:22:            <span className="text-white font-bold" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:27:            <div className="text-[#21A8B0] text-sm font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:30:            <div className="text-white font-bold" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:39:          <div className="text-[#DEF2F2] text-sm" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:44:          <div className="text-[#DEF2F2] text-sm" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:50:      <blockquote className="text-[#DEF2F2] italic mb-6 leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:55:        <div className="text-[#21A8B0] font-medium text-sm" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:58:        <div className="text-white mt-2" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/Footer.tsx:73:      <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full blur-3xl" style={{ backgroundColor: 'var(--color-secondary)', opacity: 0.1 }} />
+src/components/Footer.tsx:74:      <div className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full blur-3xl" style={{ backgroundColor: 'var(--color-muted-teal)', opacity: 0.1 }} />
+src/components/Footer.tsx:78:        <div className="border-b backdrop-blur-sm" style={{ borderColor: 'var(--color-border)' }}>

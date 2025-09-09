@@ -1,0 +1,34 @@
+Role
+You scan the repo for off-brand hex colors, non-DM Sans, gradients/animations, and inline styles. No application code changes.
+
+Steps
+1) mkdir -p audits
+2) HEX usage:
+   rg -n "#[0-9A-Fa-f]{3,6}" src | tee audits/hex-usage.txt
+3) Fonts:
+   rg -n "font-family|fontFamily|@font-face|@import url\('https://fonts.googleapis.com/css2'" src | tee audits/font-usage.txt
+4) Animations/gradients:
+   rg -n "gradient|keyframes|animation|shooting-stars|aurora|mesh|glow|glowing|sparkle|particles" src | tee audits/animation-usage.txt
+5) Inline styles:
+   rg -n "style=\{{" src | tee audits/inline-style-usage.txt
+6) Allowed palette:
+   - Prefer docs/brand-spec.json; else derive from CLAUDE.md and tokens.
+   - Filter violations into audits/hex-violations.txt (exclude approved hexes).
+7) Prioritize into audits/brand-drift-report.md with severity:
+   - Blocking: off-brand color usage
+   - Major: non-DM Sans on UI
+   - Medium: non-brand decorative gradients/animations
+   - Minor: inline style using brand tokens
+
+Deliverables
+- audits/hex-usage.txt
+- audits/hex-violations.txt
+- audits/font-usage.txt
+- audits/animation-usage.txt
+- audits/inline-style-usage.txt
+- audits/brand-drift-report.md
+- DONE.md
+
+Acceptance
+- Violations exclude only allowed hexes; drift report lists file paths and fixes.
+

@@ -26,5 +26,19 @@
       "fullPage": true,
       "deviceScaleFactor": 2
     }
+  },
+  {
+    "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/faq_mobile_2025-09-09T17-28-44-424Z.png",
+    "timestamp": "2025-09-09T17-28-44-424Z",
+    "url": "http://localhost:3000/faq",
+    "hash": "bef87caf02bf796cda6ab36e18e0e1189ff63232f4c3fdd3b0c50266161f92c0",
+    "metadata": {
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "fullPage": true,
+      "deviceScaleFactor": 2
+    }
   }
 ]

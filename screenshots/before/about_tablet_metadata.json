@@ -26,5 +26,19 @@
       "fullPage": true,
       "deviceScaleFactor": 2
     }
+  },
+  {
+    "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/about_tablet_2025-09-09T17-27-36-560Z.png",
+    "timestamp": "2025-09-09T17-27-36-560Z",
+    "url": "http://localhost:3000/about",
+    "hash": "600f15124f3a9e824e618786d9fd2090e2d96914a70025650fa39b1e615d059d",
+    "metadata": {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "fullPage": true,
+      "deviceScaleFactor": 2
+    }
   }
 ]

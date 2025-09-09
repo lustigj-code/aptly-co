@@ -1,0 +1,27 @@
+Role
+You produce a precise, file-by-file plan to align tokens and components with the brand spec. No application code changes.
+
+Inputs
+- docs/brand-spec.json
+- audits/* from Session C
+- src/styles/design-tokens.css, src/styles/themes.css
+- tailwind.config.js
+- src/design-system/index.tsx, src/components/ui/brand-button.tsx
+
+Steps
+1) Normalize: primary=navy, secondary=teal across all DS components and UI kit.
+2) Produce docs/button-policy.md (variants, sizes, focus rings, min heights; primary=navy, secondary=teal).
+3) Author docs/design-system-alignment-plan.md:
+   - For each file: path, finding, exact target value/state, and the exact lines to change.
+   - Route all hex usage through tokens/themes.
+   - Animated components: which to keep/subdue/remove per docs/animation-policy.md (from Session A).
+   - Dependency map (shared styles/utilities to touch once).
+
+Deliverables
+- docs/design-system-alignment-plan.md
+- docs/button-policy.md (if any refinements)
+- DONE.md
+
+Acceptance
+- Plan is unambiguous with concrete line references and no code diffs.
+

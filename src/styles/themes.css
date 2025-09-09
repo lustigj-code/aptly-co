@@ -1,0 +1,93 @@
+:root {
+  /* Light Mode - Default */
+  --color-primary: #0A004A;        /* Deep Navy */
+  --color-primary-hover: #0B0055;  /* Slightly lighter navy for hover */
+  --color-secondary: #21A8B0;      /* Teal */
+  --color-secondary-hover: #25B9C2; /* Lighter teal for hover */
+  --color-accent: #FFDE00;         /* Yellow */
+  --color-accent-muted: #FFE534;   /* Lighter yellow */
+  
+  --color-background: #FFFFFF;     /* White */
+  --color-surface: #F8F9FA;        /* Light surface */
+  --color-surface-elevated: #FFFFFF;
+  --color-card: #FFFFFF;
+  --color-card-hover: #F8F9FA;
+  
+  --color-text-primary: #333333;   /* Rich Black */
+  --color-text-secondary: #666666; /* Grey */
+  --color-text-muted: #999999;     /* Light Grey */
+  --color-text-inverse: #FFFFFF;   /* White text on dark */
+  
+  --color-border: #E6E6E6;         /* Light Grey */
+  --color-border-muted: #F0F0F0;
+  --color-divider: #E6E6E6;
+  
+  --color-light-navy: #3B336E;     /* Light Navy */
+  --color-muted-teal: #69BCC1;     /* Muted Teal */
+  --color-light-teal: #DEF2F2;     /* Light Teal */
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  
+  --gradient-primary: linear-gradient(135deg, #0A004A 0%, #3B336E 25%, #21A8B0 50%, #69BCC1 75%, #DEF2F2 100%);
+  --gradient-overlay: linear-gradient(180deg, rgba(10, 0, 74, 0.8) 0%, rgba(10, 0, 74, 0.4) 100%);
+  
+  /* Seamless Background Gradient */
+  --gradient-seamless: linear-gradient(135deg, #FFFFFF 0%, #F8F9FA 50%, #F0F0F0 100%);
+  --surface-soft: rgba(0, 0, 0, 0.02);
+  --section-fade-top: linear-gradient(180deg, rgba(230, 230, 230, 0.05) 0%, transparent 6px);
+  --section-fade-bottom: linear-gradient(0deg, rgba(230, 230, 230, 0.05) 0%, transparent 6px);
+}
+
+[data-theme='dark'] {
+  /* Dark Mode */
+  --color-primary: #21A8B0;        /* Teal becomes primary in dark mode */
+  --color-primary-hover: #25B9C2;
+  --color-secondary: #69BCC1;      /* Muted Teal as secondary */
+  --color-secondary-hover: #7BCCD1;
+  --color-accent: #FFDE00;         /* Yellow stays as accent */
+  --color-accent-muted: #E6C800;
+  
+  --color-background: #0A004A;     /* Deep Navy background */
+  --color-surface: #151052;        /* Slightly lighter navy */
+  --color-surface-elevated: #1A155C;
+  --color-card: #1A155C;
+  --color-card-hover: #221D68;
+  
+  --color-text-primary: #FFFFFF;   /* White text */
+  --color-text-secondary: #DEF2F2; /* Light Teal text */
+  --color-text-muted: #69BCC1;     /* Muted Teal text */
+  --color-text-inverse: #0A004A;   /* Navy text on light */
+  
+  --color-border: #3B336E;         /* Light Navy borders */
+  --color-border-muted: #2A2260;
+  --color-divider: #3B336E;
+  
+  --color-light-navy: #3B336E;
+  --color-muted-teal: #69BCC1;
+  --color-light-teal: #DEF2F2;
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  
+  --gradient-primary: linear-gradient(135deg, #0A004A 0%, #1A155C 25%, #21A8B0 50%, #3B336E 75%, #69BCC1 100%);
+  --gradient-overlay: linear-gradient(180deg, rgba(10, 0, 74, 0.95) 0%, rgba(10, 0, 74, 0.6) 100%);
+  
+  /* Seamless Background Gradient - Dark Mode */
+  --gradient-seamless: linear-gradient(135deg, #0A004A 0%, #0E0450 25%, #12085A 100%);
+  --surface-soft: rgba(255, 255, 255, 0.05);
+  --section-fade-top: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, transparent 6px);
+  --section-fade-bottom: linear-gradient(0deg, rgba(255, 255, 255, 0.03) 0%, transparent 6px);
+}
+
+/* Smooth transitions for theme switching */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Prevent transition on initial load */
+.no-transition * {
+  transition: none !important;
+}

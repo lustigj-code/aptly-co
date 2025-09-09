@@ -1,0 +1,36 @@
+HTTP/2 200 
+date: Tue, 09 Sep 2025 01:22:08 GMT
+content-type: text/html; charset=utf-8
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+x-fedora-school-id: 1018232
+vary: Accept
+cache-control: max-age=0, private, must-revalidate
+x-request-id: 9ccf1607-2ecc-4e5d-8457-978e87edde09
+x-runtime: 0.171213
+strict-transport-security: max-age=0
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+x-download-options: noopen
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+cf-cache-status: DYNAMIC
+server: cloudflare
+x-gcp-cdn-cache-id: DFW
+alt-svc: h3=":443"; ma=86400
+via: 1.1 google
+x-gcp-cdn-cache-status: miss
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9RMCDxcXzYPEpU2O1mWj2Cz8KQAYhXqdKRtWQEDFQOLKFnMHFsuw0yuz%2Fya%2FgiHcAAW%2F1GK%2FE08tv4XICsn9I%2BqSNc9sWWEv"}]}
+set-cookie: ahoy_visitor=f365d8b5-cb02-42cd-88aa-c89823ddc308; SameSite=Lax; Secure; Path=/; Expires=Thu, 09 Sep 2027 01:22:08 GMT
+set-cookie: ahoy_visit=7f58dd3f-16e0-4da1-a516-7ed894ee2766; SameSite=Lax; Secure; Path=/; Expires=Tue, 09 Sep 2025 05:22:08 GMT
+set-cookie: request_method=HEAD; SameSite=Lax; Secure; Path=/
+set-cookie: _afid=f365d8b5-cb02-42cd-88aa-c89823ddc308; SameSite=None; Secure; Path=/; Domain=aptly.co; Expires=Wed, 09 Sep 2026 01:22:08 GMT
+set-cookie: aid=f365d8b5-cb02-42cd-88aa-c89823ddc308; SameSite=None; Secure; Path=/; Domain=aptly.co; Expires=Wed, 09 Sep 2026 01:22:08 GMT
+set-cookie: site_preview=logged_out; SameSite=Lax; Secure; Path=/
+set-cookie: _session_id=037e27c2c4d835d1f18dfaa09dee0132; HttpOnly; SameSite=Lax; Secure; Path=/; Expires=Thu, 09 Oct 2025 01:22:08 GMT
+set-cookie: __cf_bm=HfSNYCfrrbkjhd1l_hevWHJ_d3YILAqEH1mh_Fz7zZw-1757380928-1.0.1.1-kfYhK40K2nmUbZGQMSxAgWaxr4EMpdh0QVrkqNUi_8Nk4ck5ZWyQSLADXM4YGnmVwdKd7jvmGMjBkmCNls.AoNimBRQWyrGpPtZ9hRuRttI; HttpOnly; SameSite=None; Secure; Path=/; Domain=teachable.com; Expires=Tue, 09 Sep 2025 01:52:08 GMT
+set-cookie: __cfruid=6e12c44e5b59729d9fd7873a9b1c75bfe4c53fa7-1757380928; HttpOnly; SameSite=None; Secure; Path=/; Domain=teachable.com
+set-cookie: _cfuvid=jLWjDQ1bB0xcoJJ825j2Z1d4sw6TX0lOKO5sxtLzBTA-1757380928789-0.0.1.1-604800000; HttpOnly; SameSite=None; Secure; Path=/; Domain=teachable.com
+cf-ray: 97c2df732df369c9-DFW
+
+Sitemap returned 404 - not available

@@ -22,7 +22,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-brand">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-md border-b border-white/10">
       <div className="container-width">
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center">
@@ -39,10 +39,10 @@ export default function Navbar() {
                 <Link
                   key={href}
                   href={href}
-                  className={`relative transition-all duration-200 text-sm font-medium px-4 py-2 rounded-brand ${
+                  className={`relative transition-all duration-200 text-sm font-medium px-4 py-2 rounded-lg min-h-[44px] flex items-center ${
                     isActive
-                      ? "text-white bg-navy"
-                      : "text-navy hover:text-teal hover:bg-light-teal"
+                      ? "text-yellow bg-white/10"
+                      : "text-white hover:text-teal hover:bg-white/5"
                   }`}
                 >
                   {label}
@@ -55,7 +55,7 @@ export default function Navbar() {
           <div className="lg:hidden">
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="text-navy hover:text-teal p-3 focus:outline-none focus:ring-2 focus:ring-teal focus:ring-offset-2 rounded-brand transition-all duration-200"
+              className="text-white hover:text-teal p-3 min-h-[44px] min-w-[44px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-teal rounded-lg transition-all duration-200"
               aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
             >
               {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -65,7 +65,7 @@ export default function Navbar() {
         
         {/* Mobile Navigation */}
         {mobileOpen && (
-          <div className="lg:hidden bg-light-teal rounded-brand p-6 mb-6 shadow-brand">
+          <div className="lg:hidden bg-navy/95 backdrop-blur-md rounded-lg p-6 mb-6 border border-white/10">
             <div className="flex flex-col space-y-2">
               {navItems.map(({ label, href }) => {
                 const isActive =
@@ -76,10 +76,10 @@ export default function Navbar() {
                     key={href}
                     href={href}
                     onClick={() => setMobileOpen(false)}
-                    className={`transition-all duration-200 text-base font-medium px-4 py-3 rounded-brand ${
+                    className={`transition-all duration-200 text-base font-medium px-4 py-3 rounded-lg min-h-[44px] flex items-center ${
                       isActive
-                        ? "text-white bg-navy"
-                        : "text-navy hover:text-white hover:bg-teal" 
+                        ? "text-yellow bg-white/10"
+                        : "text-white hover:text-teal hover:bg-white/5" 
                     }`}
                   >
                     {label}

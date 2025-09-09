@@ -1,0 +1,23 @@
+Role
+You create a reproducible plan to prove WCAG AA accessibility and visual brand consistency. No application code changes.
+
+Steps
+1) Define selector list for brand elements (nav, header, footer, buttons, cards, headings with brand colors).
+2) Contrast testing plan:
+   - Document a script outline to compute contrast via computed styles in a running app; define selectors, thresholds (≥4.5:1 body, ≥3:1 large), and output format → qa/contrast/.
+3) Axe-core plan with Playwright:
+   - Document commands to start the app and run axe on key pages; capture JSON to qa/axe/ (do not modify code unless separately approved).
+   - If tests exist in tests/, document exact commands to run them and where to save reports.
+4) Visual brand references:
+   - Plan snapshot runs to capture brand-color reference screens and save to qa/visual/.
+5) Summarize in qa/plan-accessibility.md and qa/commands.md.
+
+Deliverables
+- qa/plan-accessibility.md
+- qa/checklists/contrast-matrix.md
+- qa/commands.md
+- DONE.md
+
+Acceptance
+- Commands are copy-paste ready; thresholds set; clear success criteria (0 critical Axe violations).
+

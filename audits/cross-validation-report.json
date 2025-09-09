@@ -1,0 +1,417 @@
+{
+  "meta": {
+    "reportType": "Brand Compliance Cross-Validation",
+    "generatedDate": "2025-09-09",
+    "sessionId": "Session-D",
+    "brandRulesSource": "docs/aptly-brand-guidelines-2024.pdf",
+    "violationsSource": "audits/brand-drift-report.md + audits/hex-violations.txt",
+    "totalViolationsAnalyzed": 67,
+    "filesAffected": 26
+  },
+  "violations": [
+    {
+      "violationId": "V001",
+      "file": "src/app/privacy/page.tsx",
+      "line": 10,
+      "code": "bg-[#0A0C2A]",
+      "violationType": "incorrect_brand_color",
+      "severity": "BLOCKING",
+      "brandRuleViolated": {
+        "section": "colors.primary.navy",
+        "rule": "Navy color must be #0A004A",
+        "specification": "RGB(10, 0, 74) | CMYK: C100% M95% Y37% K48%",
+        "source": "Brand Guidelines 2024, Section 3, Primary Colors"
+      },
+      "currentValue": "#0A0C2A",
+      "requiredValue": "#0A004A",
+      "impact": "Critical brand inconsistency in core application",
+      "fix": {
+        "action": "Replace hardcoded color with brand-compliant value",
+        "suggestion": "bg-navy or bg-[#0A004A]",
+        "effort": "Low (find/replace)",
+        "validation": "Visual comparison + CSS variable usage"
+      }
+    },
+    {
+      "violationId": "V002", 
+      "file": "src/app/privacy/page.tsx",
+      "line": 125,
+      "code": "text-[#7AB8BD] hover:text-[#6BA3A8]",
+      "violationType": "non_brand_color",
+      "severity": "MAJOR",
+      "brandRuleViolated": {
+        "section": "colors.primary.teal + colors.secondary.mutedTeal",
+        "rule": "Only use approved teal variants: #21A8B0 (primary) or #69BCC1 (muted)",
+        "specification": "Teal: RGB(33, 168, 176) | Muted Teal: RGB(105, 188, 193)",
+        "source": "Brand Guidelines 2024, Section 3, Primary & Secondary Colors"
+      },
+      "currentValue": "#7AB8BD, #6BA3A8",
+      "requiredValue": "#21A8B0 or #69BCC1",
+      "impact": "Off-brand link colors affecting user experience",
+      "fix": {
+        "action": "Replace with brand teal colors",
+        "suggestion": "text-teal hover:text-muted-teal or text-[#21A8B0] hover:text-[#69BCC1]",
+        "effort": "Low",
+        "validation": "Check hover states match brand accessibility"
+      }
+    },
+    {
+      "violationId": "V003",
+      "file": "src/app/terms/page.tsx", 
+      "line": 163,
+      "code": "text-[#7AB8BD] hover:text-[#6BA3A8]",
+      "violationType": "non_brand_color",
+      "severity": "MAJOR",
+      "brandRuleViolated": {
+        "section": "colors.primary.teal + colors.secondary.mutedTeal",
+        "rule": "Only use approved teal variants: #21A8B0 (primary) or #69BCC1 (muted)",
+        "specification": "Teal: RGB(33, 168, 176) | Muted Teal: RGB(105, 188, 193)",
+        "source": "Brand Guidelines 2024, Section 3, Primary & Secondary Colors"
+      },
+      "currentValue": "#7AB8BD, #6BA3A8",
+      "requiredValue": "#21A8B0 or #69BCC1",
+      "impact": "Duplicate violation - link color inconsistency",
+      "fix": {
+        "action": "Replace with brand teal colors (same as V002)",
+        "suggestion": "text-teal hover:text-muted-teal or text-[#21A8B0] hover:text-[#69BCC1]",
+        "effort": "Low",
+        "validation": "Ensure consistency with V002 fix"
+      }
+    },
+    {
+      "violationId": "V004",
+      "file": "src/app/loading.tsx",
+      "lines": [3, 9, 10],
+      "code": "bg-[#0A0C2A], border-[#0A0C2A]",
+      "violationType": "incorrect_brand_color",
+      "severity": "BLOCKING",
+      "brandRuleViolated": {
+        "section": "colors.primary.navy",
+        "rule": "Navy color must be #0A004A",
+        "specification": "RGB(10, 0, 74) | CMYK: C100% M95% Y37% K48%",
+        "source": "Brand Guidelines 2024, Section 3, Primary Colors"
+      },
+      "currentValue": "#0A0C2A",
+      "requiredValue": "#0A004A",
+      "impact": "Critical - Loading screen displays wrong brand navy",
+      "fix": {
+        "action": "Replace all instances in loading component",
+        "suggestion": "Global find/replace #0A0C2A → #0A004A",
+        "effort": "Low",
+        "validation": "Test loading screen visual appearance"
+      }
+    },
+    {
+      "violationId": "V005",
+      "file": "src/app/loading.tsx",
+      "line": 15,
+      "code": "bg-[#7AB8BD]",
+      "violationType": "non_brand_color",
+      "severity": "MAJOR",
+      "brandRuleViolated": {
+        "section": "colors.primary.teal + colors.secondary.mutedTeal",
+        "rule": "Only use approved teal variants: #21A8B0 (primary) or #69BCC1 (muted)",
+        "specification": "Teal: RGB(33, 168, 176) | Muted Teal: RGB(105, 188, 193)",
+        "source": "Brand Guidelines 2024, Section 3, Primary & Secondary Colors"
+      },
+      "currentValue": "#7AB8BD",
+      "requiredValue": "#21A8B0 or #69BCC1",
+      "impact": "Loading spinner uses off-brand color",
+      "fix": {
+        "action": "Replace with brand teal",
+        "suggestion": "bg-teal or bg-[#21A8B0]",
+        "effort": "Low",
+        "validation": "Verify spinner visibility and contrast"
+      }
+    },
+    {
+      "violationId": "V006",
+      "file": "src/app/globals.css",
+      "line": 378,
+      "code": "--color-navy: #000033;",
+      "violationType": "incorrect_css_variable",
+      "severity": "BLOCKING",
+      "brandRuleViolated": {
+        "section": "colors.primary.navy",
+        "rule": "Navy color must be #0A004A",
+        "specification": "RGB(10, 0, 74) | CMYK: C100% M95% Y37% K48%",
+        "source": "Brand Guidelines 2024, Section 3, Primary Colors"
+      },
+      "currentValue": "#000033",
+      "requiredValue": "#0A004A",
+      "impact": "Critical - CSS variable affects all navy usage globally",
+      "fix": {
+        "action": "Update CSS custom property",
+        "suggestion": "--color-navy: #0A004A;",
+        "effort": "Low",
+        "validation": "Global impact - test all navy usages"
+      }
+    },
+    {
+      "violationId": "V007",
+      "file": "src/app/globals.css",
+      "line": 379,
+      "code": "--color-teal: #00A0A0;",
+      "violationType": "incorrect_css_variable",
+      "severity": "BLOCKING",
+      "brandRuleViolated": {
+        "section": "colors.primary.teal",
+        "rule": "Teal color must be #21A8B0",
+        "specification": "RGB(33, 168, 176) | CMYK: C74% M9% Y33% K0%",
+        "source": "Brand Guidelines 2024, Section 3, Primary Colors"
+      },
+      "currentValue": "#00A0A0",
+      "requiredValue": "#21A8B0",
+      "impact": "Critical - CSS variable affects all teal usage globally",
+      "fix": {
+        "action": "Update CSS custom property",
+        "suggestion": "--color-teal: #21A8B0;",
+        "effort": "Low",
+        "validation": "Global impact - test all teal usages"
+      }
+    },
+    {
+      "violationId": "V008",
+      "file": "src/styles/themes.css",
+      "lines": [4, 6, 8, 11, 17, 18, 22, 40, 42, 44, 47, 48, 49, 50, 58],
+      "code": "Multiple CSS variables with non-brand colors",
+      "violationType": "theme_system_drift",
+      "severity": "MAJOR",
+      "brandRuleViolated": {
+        "section": "colors (all sections) + restrictions.prohibited",
+        "rule": "Only use colors from approved brand palette",
+        "specification": "Navy: #0A004A, Teal: #21A8B0, Yellow: #FFDE00, etc.",
+        "source": "Brand Guidelines 2024, Section 3 + Section 11 Restrictions"
+      },
+      "currentValue": "15 non-brand color variables",
+      "requiredValue": "Derivatives of brand colors only",
+      "impact": "Theme system completely off-brand",
+      "fix": {
+        "action": "Redesign theme system using only brand colors",
+        "suggestion": "Derive hover states with opacity/brightness adjustments",
+        "effort": "High",
+        "validation": "Complete theme testing across light/dark modes"
+      }
+    },
+    {
+      "violationId": "V009",
+      "file": "src/components/ui/gradient-mesh.tsx",
+      "lines": [18, 57, 58, 59, 60, 61, 62, 63],
+      "code": "from-[#0A0C2A] + multiple rainbow colors",
+      "violationType": "off_brand_animation_colors",
+      "severity": "MEDIUM",
+      "brandRuleViolated": {
+        "section": "colors.gradient + restrictions.prohibited",
+        "rule": "Use brand gradient only: Navy → Light Navy → Teal → Muted Teal → Light Teal",
+        "specification": "Gradient stops: #0A004A, #3B336E, #21A8B0, #69BCC1, #DEF2F2",
+        "source": "Brand Guidelines 2024, Section 3 Gradient + Section 11 Restrictions"
+      },
+      "currentValue": "Rainbow colors (#3b82f6, #a855f7, etc.)",
+      "requiredValue": "Brand gradient colors only",
+      "impact": "Animation component uses completely off-brand palette",
+      "fix": {
+        "action": "Replace with brand gradient or remove component",
+        "suggestion": "Use brand gradient: from-navy via-light-navy to-teal",
+        "effort": "Medium",
+        "validation": "Check animation performance and visual appeal"
+      }
+    },
+    {
+      "violationId": "V010",
+      "file": "src/components/ui/sparkles.tsx",
+      "lines": [64, 65, 66, 67, 68, 69, 70, 408],
+      "code": "Multiple animation colors (#0d47a1, etc.)",
+      "violationType": "off_brand_animation_colors",
+      "severity": "MEDIUM",
+      "brandRuleViolated": {
+        "section": "restrictions.prohibited + colors (primary)",
+        "rule": "No complex animations + only brand colors",
+        "specification": "Navy: #0A004A, Teal: #21A8B0, Yellow: #FFDE00",
+        "source": "Brand Guidelines 2024, Section 11 Restrictions"
+      },
+      "currentValue": "Blue animation colors",
+      "requiredValue": "Brand colors or component removal",
+      "impact": "Complex animation violates brand simplicity",
+      "fix": {
+        "action": "Simplify or remove sparkles component",
+        "suggestion": "Replace with subtle brand-colored effects or remove",
+        "effort": "Medium",
+        "validation": "Consider brand simplicity guidelines"
+      }
+    },
+    {
+      "violationId": "V011",
+      "file": "src/components/ui/aurora-background.tsx",
+      "lines": [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
+      "code": "Aurora colors (#1e3a8a, #0f766e, #eab308, etc.)",
+      "violationType": "off_brand_animation_colors",
+      "severity": "MEDIUM",
+      "brandRuleViolated": {
+        "section": "restrictions.prohibited + colors.gradient",
+        "rule": "No complex animations + use brand gradient only",
+        "specification": "Approved gradient: Navy to Light Teal progression",
+        "source": "Brand Guidelines 2024, Section 3 Gradient + Section 11"
+      },
+      "currentValue": "Multi-color aurora effect",
+      "requiredValue": "Brand gradient or component removal",
+      "impact": "Aurora animation completely off-brand",
+      "fix": {
+        "action": "Replace with brand gradient aurora or remove",
+        "suggestion": "Use navy-to-teal gradient for aurora effect",
+        "effort": "Medium",
+        "validation": "Test performance and brand compliance"
+      }
+    },
+    {
+      "violationId": "V012",
+      "file": "src/components/ui/shooting-stars.tsx",
+      "lines": [49, 50],
+      "code": "Star colors (#9E00FF, #2EB9DF)",
+      "violationType": "off_brand_animation_colors",
+      "severity": "MEDIUM",
+      "brandRuleViolated": {
+        "section": "restrictions.prohibited + colors (primary)",
+        "rule": "Only brand colors allowed",
+        "specification": "Navy: #0A004A, Teal: #21A8B0, Yellow: #FFDE00",
+        "source": "Brand Guidelines 2024, Section 3 + Section 11"
+      },
+      "currentValue": "Purple and cyan stars",
+      "requiredValue": "Brand colors only",
+      "impact": "Shooting stars use purple/cyan instead of brand colors",
+      "fix": {
+        "action": "Replace star colors with brand yellow/teal",
+        "suggestion": "Use #FFDE00 (yellow) and #21A8B0 (teal) for stars",
+        "effort": "Low",
+        "validation": "Verify star visibility and animation appeal"
+      }
+    },
+    {
+      "violationId": "V013",
+      "file": "src/components/ui/bento-grid.tsx",
+      "lines": [180, 192],
+      "code": "Gradient colors (#7AB8BD, #F1D632)",
+      "violationType": "non_brand_gradient",
+      "severity": "MAJOR",
+      "brandRuleViolated": {
+        "section": "colors.gradient + restrictions.prohibited",
+        "rule": "Use brand gradient only, no custom gradients",
+        "specification": "Brand gradient: #0A004A → #3B336E → #21A8B0 → #69BCC1 → #DEF2F2",
+        "source": "Brand Guidelines 2024, Section 3 Gradient"
+      },
+      "currentValue": "Custom teal-yellow gradient",
+      "requiredValue": "Brand gradient only",
+      "impact": "Bento grid uses non-brand gradient",
+      "fix": {
+        "action": "Replace with brand gradient",
+        "suggestion": "Use approved navy-to-teal gradient",
+        "effort": "Low",
+        "validation": "Check bento grid visual hierarchy"
+      }
+    },
+    {
+      "violationId": "V014",
+      "file": "src/components/ui/features-section-demo-3.tsx",
+      "lines": [197, 207, 217],
+      "code": "Multiple colors (#7AB8BD, #F1D632, #0A0C2A)",
+      "violationType": "multiple_brand_violations",
+      "severity": "MAJOR",
+      "brandRuleViolated": {
+        "section": "colors (all sections)",
+        "rule": "Only use approved brand colors",
+        "specification": "Navy: #0A004A (not #0A0C2A), Yellow: #FFDE00 (not #F1D632), Teal: #21A8B0 (not #7AB8BD)",
+        "source": "Brand Guidelines 2024, Section 3"
+      },
+      "currentValue": "Mix of off-brand colors",
+      "requiredValue": "Brand-compliant colors",
+      "impact": "Features section completely off-brand",
+      "fix": {
+        "action": "Replace all colors with brand equivalents",
+        "suggestion": "#0A004A, #FFDE00, #21A8B0 respectively",
+        "effort": "Medium",
+        "validation": "Check features section visual design"
+      }
+    },
+    {
+      "violationId": "V015",
+      "file": "src/components/VoiceRecorder.tsx",
+      "lines": [35, 51],
+      "code": "Colors (#7AB8BD, #6BB3C3)",
+      "violationType": "non_brand_color",
+      "severity": "MAJOR",
+      "brandRuleViolated": {
+        "section": "colors.primary.teal + colors.secondary.mutedTeal",
+        "rule": "Only use approved teal variants",
+        "specification": "Teal: #21A8B0, Muted Teal: #69BCC1",
+        "source": "Brand Guidelines 2024, Section 3"
+      },
+      "currentValue": "#7AB8BD, #6BB3C3",
+      "requiredValue": "#21A8B0, #69BCC1",
+      "impact": "Voice recorder uses off-brand teal shades",
+      "fix": {
+        "action": "Replace with brand teal colors",
+        "suggestion": "Use #21A8B0 and #69BCC1",
+        "effort": "Low",
+        "validation": "Test voice recorder UI contrast"
+      }
+    }
+  ],
+  "severityBreakdown": {
+    "BLOCKING": {
+      "count": 4,
+      "description": "Critical violations that prevent brand compliance",
+      "files": ["src/app/privacy/page.tsx", "src/app/loading.tsx", "src/app/globals.css"],
+      "impact": "Core application displays wrong brand colors"
+    },
+    "MAJOR": {
+      "count": 7,
+      "description": "Significant brand drift affecting user experience",
+      "files": ["src/app/privacy/page.tsx", "src/app/terms/page.tsx", "src/app/loading.tsx", "src/styles/themes.css", "src/components/ui/bento-grid.tsx", "src/components/ui/features-section-demo-3.tsx", "src/components/VoiceRecorder.tsx"],
+      "impact": "User-facing components show off-brand colors"
+    },
+    "MEDIUM": {
+      "count": 4,
+      "description": "Animation components with off-brand aesthetics",
+      "files": ["src/components/ui/gradient-mesh.tsx", "src/components/ui/sparkles.tsx", "src/components/ui/aurora-background.tsx", "src/components/ui/shooting-stars.tsx"],
+      "impact": "Decorative elements violate brand simplicity and color rules"
+    }
+  },
+  "ruleCategories": {
+    "colorPalette": {
+      "violationsCount": 11,
+      "description": "Using colors outside approved brand palette",
+      "affectedFiles": 12
+    },
+    "cssVariables": {
+      "violationsCount": 2,
+      "description": "Global CSS variables using wrong brand colors",
+      "affectedFiles": 2
+    },
+    "themeSystem": {
+      "violationsCount": 1,
+      "description": "Theme system using non-brand color derivatives",
+      "affectedFiles": 1
+    },
+    "animationComplexity": {
+      "violationsCount": 4,
+      "description": "Complex animations violating brand simplicity",
+      "affectedFiles": 4
+    }
+  },
+  "compliance": {
+    "fontUsage": {
+      "status": "COMPLIANT",
+      "description": "All fonts correctly use 'DM Sans, sans-serif'",
+      "violations": 0
+    },
+    "logoUsage": {
+      "status": "NOT_AUDITED",
+      "description": "Logo compliance requires separate visual audit",
+      "note": "Check logo sizing, clearspace, and color rules"
+    },
+    "voiceAndTone": {
+      "status": "NOT_AUDITED", 
+      "description": "Content tone requires separate content audit",
+      "note": "Check for professional tone, no emojis, proper CTAs"
+    }
+  }
+}

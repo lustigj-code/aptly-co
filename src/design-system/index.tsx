@@ -30,10 +30,10 @@ const sizeClasses = {
 
 const colorClasses = {
   white: 'text-white',
-  navy: 'text-navy',
-  teal: 'text-teal',
-  'rich-black': 'text-rich-black',
-  'light-teal': 'text-light-teal'
+  navy: 'text-[var(--color-primary)]',
+  teal: 'text-[var(--color-secondary)]',
+  'rich-black': 'text-[var(--color-text-primary)]',
+  'light-teal': 'text-[var(--color-text-secondary)]'
 };
 
 const weightClasses = {
@@ -89,15 +89,15 @@ export function Button({
   const baseClasses = "inline-flex items-center justify-center font-sans font-medium rounded-3xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2";
   
   const variantClasses = {
-    primary: "bg-navy text-white hover:bg-opacity-90 focus:ring-navy",
-    secondary: "bg-teal text-white hover:bg-opacity-90 focus:ring-teal",
-    outline: "bg-transparent border-2 border-white text-white hover:bg-white hover:text-navy focus:ring-white"
+    primary: "bg-teal text-white hover:bg-opacity-90 focus:ring-teal border-0",
+    secondary: "bg-transparent text-white hover:bg-white/10 focus:ring-white border border-white/30",
+    outline: "bg-transparent text-white hover:bg-white/10 focus:ring-teal border border-teal/50"
   };
   
   const sizeClasses = {
-    sm: "px-4 py-2 text-sm",
-    md: "px-6 py-3 text-base",
-    lg: "px-8 py-4 text-lg"
+    sm: "px-4 py-2.5 min-h-[44px] text-sm",
+    md: "px-6 py-3 min-h-[44px] text-base",
+    lg: "px-8 py-4 min-h-[48px] text-lg"
   };
   
   const classes = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${disabled ? 'opacity-50 cursor-not-allowed' : ''} ${className}`;
@@ -159,20 +159,23 @@ export function Container({
 // ============================================
 
 type SectionProps = {
-  background?: 'transparent' | 'navy' | 'light-navy' | 'white' | 'gradient';
+  background?: 'transparent' | 'surface' | 'navy' | 'light-navy' | 'white' | 'gradient';
   spacing?: 'sm' | 'md' | 'lg' | 'xl';
   className?: string;
   children: React.ReactNode;
+  softFade?: boolean;
 };
 
 export function Section({ 
   background = 'transparent',
   spacing = 'lg',
   className = '',
-  children 
+  children,
+  softFade = false
 }: SectionProps) {
   const backgroundClasses = {
     transparent: '',
+    surface: '', // Removed background for seamless flow
     navy: 'bg-navy',
     'light-navy': 'bg-light-navy',
     white: 'bg-white',
@@ -186,8 +189,10 @@ export function Section({
     xl: 'py-24'
   };
   
+  const fadeClass = softFade ? 'section-soft-fade' : '';
+  
   return (
-    <section className={`${backgroundClasses[background]} ${spacingClasses[spacing]} ${className}`}>
+    <section className={`${backgroundClasses[background]} ${spacingClasses[spacing]} ${fadeClass} ${className}`}>
       {children}
     </section>
   );
@@ -211,9 +216,9 @@ export function Card({
   children 
 }: CardProps) {
   const variantClasses = {
-    default: 'bg-white/5 backdrop-blur-sm',
-    bordered: 'bg-transparent border border-white/20',
-    elevated: 'bg-white shadow-lg'
+    default: 'bg-white/3 backdrop-blur-sm', // Reduced opacity for subtlety
+    bordered: 'bg-transparent border border-white/10', // Softer borders
+    elevated: 'bg-white shadow-md' // Gentler elevation
   };
   
   const paddingClasses = {

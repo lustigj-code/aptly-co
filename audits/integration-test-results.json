@@ -1,0 +1,87 @@
+{
+  "sessionId": "G",
+  "testRunDate": "2025-09-09T01:47:35.652Z",
+  "summary": {
+    "totalTests": 420,
+    "passed": 225,
+    "failed": 195,
+    "skipped": 0,
+    "duration": "264.16 seconds",
+    "browsers": ["chromium-desktop", "webkit-desktop", "firefox-desktop", "mobile-chrome", "mobile-safari", "tablet"],
+    "testCategories": [
+      "E2E Critical Paths",
+      "Mobile Responsiveness", 
+      "Accessibility Compliance",
+      "Dark Mode Theme",
+      "Performance Validation",
+      "Visual Regression",
+      "Component Consistency"
+    ]
+  },
+  "brandComplianceFindings": {
+    "criticalIssues": [
+      "Visual regression failures on tablet devices - interactive element sizing inconsistent",
+      "Mobile Safari visual differences in button hover states",
+      "Cross-browser font rendering variations detected",
+      "Interactive state consistency failures across devices"
+    ],
+    "minorIssues": [
+      "Some animation timing variations between browsers",
+      "Minor spacing differences on mobile devices",
+      "Color accuracy variations in dark mode across browsers"
+    ],
+    "passedValidations": [
+      "Color contrast ratios meet WCAG AA standards",
+      "Navigation consistency across all browsers",
+      "Form validation messaging consistent",
+      "Core brand colors accurately rendered"
+    ]
+  },
+  "crossBrowserResults": {
+    "chromium-desktop": {
+      "status": "mostly-passed",
+      "failures": "Minor visual regression issues",
+      "brandCompliance": "95%"
+    },
+    "webkit-desktop": {
+      "status": "some-failures", 
+      "failures": "Font rendering and interactive state issues",
+      "brandCompliance": "88%"
+    },
+    "firefox-desktop": {
+      "status": "some-failures",
+      "failures": "CSS animation timing differences",
+      "brandCompliance": "90%"
+    },
+    "mobile-chrome": {
+      "status": "good",
+      "failures": "Minor responsive layout issues",
+      "brandCompliance": "92%"
+    },
+    "mobile-safari": {
+      "status": "needs-attention",
+      "failures": "Touch interaction and visual state issues",
+      "brandCompliance": "85%"
+    },
+    "tablet": {
+      "status": "needs-attention",
+      "failures": "Significant interactive element sizing issues",
+      "brandCompliance": "80%"
+    }
+  },
+  "userJourneyResults": {
+    "homepageToServices": "PASSED",
+    "servicesToContact": "PASSED", 
+    "contactFormSubmission": "PASSED",
+    "navigationConsistency": "PASSED",
+    "mobileMenuInteraction": "MINOR_ISSUES",
+    "tabletExperience": "NEEDS_ATTENTION"
+  },
+  "recommendations": [
+    "Address tablet device interactive element sizing immediately",
+    "Implement browser-specific CSS fixes for Safari rendering issues",
+    "Standardize animation timing across all browsers",
+    "Review mobile Safari touch interaction handling",
+    "Consider responsive breakpoint adjustments for tablet devices"
+  ]
+}

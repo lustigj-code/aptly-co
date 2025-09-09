@@ -1,0 +1,70 @@
+{
+  "id": "validation_2025-09-09_1757439026734",
+  "startTime": "2025-09-09T17:30:26.734Z",
+  "status": "in-progress",
+  "pages": [
+    {
+      "name": "home",
+      "url": "http://localhost:3000/",
+      "beforeScreenshots": [
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/home_desktop_2025-09-09T17-30-28-141Z.png",
+          "timestamp": "2025-09-09T17-30-28-141Z",
+          "url": "http://localhost:3000/",
+          "hash": "c6fb6139e7a6dee32d174268262c3247272f03a8a8f2c602bcd40c832508f7f0",
+          "metadata": {
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/home_laptop_2025-09-09T17-30-30-235Z.png",
+          "timestamp": "2025-09-09T17-30-30-235Z",
+          "url": "http://localhost:3000/",
+          "hash": "ce079ee2f648af0ba0a46b66d0c63bd740e295a52a82accee218fde8a9300001",
+          "metadata": {
+            "viewport": {
+              "width": 1366,
+              "height": 768
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/home_tablet_2025-09-09T17-30-31-904Z.png",
+          "timestamp": "2025-09-09T17-30-31-904Z",
+          "url": "http://localhost:3000/",
+          "hash": "4f52db2627e8c9cbca365a411b6f14f35e28ed0886e9e6b02f9c0914dc95ffb3",
+          "metadata": {
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/home_mobile_2025-09-09T17-30-33-583Z.png",
+          "timestamp": "2025-09-09T17-30-33-583Z",
+          "url": "http://localhost:3000/",
+          "hash": "978838ce5bed7947f220e14e2e94dc35ede09dcdeb1e83d7cea7fd6b6c12cd7f",
+          "metadata": {
+            "viewport": {
+              "width": 375,
+              "height": 812
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        }
+      ],
+      "status": "captured-before"
+    }
+  ]
+}

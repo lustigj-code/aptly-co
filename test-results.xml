@@ -1,0 +1,66 @@
+<testsuites id="" name="" tests="2" failures="2" skipped="0" errors="0" time="44.340019999999996">
+<testsuite name="seamless-test.spec.ts" timestamp="2025-09-09T17:24:37.322Z" hostname="chromium-desktop" tests="2" failures="2" skipped="0" time="84.65" errors="0">
+<testcase name="Seamless Background Pattern Test › should measure background transitions on home page" classname="seamless-test.spec.ts" time="42.335">
+<failure message="seamless-test.spec.ts:6:7 should measure background transitions on home page" type="FAILURE">
+<![CDATA[  [chromium-desktop] › seamless-test.spec.ts:6:7 › Seamless Background Pattern Test › should measure background transitions on home page 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+    Call log:
+      - navigating to "http://localhost:3002/", waiting until "load"
+
+
+       5 | test.describe('Seamless Background Pattern Test', () => {
+       6 |   test('should measure background transitions on home page', async ({ page }, testInfo) => {
+    >  7 |     await page.goto('http://localhost:3002');
+         |                ^
+       8 |     await page.waitForLoadState('networkidle');
+       9 |     
+      10 |     // Wait for animations to complete
+        at /Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/tests/seamless-test.spec.ts:7:16
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/seamless-test-Seamless-Bac-05182-nd-transitions-on-home-page-chromium-desktop/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/seamless-test-Seamless-Bac-05182-nd-transitions-on-home-page-chromium-desktop/video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Seamless Background Pattern Test › should verify visual consistency" classname="seamless-test.spec.ts" time="42.315">
+<failure message="seamless-test.spec.ts:112:7 should verify visual consistency" type="FAILURE">
+<![CDATA[  [chromium-desktop] › seamless-test.spec.ts:112:7 › Seamless Background Pattern Test › should verify visual consistency 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+    Call log:
+      - navigating to "http://localhost:3002/", waiting until "load"
+
+
+      111 |   
+      112 |   test('should verify visual consistency', async ({ page }) => {
+    > 113 |     await page.goto('http://localhost:3002');
+          |                ^
+      114 |     await page.waitForLoadState('networkidle');
+      115 |     
+      116 |     // Check that transparent sections exist
+        at /Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/tests/seamless-test.spec.ts:113:16
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/seamless-test-Seamless-Bac-09ff7-d-verify-visual-consistency-chromium-desktop/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/seamless-test-Seamless-Bac-09ff7-d-verify-visual-consistency-chromium-desktop/video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
