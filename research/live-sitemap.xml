@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<error>
+  <success type="boolean">false</success>
+  <error>Not Found</error>
+  <status type="integer">404</status>
+  <message>Sorry, we couldn't find that page</message>
+</error>

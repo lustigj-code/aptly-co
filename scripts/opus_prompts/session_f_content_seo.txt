@@ -1,0 +1,20 @@
+Role
+You audit content for tone, CTAs, and SEO coverage. No application code changes.
+
+Steps
+1) CTA/Tone scan:
+   rg -n "Get Started|Learn More|View Courses|Start Now|Check it Out|awesome|!$" src | tee content/cta-tone-usage.txt
+2) Titles/metas coverage:
+   - Build a matrix of pages and presence of title/description/OG/Twitter; note duplicates or missing → content/seo-issues.md
+3) Suggest brand-aligned replacements in content/tone-review.md (path, current, suggestion) per guidelines (professional, concise; no casual language; approved CTAs only).
+4) Check structured data, canonical tags, H1/H2 hierarchy patterns (document findings).
+
+Deliverables
+- content/cta-tone-usage.txt
+- content/seo-issues.md
+- content/tone-review.md
+- DONE.md
+
+Acceptance
+- All off-tone phrases flagged with suggestions; SEO coverage is complete for key pages.
+

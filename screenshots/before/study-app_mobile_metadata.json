@@ -26,5 +26,19 @@
       "fullPage": true,
       "deviceScaleFactor": 2
     }
+  },
+  {
+    "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/study-app_mobile_2025-09-09T17-28-21-291Z.png",
+    "timestamp": "2025-09-09T17-28-21-291Z",
+    "url": "http://localhost:3000/study-app",
+    "hash": "f3e8dfb7665868dc8a1cbce06245d2f5987348e67f66fcaf38113b3baf17cfe0",
+    "metadata": {
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "fullPage": true,
+      "deviceScaleFactor": 2
+    }
   }
 ]

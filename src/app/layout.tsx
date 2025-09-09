@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/contexts/theme-context";
+// Load theme tokens first, then global styles that consume them
+import "@/styles/themes.css";
 import "./globals.css";
 
 const dmSans = DM_Sans({ 
@@ -55,13 +58,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={dmSans.variable}>
-      <body className="font-sans antialiased">
-        <Navigation />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
+    <html lang="en" className={dmSans.variable} data-theme="dark" suppressHydrationWarning>
+      <body className="font-sans antialiased text-white" style={{ background: 'var(--gradient-seamless)' }} suppressHydrationWarning>
+        <ThemeProvider>
+          <Navigation />
+          <main className="min-h-screen">
+            {children}
+          </main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

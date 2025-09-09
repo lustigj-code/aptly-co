@@ -1,0 +1,8 @@
+https://cdn.sift.com/s.js
+https://connect.facebook.net/en_US/fbevents.js
+https://fedora.teachablecdn.com/assets/pages-da8b56ddd8339884ba4f4ae8b551a32ee8799b5b11f9be015421e472d0bc00a6.css
+https://fedora.teachablecdn.com/packs/pages--d5778ce0cdf02cde3ca7.js
+https://releases.transloadit.com/uppy/v4.18.0/uppy.min.css
+https://releases.transloadit.com/uppy/v4.18.0/uppy.min.js
+https://www.googletagmanager.com/gtm.js
+https://www.recaptcha.net/recaptcha/api.js

@@ -1,0 +1,322 @@
+{
+  "id": "validation_2025-09-09_1757438841720",
+  "startTime": "2025-09-09T17:27:21.720Z",
+  "status": "in-progress",
+  "pages": [
+    {
+      "name": "home",
+      "url": "http://localhost:3000/",
+      "beforeScreenshots": [
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/home_desktop_2025-09-09T17-27-23-864Z.png",
+          "timestamp": "2025-09-09T17-27-23-864Z",
+          "url": "http://localhost:3000/",
+          "hash": "6c32418f269aa7b1e1db7efa748e96ca283f4816db1730732101a608efe34854",
+          "metadata": {
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/home_laptop_2025-09-09T17-27-26-118Z.png",
+          "timestamp": "2025-09-09T17-27-26-118Z",
+          "url": "http://localhost:3000/",
+          "hash": "1b7b8589f0f0e124bc63e7d7fb7191caf1d08b0e2337a119e1d247e5959d1a85",
+          "metadata": {
+            "viewport": {
+              "width": 1366,
+              "height": 768
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/home_tablet_2025-09-09T17-27-28-171Z.png",
+          "timestamp": "2025-09-09T17-27-28-171Z",
+          "url": "http://localhost:3000/",
+          "hash": "0086b919207b5919d0b665a455a538141f99622a56126183003059eb22ee36b8",
+          "metadata": {
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/home_mobile_2025-09-09T17-27-30-211Z.png",
+          "timestamp": "2025-09-09T17-27-30-211Z",
+          "url": "http://localhost:3000/",
+          "hash": "fc3689400618cda6b90aa828d28d123839fffb600c74d49c928377ce9ad48a2d",
+          "metadata": {
+            "viewport": {
+              "width": 375,
+              "height": 812
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        }
+      ],
+      "status": "captured-before"
+    },
+    {
+      "name": "about",
+      "url": "http://localhost:3000/about",
+      "beforeScreenshots": [
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/about_desktop_2025-09-09T17-27-31-691Z.png",
+          "timestamp": "2025-09-09T17-27-31-691Z",
+          "url": "http://localhost:3000/about",
+          "hash": "b6e5d820e5a76380f8b37af4657bbd2cb57f295d7f839234a2bd31bd925ce9bb",
+          "metadata": {
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/about_laptop_2025-09-09T17-27-34-286Z.png",
+          "timestamp": "2025-09-09T17-27-34-286Z",
+          "url": "http://localhost:3000/about",
+          "hash": "79acea5b4c91aee7f9086b734665b3c3fec140d4df3419ae6376827dda0190e9",
+          "metadata": {
+            "viewport": {
+              "width": 1366,
+              "height": 768
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/about_tablet_2025-09-09T17-27-36-560Z.png",
+          "timestamp": "2025-09-09T17-27-36-560Z",
+          "url": "http://localhost:3000/about",
+          "hash": "600f15124f3a9e824e618786d9fd2090e2d96914a70025650fa39b1e615d059d",
+          "metadata": {
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/about_mobile_2025-09-09T17-27-38-502Z.png",
+          "timestamp": "2025-09-09T17-27-38-502Z",
+          "url": "http://localhost:3000/about",
+          "hash": "50dd02a4aa8b759544843a8e5e37f06f56826641b59a451318f197f65ea1fd8c",
+          "metadata": {
+            "viewport": {
+              "width": 375,
+              "height": 812
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        }
+      ],
+      "status": "captured-before"
+    },
+    {
+      "name": "courses",
+      "url": "http://localhost:3000/courses",
+      "beforeScreenshots": [
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/courses_desktop_2025-09-09T17-27-45-034Z.png",
+          "timestamp": "2025-09-09T17-27-45-034Z",
+          "url": "http://localhost:3000/courses",
+          "hash": "bbe6fbaf217cfcbd4403693ed80730ddd07093f7baa42ee000aa1c3a51e5675b",
+          "metadata": {
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/courses_laptop_2025-09-09T17-27-46-777Z.png",
+          "timestamp": "2025-09-09T17-27-46-777Z",
+          "url": "http://localhost:3000/courses",
+          "hash": "8f3bfdadaf76c8b6455ee15514185ca127a9f6a9e508dcf50460941e487ccb1d",
+          "metadata": {
+            "viewport": {
+              "width": 1366,
+              "height": 768
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/courses_tablet_2025-09-09T17-27-48-704Z.png",
+          "timestamp": "2025-09-09T17-27-48-704Z",
+          "url": "http://localhost:3000/courses",
+          "hash": "0cf09b88791b2311da230a8ffa3133bd1fc484f184db7d50c0f0fd3bda61b828",
+          "metadata": {
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/courses_mobile_2025-09-09T17-27-50-065Z.png",
+          "timestamp": "2025-09-09T17-27-50-065Z",
+          "url": "http://localhost:3000/courses",
+          "hash": "662df758b67c60ffb06206ea2eb58fb88535af5a1d619c4fdb139aa035b79c92",
+          "metadata": {
+            "viewport": {
+              "width": 375,
+              "height": 812
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        }
+      ],
+      "status": "captured-before"
+    },
+    {
+      "name": "study-app",
+      "url": "http://localhost:3000/study-app",
+      "beforeScreenshots": [
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/study-app_desktop_2025-09-09T17-27-52-674Z.png",
+          "timestamp": "2025-09-09T17-27-52-674Z",
+          "url": "http://localhost:3000/study-app",
+          "hash": "2641bbc528c079ae234dd798ff84acc2a5423af997f214c530b436c929e2b213",
+          "metadata": {
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/study-app_laptop_2025-09-09T17-27-59-404Z.png",
+          "timestamp": "2025-09-09T17-27-59-404Z",
+          "url": "http://localhost:3000/study-app",
+          "hash": "79dea00ad18f2c2d1b0f813bf34e31c11378ebac6326dd15a6adeb73c6c67799",
+          "metadata": {
+            "viewport": {
+              "width": 1366,
+              "height": 768
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/study-app_tablet_2025-09-09T17-28-11-017Z.png",
+          "timestamp": "2025-09-09T17-28-11-017Z",
+          "url": "http://localhost:3000/study-app",
+          "hash": "66e683e36a73b989b1e8b0fd94f6414c6c546d5fd69237432bcd627e4803185c",
+          "metadata": {
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/study-app_mobile_2025-09-09T17-28-21-291Z.png",
+          "timestamp": "2025-09-09T17-28-21-291Z",
+          "url": "http://localhost:3000/study-app",
+          "hash": "f3e8dfb7665868dc8a1cbce06245d2f5987348e67f66fcaf38113b3baf17cfe0",
+          "metadata": {
+            "viewport": {
+              "width": 375,
+              "height": 812
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        }
+      ],
+      "status": "captured-before"
+    },
+    {
+      "name": "faq",
+      "url": "http://localhost:3000/faq",
+      "beforeScreenshots": [
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/faq_desktop_2025-09-09T17-28-38-465Z.png",
+          "timestamp": "2025-09-09T17-28-38-465Z",
+          "url": "http://localhost:3000/faq",
+          "hash": "07b450d6d69705956807828b2ea2f138acef20736c3a15717e50cb27c253c16f",
+          "metadata": {
+            "viewport": {
+              "width": 1920,
+              "height": 1080
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/faq_laptop_2025-09-09T17-28-40-995Z.png",
+          "timestamp": "2025-09-09T17-28-40-995Z",
+          "url": "http://localhost:3000/faq",
+          "hash": "936e1c46a7e6c415d0a9501c13d32569a0d605661552cac2c669344d53d34a8f",
+          "metadata": {
+            "viewport": {
+              "width": 1366,
+              "height": 768
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/faq_tablet_2025-09-09T17-28-42-929Z.png",
+          "timestamp": "2025-09-09T17-28-42-929Z",
+          "url": "http://localhost:3000/faq",
+          "hash": "11d89d417c177a265ca19f6a793811ec3b3a0322bec90a3e971aa97c0df16f9c",
+          "metadata": {
+            "viewport": {
+              "width": 768,
+              "height": 1024
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        },
+        {
+          "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/faq_mobile_2025-09-09T17-28-44-424Z.png",
+          "timestamp": "2025-09-09T17-28-44-424Z",
+          "url": "http://localhost:3000/faq",
+          "hash": "bef87caf02bf796cda6ab36e18e0e1189ff63232f4c3fdd3b0c50266161f92c0",
+          "metadata": {
+            "viewport": {
+              "width": 375,
+              "height": 812
+            },
+            "fullPage": true,
+            "deviceScaleFactor": 2
+          }
+        }
+      ],
+      "status": "captured-before"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-09-09T17:25:48.025Z",
+  "screenshots": {
+    "home_desktop": "home-desktop.png",
+    "home_desktop_scrolled": "home-desktop-scrolled.png",
+    "home_mobile": "home-mobile.png"
+  },
+  "comparisons": {
+    "changes_above_fold": 1,
+    "changes_total": 56,
+    "assessment": "NEEDS_WORK"
+  },
+  "segmentation_score": {
+    "total_sections": 44,
+    "hard_breaks": 12,
+    "visible_borders": 44,
+    "issues": [
+      {
+        "element": " py-24  relative overflow-hidden",
+        "issue": "Visible border",
+        "color": "rgb(229, 231, 235)"
+      },
+      {
+        "element": " py-20  section-soft-fade",
+        "issue": "Visible border",
+        "color": "rgb(229, 231, 235)"
+      },
+      {
+        "element": "rounded-2xl bg-white/3 backdrop-blur-sm p-6 text-center group hover:opacity-90 transition-opacity duration-300 card-standard",
+        "issue": "Hard background color break",
+        "color": "rgba(255, 255, 255, 0.05)"
+      },
+      {
+        "element": "rounded-2xl bg-white/3 backdrop-blur-sm p-6 text-center group hover:opacity-90 transition-opacity duration-300 card-standard",
+        "issue": "Visible border",
+        "color": "rgb(59, 51, 110)"
+      },
+      {
+        "element": "w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-secondary to-navy rounded-full flex items-center justify-center group-hover:scale-110 transition-transform",
+        "issue": "Visible border",
+        "color": "rgb(229, 231, 235)"
+      }
+    ],
+    "seamless_score": 0
+  }
+}

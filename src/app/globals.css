@@ -2,29 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import Design System Tokens */
+@import '../styles/design-tokens.css';
+
 /* Brand Foundation - Aptly Design System */
+
+/* Theme Toggle Button Styles */
+.theme-toggle {
+  @apply p-2 rounded-full transition-all duration-300;
+  @apply hover:bg-white/10 active:scale-95;
+  color: var(--color-text-primary);
+}
+
+.theme-toggle:hover {
+  transform: rotate(15deg);
+}
 
 @layer base {
   /* Import DM Sans from Google Fonts */
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
-  /* CSS Custom Properties for Brand Colors */
+  /* CSS Custom Properties for Brand Colors - Now handled by themes.css */
   :root {
-    /* Primary Colors */
-    --color-navy: #0A004A;
-    --color-teal: #21A8B0;
-    --color-yellow: #FFDE00;
+    /* Legacy color definitions for compatibility */
+    --color-navy: var(--color-primary);
+    --color-teal: var(--color-secondary);
+    --color-yellow: var(--color-accent);
     
     /* Secondary Colors */
-    --color-light-navy: #3B336E;
-    --color-muted-teal: #69BCC1;
-    --color-light-teal: #DEF2F2;
+    --color-light-navy: var(--color-light-navy);
+    --color-muted-teal: var(--color-muted-teal);
+    --color-light-teal: var(--color-light-teal);
     
     /* Neutral Colors */
     --color-white: #FFFFFF;
-    --color-light-grey: #E6E6E6;
+    --color-light-grey: var(--color-border);
     --color-grey: #CCCCCC;
-    --color-rich-black: #333333;
+    --color-rich-black: var(--color-text-primary);
     
     /* Spacing System (8px grid) */
     --space-1: 8px;
@@ -88,41 +102,62 @@
     margin: 0;
   }
 
-  /* Heading Styles */
+  /* Enhanced Heading Styles with Better Hierarchy */
   h1 {
-    font-size: var(--text-5xl);
+    font-size: clamp(2.5rem, 5vw, var(--text-6xl));
     font-weight: var(--font-bold);
-    line-height: var(--leading-tight);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
   }
 
   h2 {
-    font-size: var(--text-4xl);
+    font-size: clamp(2rem, 4vw, var(--text-4xl));
     font-weight: var(--font-bold);
-    line-height: var(--leading-tight);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
   }
 
   h3 {
-    font-size: var(--text-3xl);
+    font-size: clamp(1.5rem, 3vw, var(--text-3xl));
     font-weight: var(--font-medium);
-    line-height: var(--leading-normal);
+    line-height: 1.3;
+    letter-spacing: -0.005em;
   }
 
   h4 {
-    font-size: var(--text-2xl);
+    font-size: clamp(1.25rem, 2.5vw, var(--text-2xl));
     font-weight: var(--font-medium);
-    line-height: var(--leading-normal);
+    line-height: 1.4;
   }
 
   h5 {
-    font-size: var(--text-xl);
+    font-size: clamp(1.125rem, 2vw, var(--text-xl));
     font-weight: var(--font-medium);
-    line-height: var(--leading-normal);
+    line-height: 1.5;
   }
 
   h6 {
-    font-size: var(--text-lg);
+    font-size: clamp(1rem, 1.5vw, var(--text-lg));
     font-weight: var(--font-medium);
-    line-height: var(--leading-normal);
+    line-height: 1.5;
+  }
+  
+  /* Enhanced paragraph spacing */
+  p {
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+  
+  /* Better link styles */
+  a {
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  /* Selection colors */
+  ::selection {
+    background-color: var(--color-teal);
+    color: var(--color-white);
   }
 }
 
@@ -139,24 +174,29 @@
 
   /* Brand Button Styles */
   .btn-primary {
-    @apply bg-navy text-white px-6 py-3 rounded-brand-lg font-medium transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-teal focus:ring-offset-2;
+    @apply bg-teal text-white px-6 py-3 rounded-full font-medium transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-teal focus:ring-offset-2 flex items-center justify-center border-0 min-h-[48px];
   }
 
   .btn-secondary {
-    @apply bg-teal text-white px-6 py-3 rounded-brand-lg font-medium transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-navy focus:ring-offset-2;
+    @apply bg-transparent text-white px-6 py-3 rounded-full font-medium transition-all hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 flex items-center justify-center border border-white/30 min-h-[48px];
   }
 
   .btn-outline {
-    @apply border-2 border-white text-white px-6 py-3 rounded-brand-lg font-medium transition-colors hover:bg-white hover:text-navy focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2;
+    @apply border border-teal/50 text-white px-6 py-3 rounded-full font-medium transition-colors hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-teal focus:ring-offset-2 flex items-center justify-center min-h-[48px];
   }
 
   /* Card Styles */
   .card {
-    @apply bg-white rounded-brand p-6 shadow-brand;
+    @apply bg-white rounded-brand p-6 shadow-brand transition-all duration-300 hover:scale-[1.02];
   }
 
   .card-dark {
-    @apply bg-light-navy rounded-brand p-6;
+    @apply bg-light-navy rounded-brand p-6 transition-all duration-300 hover:scale-[1.02];
+  }
+  
+  /* Card hover animation */
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-lg;
   }
 
   /* Text Utilities */
@@ -193,6 +233,32 @@
 }
 
 @layer utilities {
+  /* Modern spacing utilities */
+  .space-y-dynamic > * + * {
+    margin-top: clamp(1rem, 3vw, 2rem);
+  }
+  
+  /* Enhanced shadow utilities */
+  .shadow-modern {
+    box-shadow: 0 10px 40px rgba(10, 0, 74, 0.08);
+  }
+  
+  .shadow-modern-lg {
+    box-shadow: 0 20px 60px rgba(10, 0, 74, 0.12);
+  }
+  
+  /* Text utilities */
+  .text-balance-optimal {
+    text-wrap: balance;
+    hyphens: auto;
+  }
+  
+  /* Modern backdrop effects */
+  .backdrop-modern {
+    backdrop-filter: blur(12px) saturate(1.5);
+    -webkit-backdrop-filter: blur(12px) saturate(1.5);
+  }
+  
   /* Hide scrollbar but keep functionality */
   .scrollbar-hide {
     -ms-overflow-style: none;
@@ -230,6 +296,43 @@
     @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2;
   }
 
+  /* Ripple Animation */
+  @keyframes ripple {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+
+  .animate-ripple {
+    animation: ripple 0.6s ease-out;
+  }
+
+  /* Shimmer Animation for Skeleton */
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(204, 204, 204, 0.2) 25%,
+      rgba(204, 204, 204, 0.3) 50%,
+      rgba(204, 204, 204, 0.2) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
   /* Aspect Ratios */
   .aspect-3\/2 {
     aspect-ratio: 3 / 2;
@@ -242,12 +345,100 @@
   .aspect-16\/10 {
     aspect-ratio: 16 / 10;
   }
+
+  /* ==================== SURFACE SYSTEM UTILITIES ==================== */
+  
+  /* Surface Background Utilities - Semantic backgrounds for unified design */
+  .surface-primary {
+    background: var(--surface-primary);
+  }
+
+  .surface-secondary {
+    background: var(--surface-secondary);
+  }
+
+  .surface-gradient {
+    background: var(--surface-gradient);
+  }
+
+  .surface-elevated {
+    background: var(--surface-elevated);
+  }
+
+  /* Section Transition Utilities */
+  .section-transition-subtle {
+    position: relative;
+  }
+
+  .section-transition-subtle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--surface-border);
+  }
+
+  .section-fade-gradient {
+    background: linear-gradient(to bottom, 
+      var(--surface-primary) 0%, 
+      color-mix(in srgb, var(--surface-primary) 80%, var(--surface-secondary) 20%) 100%
+    );
+  }
+  
+  /* Ultra-smooth section blending */
+  .section-blend-top {
+    position: relative;
+  }
+  
+  .section-blend-top::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom,
+      transparent 0%,
+      var(--surface-primary) 100%
+    );
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  /* Softer transition for consecutive sections */
+  .section-soft-blend {
+    background: linear-gradient(180deg,
+      var(--surface-primary) 0%,
+      color-mix(in srgb, var(--surface-primary) 95%, var(--surface-secondary) 5%) 50%,
+      var(--surface-primary) 100%
+    );
+  }
 }
+
+/* Import animations and responsive styles */
+@import '../styles/animations.css';
+@import '../styles/responsive.css';
 
 /* Smooth Scroll */
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
+  }
+  
+  /* Add subtle page load animation */
+  body {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 

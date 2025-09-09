@@ -1,0 +1,31 @@
+{
+  "coreWebVitals": {
+    "LCP_ms": 2500,
+    "CLS": 0.1,
+    "INP_ms": 200,
+    "description": "Core Web Vitals thresholds for 'Good' performance rating"
+  },
+  "lighthouse": {
+    "performance": 90,
+    "accessibility": 95,
+    "bestPractices": 95,
+    "seo": 95,
+    "description": "Minimum acceptable Lighthouse scores (0-100)"
+  },
+  "additionalMetrics": {
+    "FCP_ms": 1800,
+    "TTI_ms": 3800,
+    "TBT_ms": 300,
+    "description": "Additional performance metrics for comprehensive monitoring"
+  },
+  "thresholdLevels": {
+    "good": "All metrics at or above thresholds",
+    "needsImprovement": "1-2 metrics below thresholds",
+    "poor": "3+ metrics below thresholds or critical failures"
+  },
+  "alerting": {
+    "immediate": ["LCP > 4000ms", "CLS > 0.25", "INP > 500ms"],
+    "daily": ["Any Lighthouse score < threshold"],
+    "weekly": ["Performance trend declining > 5%"]
+  }
+}

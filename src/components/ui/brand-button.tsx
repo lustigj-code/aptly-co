@@ -39,9 +39,9 @@ export function BrandButton({
   };
 
   const sizes = {
-    sm: "px-4 py-2 text-sm rounded-brand-sm",
-    md: "px-6 py-3 text-base rounded-brand",
-    lg: "px-8 py-4 text-lg rounded-brand-lg",
+    sm: "px-4 py-2.5 min-h-[44px] text-sm rounded-brand-sm",
+    md: "px-6 py-3 min-h-[44px] text-base rounded-brand",
+    lg: "px-8 py-4 min-h-[48px] text-lg rounded-brand-lg",
   };
 
   const disabledStyles = "opacity-50 cursor-not-allowed pointer-events-none";
@@ -110,9 +110,9 @@ export function IconButton({
   };
 
   const sizes = {
-    sm: "p-2",
-    md: "p-3",
-    lg: "p-4",
+    sm: "p-2.5 min-w-[44px] min-h-[44px]",
+    md: "p-3 min-w-[44px] min-h-[44px]",
+    lg: "p-4 min-w-[48px] min-h-[48px]",
   };
 
   const disabledStyles = "opacity-50 cursor-not-allowed pointer-events-none";

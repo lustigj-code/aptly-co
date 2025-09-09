@@ -1,0 +1,46 @@
+src/app/faq/page.tsx:64:              style={{ fontFamily: 'DM Sans, sans-serif' }}
+src/app/faq/page.tsx:76:              style={{ fontFamily: 'DM Sans, sans-serif' }}
+src/app/faq/page.tsx:99:                    <h3 className="text-xl font-bold text-white group-hover:text-[#21A8B0] transition-colors pr-4" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:124:                        <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:145:              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:148:              <p className="text-lg md:text-xl text-[#DEF2F2] mb-8 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:180:              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:183:              <p className="text-lg md:text-xl text-[#DEF2F2] max-w-2xl mx-auto" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:201:                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:204:                  <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:221:                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:224:                  <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:241:                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:244:                  <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:262:              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:265:              <p className="text-lg md:text-xl text-[#DEF2F2] mb-8 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:65:              style={{ fontFamily: 'DM Sans, sans-serif' }}
+src/app/careers/page.tsx:77:              style={{ fontFamily: 'DM Sans, sans-serif' }}
+src/app/careers/page.tsx:114:              <h2 className="h2 text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:117:              <p className="text-lg md:text-xl text-[#DEF2F2] max-w-2xl mx-auto" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:133:                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:136:                      <p className="text-[#21A8B0] font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:141:                      <span className="px-3 py-2 bg-[#21A8B0]/20 text-[#21A8B0] text-sm rounded-full font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:146:                  <p className="text-[#DEF2F2] mb-6 leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:150:                    <span className="text-[#DEF2F2] font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>{job.location}</span>
+src/app/careers/page.tsx:174:              <h2 className="h2 text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:177:              <p className="text-lg md:text-xl text-[#DEF2F2] max-w-2xl mx-auto" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:194:                  <p className="text-[#DEF2F2] font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:212:                <h2 className="h2 text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:215:                <p className="text-lg text-[#DEF2F2] mb-6 leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:218:                <p className="text-lg text-[#DEF2F2] mb-6 leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:221:                <p className="text-lg text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:248:              <h2 className="h2 text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:251:              <p className="text-lg md:text-xl text-[#DEF2F2] mb-8 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/courses/page.tsx:38:              style={{ fontFamily: 'DM Sans, sans-serif' }}
+src/app/courses/page.tsx:47:              style={{ fontFamily: 'DM Sans, sans-serif' }}
+src/app/globals.css:93:    font-family: 'DM Sans', system-ui, sans-serif;
+src/utils/screenshot/comparisonUtility.ts:90:            body { margin: 0; padding: 20px; font-family: Arial, sans-serif; }
+src/components/TestimonialCard.tsx:22:            <span className="text-white font-bold" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:27:            <div className="text-[#21A8B0] text-sm font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:30:            <div className="text-white font-bold" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:39:          <div className="text-[#DEF2F2] text-sm" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:44:          <div className="text-[#DEF2F2] text-sm" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:50:      <blockquote className="text-[#DEF2F2] italic mb-6 leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:55:        <div className="text-[#21A8B0] font-medium text-sm" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:58:        <div className="text-white mt-2" style={{ fontFamily: 'DM Sans, sans-serif' }}>

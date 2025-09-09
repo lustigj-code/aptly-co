@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import { 
   Container, 
   Section, 
@@ -11,61 +14,118 @@ import {
   Divider 
 } from '@/design-system';
 import { getFeaturedCourses } from '@/lib/data/courses';
+import { getFeaturedTestimonial } from '@/lib/data/testimonials';
 import { AptlyLogo } from '@/components/AptlyLogo';
+import { ButtonRipple } from '@/components/ui/button-ripple';
+import { useScrollAnimation, useParallax } from '@/hooks/useScrollAnimation';
+import { 
+  ChevronRight, 
+  ArrowRight, 
+  Star, 
+  Users, 
+  Award, 
+  Clock,
+  Check,
+  TrendingUp,
+  BookOpen,
+  Briefcase
+} from 'lucide-react';
+// Animations are globally available via globals.css; avoid duplicate imports here
 
 export default function HomePage() {
   const featuredCourses = getFeaturedCourses();
+  const featuredTestimonial = getFeaturedTestimonial();
+  const [mounted, setMounted] = useState(false);
+  
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
-    <main className="min-h-screen bg-navy">
+    <main className="min-h-screen bg-navy text-primary">
       {/* Hero Section - Clean and Powerful */}
-      <Section background="gradient" spacing="xl" className="relative overflow-hidden">
+      <Section background="transparent" spacing="xl" className="relative overflow-hidden">
         <Container size="lg">
-          <div className="text-center max-w-4xl mx-auto">
-            <Badge variant="info" size="md">Partner with Meta & Google</Badge>
+          <div className={`text-center max-w-4xl mx-auto ${mounted ? 'animate-[fadeInUp_0.8s_ease-out]' : 'opacity-0'}`}>
+            <Badge variant="info" size="md" className="animate-[fadeInScale_0.6s_ease-out_0.2s_both]">Partner with Meta & Google</Badge>
             
-            <Heading as="h1" size="3xl" className="mt-6 mb-6">
+            <Heading as="h1" size="3xl" className="mt-6 mb-6 animate-[fadeInUp_0.8s_ease-out_0.3s_both] text-primary">
               Transform Your Career with
-              <span className="block text-teal">Industry-Leading Certifications</span>
+              <span className="block text-secondary">Industry-Leading Certifications</span>
             </Heading>
             
-            <p className="text-xl text-light-teal mb-10 leading-relaxed">
-              Join 50,000+ professionals who have advanced their careers through 
-              our partnership programs with the world&apos;s leading tech companies.
+            <p className="text-xl mb-10 leading-relaxed animate-[fadeInUp_0.8s_ease-out_0.4s_both] text-secondary">
+              Join thousands of professionals advancing their careers through Meta and Google 
+              certificate programs.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="primary">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-[fadeInUp_0.8s_ease-out_0.5s_both]">
+              <ButtonRipple size="lg" variant="primary" className="btn-primary">
                 Browse Programs
-              </Button>
-              <Button size="lg" variant="outline">
+                <ChevronRight className="inline-block ml-2 w-5 h-5" />
+              </ButtonRipple>
+              <ButtonRipple size="lg" variant="outline" className="btn-secondary">
                 Talk to Advisor
-              </Button>
+                <ArrowRight className="inline-block ml-2 w-5 h-5" />
+              </ButtonRipple>
             </div>
           </div>
         </Container>
       </Section>
 
-      {/* Trust Indicators - Clean Stats */}
-      <Section background="navy" spacing="md">
+      {/* Success by Numbers - Enhanced Visual Design */}
+      <Section background="transparent" spacing="lg" className="section-soft-fade">
+        
         <Container size="lg">
-          <Grid cols={{ default: 2, md: 4 }} gap="md">
-            <Stat value="50K+" label="Active Learners" />
-            <Stat value="95%" label="Completion Rate" />
-            <Stat value="87%" label="Job Placement" />
-            <Stat value="4.8" label="Rating" />
+          <div className="text-center mb-12">
+            <Heading as="h2" size="2xl" className="mb-4">
+              Success by Numbers
+            </Heading>
+            <p className="text-lg text-secondary max-w-2xl mx-auto">
+              Join thousands of professionals who have transformed their careers with Aptly
+            </p>
+          </div>
+          
+          <Grid cols={{ default: 2, md: 4 }} gap="md" className="opacity-0 animate-[fadeInUp_1s_ease-out_0.8s_both] relative z-10">
+            <Card variant="default" className="text-center group hover:opacity-90 transition-opacity duration-300 card-standard">
+              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-secondary to-navy rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                <Users className="w-8 h-8 text-white" />
+              </div>
+              <Stat value="10,000+" label="Students Enrolled" />
+            </Card>
+            
+            <Card variant="default" className="text-center group hover:opacity-90 transition-opacity duration-300 card-standard">
+              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-yellow to-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                <Star className="w-8 h-8 text-white fill-white" />
+              </div>
+              <Stat value="4.7" label="Average Rating" />
+            </Card>
+            
+            <Card variant="default" className="text-center group hover:opacity-90 transition-opacity duration-300 card-standard">
+              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-teal to-light-navy rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                <Award className="w-8 h-8 text-white" />
+              </div>
+              <Stat value="Industry" label="Recognized" />
+            </Card>
+            
+            <Card variant="default" className="text-center group hover:opacity-90 transition-opacity duration-300 card-standard">
+              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-secondary to-muted-teal rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                <Clock className="w-8 h-8 text-white" />
+              </div>
+              <Stat value="6-Month" label="Programs" />
+            </Card>
           </Grid>
         </Container>
       </Section>
 
       {/* Featured Programs - Clean Cards */}
-      <Section background="light-navy" spacing="xl">
+      <Section background="transparent" spacing="xl" className="section-soft-fade">
         <Container size="lg">
           <div className="text-center mb-12">
             <Heading as="h2" size="2xl" className="mb-4">
               Professional Certificate Programs
             </Heading>
-            <p className="text-lg text-light-teal max-w-2xl mx-auto">
+            <p className="text-lg max-w-2xl mx-auto text-secondary">
               6-month programs designed with industry leaders. 
               Graduate job-ready with portfolio projects and career coaching.
             </p>
@@ -74,88 +134,93 @@ export default function HomePage() {
           <Grid cols={{ default: 1, md: 2, lg: 3 }} gap="lg">
             {featuredCourses.map((course) => (
               <div key={course.id}>
-                <Card variant="bordered" className="h-full hover:border-teal/40 transition-colors">
-                  <div className="aspect-video relative mb-6 overflow-hidden rounded-xl">
+                <Card variant="default" className="h-full card-standard hover:border-secondary/40 transition-all">
+                  <div className="aspect-video relative mb-6 overflow-hidden rounded-xl group">
                     <Image
                       src={course.image}
                       alt={course.title}
                       fill
-                      className="object-cover"
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
                   <Badge variant="success">Professional Certificate</Badge>
-                  <Heading as="h3" size="lg" weight="medium" className="mt-4 mb-3">
+                  <Heading as="h3" size="lg" weight="medium" className="mt-4 mb-3 text-primary">
                     {course.title}
                   </Heading>
-                  <p className="text-light-teal mb-6 line-clamp-2">
+                  <p className="text-secondary mb-6 line-clamp-2">
                     {course.description}
                   </p>
-                  <Button 
-                    href={course.link} 
+                  <ButtonRipple 
                     variant="secondary" 
                     size="sm" 
-                    external
                     className="w-full"
+                    onClick={() => window.open(course.link, '_blank')}
                   >
                     Learn More
-                  </Button>
+                    <ArrowRight className="inline-block ml-2 w-4 h-4" />
+                  </ButtonRipple>
                 </Card>
               </div>
             ))}
           </Grid>
 
           <div className="text-center mt-10">
-            <Button href="/programs" variant="outline">
+            <ButtonRipple 
+              variant="outline" 
+              size="lg"
+              className="btn-secondary"
+              onClick={() => window.location.href = '/programs'}
+            >
               View All Programs
-            </Button>
+              <ChevronRight className="inline-block ml-2 w-5 h-5" />
+            </ButtonRipple>
           </div>
         </Container>
       </Section>
 
       {/* Value Proposition - The Aptly Advantage */}
-      <Section background="navy" spacing="xl">
+      <Section background="transparent" spacing="xl" className="section-soft-fade">
         <Container size="lg">
           <Grid cols={{ default: 1, lg: 2 }} gap="lg" className="items-center">
             <div>
               <Heading as="h2" size="2xl" className="mb-6">
                 The Aptly Advantage
               </Heading>
-              <p className="text-lg text-light-teal mb-8">
+              <p className="text-lg text-secondary mb-8">
                 We don&apos;t just teach skills - we transform careers. 
                 Our comprehensive approach ensures you&apos;re job-ready from day one.
               </p>
               
               <div className="space-y-4">
                 {[
-                  "Industry-designed curriculum updated quarterly",
+                  "Curriculum designed by Meta and Google",
                   "1-on-1 career coaching and interview preparation",
                   "Real projects from actual companies",
-                  "Direct referrals to partner companies",
+                  "Career certificates recognized by top employers",
                   "Lifetime access to course materials"
                 ].map((feature, idx) => (
-                  <div key={idx} className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-teal/20 flex items-center justify-center mt-0.5 mr-4 flex-shrink-0">
-                      <span className="text-teal text-sm">✓</span>
+                  <div key={idx} className="flex items-start group transition-all hover:translate-x-2">
+                    <div className="w-6 h-6 rounded-full bg-secondary/20 flex items-center justify-center mt-0.5 mr-4 flex-shrink-0 group-hover:bg-secondary/30 group-hover:scale-110 transition-all">
+                      <Check className="w-4 h-4 text-secondary" />
                     </div>
-                    <p className="text-white">{feature}</p>
+                    <p className="text-primary group-hover:text-secondary transition-colors">{feature}</p>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="relative">
-              <Card variant="default" padding="lg">
+              <Card variant="default" padding="lg" className="card-standard animate-[float_6s_ease-in-out_infinite]">
                 <div className="text-center">
                   <Heading as="h3" size="xl" className="mb-4">
                     Success Story
                   </Heading>
-                  <blockquote className="text-light-teal italic mb-6">
-                    &ldquo;Aptly&apos;s Meta certificate program helped me transition 
-                    from retail to a data analyst role at a Fortune 500 company. 
-                    The career support was invaluable.&rdquo;
+                  <blockquote className="text-secondary italic mb-6">
+                    &ldquo;{featuredTestimonial.quote}&rdquo;
                   </blockquote>
-                  <div className="text-white font-medium">Sarah Chen</div>
-                  <div className="text-muted-teal text-sm">Data Analyst, Microsoft</div>
+                  <div className="text-primary font-medium">{featuredTestimonial.author}</div>
+                  <div className="text-secondary text-sm">{featuredTestimonial.role}</div>
                 </div>
               </Card>
             </div>
@@ -163,14 +228,57 @@ export default function HomePage() {
         </Container>
       </Section>
 
+      {/* Trust Badges - Partner Logos */}
+      <Section background="transparent" spacing="lg">
+        <Container size="lg">
+          <div className="text-center mb-8">
+            <Heading as="h2" size="lg" className="mb-2 text-primary">
+              Trusted Partners
+            </Heading>
+            <p className="text-secondary">
+              Learn from industry leaders with recognized certifications
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+            <div className="h-12 flex items-center">
+              <Image 
+                src="/images/partners/meta-official.svg" 
+                alt="Meta" 
+                width={100} 
+                height={40}
+                className="opacity-80 hover:opacity-100 transition-opacity object-contain"
+              />
+            </div>
+            <div className="h-12 flex items-center">
+              <Image 
+                src="/images/partners/google-official.svg" 
+                alt="Google" 
+                width={100} 
+                height={40}
+                className="opacity-80 hover:opacity-100 transition-opacity object-contain"
+              />
+            </div>
+            <div className="h-12 flex items-center">
+              <Image 
+                src="/images/partners/coursera-official.svg" 
+                alt="Coursera" 
+                width={120} 
+                height={40}
+                className="opacity-80 hover:opacity-100 transition-opacity object-contain"
+              />
+            </div>
+          </div>
+        </Container>
+      </Section>
+
       {/* Learning Methodology */}
-      <Section background="white" spacing="xl">
+      <Section background="transparent" spacing="xl" className="section-soft-fade">
         <Container size="lg">
           <div className="text-center mb-12">
-            <Heading as="h2" size="2xl" color="navy" className="mb-4">
+            <Heading as="h2" size="2xl" className="mb-4 text-primary">
               How It Works
             </Heading>
-            <p className="text-lg text-rich-black max-w-2xl mx-auto">
+            <p className="text-lg text-secondary max-w-2xl mx-auto">
               Your journey from enrollment to employment in four simple steps
             </p>
           </div>
@@ -181,15 +289,15 @@ export default function HomePage() {
               { step: "2", title: "Learn & Build", desc: "Complete projects with expert guidance" },
               { step: "3", title: "Get Certified", desc: "Earn industry-recognized credentials" },
               { step: "4", title: "Land Your Job", desc: "Leverage our placement support" }
-            ].map((item) => (
-              <div key={item.step} className="text-center">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-navy to-teal text-white text-2xl font-bold flex items-center justify-center mx-auto mb-4">
+            ].map((item, idx) => (
+              <div key={item.step} className={`text-center group transition-all hover:scale-105 ${mounted ? `animate-[fadeInUp_0.6s_ease-out_${idx * 0.1}s_both]` : 'opacity-0'}`}>
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-secondary to-light-navy text-primary text-2xl font-bold flex items-center justify-center mx-auto mb-4 group-hover:shadow-xl transition-all group-hover:scale-110">
                   {item.step}
                 </div>
-                <Heading as="h3" size="md" color="navy" weight="medium" className="mb-2">
+                <Heading as="h3" size="md" weight="medium" className="mb-2 text-primary">
                   {item.title}
                 </Heading>
-                <p className="text-rich-black text-sm">{item.desc}</p>
+                <p className="text-secondary text-sm">{item.desc}</p>
               </div>
             ))}
           </Grid>
@@ -197,24 +305,24 @@ export default function HomePage() {
       </Section>
 
       {/* CTA Section */}
-      <Section background="gradient" spacing="lg">
+      <Section background="transparent" spacing="lg">
         <Container size="md">
-          <div className="text-center">
+          <Card variant="default" className="card-standard p-12 text-center animate-[fadeInScale_0.8s_ease-out]">
             <Heading as="h2" size="2xl" className="mb-6">
               Ready to Transform Your Career?
             </Heading>
-            <p className="text-lg text-light-teal mb-8">
+            <p className="text-lg text-secondary mb-8">
               Join thousands of successful graduates. Start your journey today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="primary">
+              <Button size="lg" variant="primary" className="btn-primary">
                 Get Started
               </Button>
-              <Button size="lg" variant="outline">
+              <Button size="lg" variant="outline" className="btn-secondary">
                 Download Career Guide
               </Button>
             </div>
-          </div>
+          </Card>
         </Container>
       </Section>
     </main>

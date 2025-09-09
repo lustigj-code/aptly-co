@@ -55,7 +55,7 @@ export default function CareersPage() {
       
       <div className="relative z-10">
         {/* Hero Section */}
-        <section className="pt-32 pb-16 px-8">
+        <section className="section-padding container-padding pt-32">
           <div className="max-w-7xl mx-auto text-center">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -103,7 +103,7 @@ export default function CareersPage() {
         </section>
 
         {/* Open Positions */}
-        <section id="positions" className="py-24 px-8">
+        <section id="positions" className="section-padding container-padding">
           <div className="max-w-6xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -111,7 +111,7 @@ export default function CareersPage() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-center mb-16"
             >
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+              <h2 className="h2 text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                 Open Positions
               </h2>
               <p className="text-lg md:text-xl text-[#DEF2F2] max-w-2xl mx-auto" style={{ fontFamily: 'DM Sans, sans-serif' }}>
@@ -126,7 +126,7 @@ export default function CareersPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.6 + i * 0.1 }}
-                  className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-[#21A8B0]/30 transition-all duration-300 p-8"
+                  className="card-standard group"
                 >
                   <div className="flex items-start justify-between mb-6">
                     <div>
@@ -163,7 +163,7 @@ export default function CareersPage() {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-24 px-8">
+        <section className="section-padding container-padding">
           <div className="max-w-6xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -171,7 +171,7 @@ export default function CareersPage() {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="text-center mb-16"
             >
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+              <h2 className="h2 text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                 Why Work With Us
               </h2>
               <p className="text-lg md:text-xl text-[#DEF2F2] max-w-2xl mx-auto" style={{ fontFamily: 'DM Sans, sans-serif' }}>
@@ -186,7 +186,7 @@ export default function CareersPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.9 + i * 0.1 }}
-                  className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-[#21A8B0]/30 transition-all duration-300"
+                  className="card-standard text-center"
                 >
                   <div className="w-12 h-12 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center mx-auto mb-4">
                     <div className="text-xl text-white">B</div>
@@ -201,7 +201,7 @@ export default function CareersPage() {
         </section>
 
         {/* Culture Section */}
-        <section id="culture" className="py-24 px-8">
+        <section id="culture" className="section-padding container-padding">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <motion.div
@@ -209,7 +209,7 @@ export default function CareersPage() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 1.0 }}
               >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                <h2 className="h2 text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                   Our Culture
                 </h2>
                 <p className="text-lg text-[#DEF2F2] mb-6 leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
@@ -237,7 +237,7 @@ export default function CareersPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 px-8">
+        <section className="section-padding container-padding">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -245,7 +245,7 @@ export default function CareersPage() {
               transition={{ duration: 0.8, delay: 1.2 }}
               className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-12"
             >
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+              <h2 className="h2 text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                 Ready to Join Us?
               </h2>
               <p className="text-lg md:text-xl text-[#DEF2F2] mb-8 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>

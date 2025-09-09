@@ -1,0 +1,276 @@
+src/app/insights/page.tsx:33:      <Section background="gradient" spacing="lg">
+src/app/insights/page.tsx:160:      <Section background="gradient" spacing="lg">
+src/app/insights/[slug]/page.tsx:68:      <Section background="gradient" spacing="lg">
+src/app/insights/[slug]/page.tsx:194:      <Section background="gradient" spacing="lg">
+src/app/contact/page.tsx:64:      <Section background="gradient" spacing="lg">
+src/app/contact/page.tsx:259:      <Section background="gradient" spacing="lg">
+Binary file src/app/.page.tsx.swp matches
+src/app/success/page.tsx:20:import '@/styles/animations.css';
+src/app/success/page.tsx:35:      <Section background="gradient" spacing="xl" className="mesh-gradient grain-overlay">
+src/app/success/page.tsx:55:          <ScrollAnimatedSection animation="fadeIn">
+src/app/success/page.tsx:129:          <ScrollAnimatedSection animation="fadeIn" className="text-center mb-12">
+src/app/success/page.tsx:142:                animation="scale"
+src/app/success/page.tsx:148:                      <div className="w-12 h-12 bg-gradient-to-br from-secondary to-navy rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+src/app/success/page.tsx:199:          <ScrollAnimatedSection animation="fadeIn" className="text-center mb-12">
+src/app/success/page.tsx:212:                animation="scale"
+src/app/success/page.tsx:218:                      <div className="w-12 h-12 bg-gradient-to-br from-teal to-navy rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+src/app/success/page.tsx:269:          <ScrollAnimatedSection animation="fadeIn" className="text-center mb-12">
+src/app/success/page.tsx:282:                animation="scale"
+src/app/success/page.tsx:288:                      <div className="w-12 h-12 bg-gradient-to-br from-secondary to-navy rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+src/app/success/page.tsx:337:      <Section background="gradient" spacing="lg" className="mesh-gradient">
+src/app/faq/page.tsx:6:import { BrandGradientBackground } from "@/components/ui/brand-gradient-background";
+src/app/faq/page.tsx:198:                  <div className="w-16 h-16 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center mx-auto mb-6">
+src/app/faq/page.tsx:218:                  <div className="w-16 h-16 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center mx-auto mb-6">
+src/app/faq/page.tsx:238:                  <div className="w-16 h-16 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center mx-auto mb-6">
+src/app/business/page.tsx:57:      <Section background="gradient" spacing="xl">
+src/app/business/page.tsx:215:      <Section background="gradient" spacing="lg">
+src/app/about/page.tsx:13:import '@/styles/animations.css';
+src/app/about/page.tsx:76:      <Section background="gradient" spacing="xl" className="mesh-gradient grain-overlay">
+src/app/about/page.tsx:95:            <ScrollAnimatedSection animation="slideLeft" className="space-y-6">
+src/app/about/page.tsx:114:            <ScrollAnimatedSection animation="slideRight">
+src/app/about/page.tsx:139:          <ScrollAnimatedSection animation="fadeIn" className="text-center mb-12">
+src/app/about/page.tsx:152:                animation="scale"
+src/app/about/page.tsx:160:                  <div className="w-16 h-16 bg-gradient-to-br from-secondary to-navy rounded-full flex items-center justify-center mb-4 mx-auto group-hover:scale-110 group-hover:rotate-12 transition-all">
+src/app/about/page.tsx:179:          <ScrollAnimatedSection animation="fadeIn" className="text-center mb-12">
+src/app/about/page.tsx:189:                animation="slideLeft"
+src/app/about/page.tsx:194:                  <div className="w-24 h-10 bg-gradient-to-r from-secondary to-navy rounded-full flex items-center justify-center text-primary font-bold group-hover:scale-110 transition-transform shadow-elegant">
+src/app/about/page.tsx:210:          <ScrollAnimatedSection animation="fadeIn" className="text-center mb-12">
+src/app/about/page.tsx:223:                animation="scale"
+src/app/about/page.tsx:231:                  <div className="w-24 h-24 bg-gradient-to-br from-secondary to-light-navy rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform shadow-xl" />
+src/app/about/page.tsx:245:      <Section background="gradient" spacing="lg" className="mesh-gradient">
+src/app/careers/page.tsx:5:import { BrandGradientBackground } from "@/components/ui/brand-gradient-background";
+src/app/careers/page.tsx:191:                  <div className="w-12 h-12 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center mx-auto mb-4">
+src/app/programs/page.tsx:33:      <Section background="gradient" spacing="lg">
+src/app/courses/page.tsx:4:import { BrandGradientBackground } from "@/components/ui/brand-gradient-background";
+src/app/loading.tsx:5:        {/* Aptly logo animation */}
+src/app/page.tsx:33:import '@/styles/animations.css';
+src/app/page.tsx:47:      <Section background="gradient" spacing="xl" className="relative overflow-hidden mesh-gradient grain-overlay">
+src/app/page.tsx:78:        <div className="absolute inset-0 bg-gradient-to-r from-navy/50 to-teal/20"></div>
+src/app/page.tsx:94:              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-secondary to-navy rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+src/app/page.tsx:101:              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-yellow to-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+src/app/page.tsx:108:              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-teal to-light-navy rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+src/app/page.tsx:115:              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-secondary to-muted-teal rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+src/app/page.tsx:148:                    <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+src/app/page.tsx:297:                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-secondary to-light-navy text-primary text-2xl font-bold flex items-center justify-center mx-auto mb-4 group-hover:shadow-xl transition-all group-hover:scale-110">
+src/app/page.tsx:311:      <Section background="gradient" spacing="lg" className="mesh-gradient">
+src/app/globals.css:197:  /* Card hover animation */
+src/app/globals.css:203:  .text-gradient {
+src/app/globals.css:204:    @apply bg-gradient-to-r from-teal to-muted-teal bg-clip-text text-transparent;
+src/app/globals.css:300:  @keyframes ripple {
+src/app/globals.css:312:    animation: ripple 0.6s ease-out;
+src/app/globals.css:316:  @keyframes shimmer {
+src/app/globals.css:326:    background: linear-gradient(
+src/app/globals.css:333:    animation: shimmer 1.5s infinite;
+src/app/globals.css:350:/* Import animations and responsive styles */
+src/app/globals.css:351:@import '../styles/animations.css';
+src/app/globals.css:360:  /* Add subtle page load animation */
+src/app/globals.css:362:    animation: fadeIn 0.5s ease-out;
+src/app/globals.css:365:  @keyframes fadeIn {
+src/app/services/page.tsx:7:import '@/styles/animations.css';
+src/app/services/page.tsx:19:      <Section background="gradient" spacing="xl" className="mesh-gradient grain-overlay">
+src/app/services/page.tsx:83:                <div className="w-16 h-16 bg-gradient-to-br from-secondary to-navy rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+src/app/services/page.tsx:170:                <div className="w-16 h-16 bg-gradient-to-br from-secondary to-navy rounded-full flex items-center justify-center text-primary text-2xl font-bold mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all">
+src/app/services/page.tsx:186:      <Section background="gradient" spacing="lg" className="mesh-gradient">
+Binary file src/app/study-app/page.tsx.backup matches
+src/app/study-app/page.tsx:5:import { BrandGradientBackground } from "@/components/ui/brand-gradient-background";
+src/app/study-app/page.tsx:160:              <div className="aspect-[9/16] bg-gradient-to-b from-teal/20 to-navy/20 rounded-lg mb-2"></div>
+src/app/study-app/page.tsx:164:              <div className="aspect-[9/16] bg-gradient-to-b from-navy/20 to-teal/20 rounded-lg mb-2"></div>
+src/app/study-app/page.tsx:168:              <div className="aspect-[9/16] bg-gradient-to-b from-teal/20 to-light-teal/20 rounded-lg mb-2"></div>
+src/app/study-app/page.tsx:172:              <div className="aspect-[9/16] bg-gradient-to-b from-light-teal/20 to-navy/20 rounded-lg mb-2"></div>
+src/app/study-app/page.tsx:176:              <div className="aspect-[9/16] bg-gradient-to-b from-navy/20 to-light-teal/20 rounded-lg mb-2"></div>
+src/app/page.backup.tsx:9:import { BrandGradientBackground } from "@/components/ui/brand-gradient-background";
+src/styles/animations.css:3:@keyframes fadeInUp {
+src/styles/animations.css:14:@keyframes fadeInScale {
+src/styles/animations.css:25:@keyframes slideInLeft {
+src/styles/animations.css:36:@keyframes slideInRight {
+src/styles/animations.css:47:@keyframes gradientShift {
+src/styles/animations.css:56:@keyframes float {
+src/styles/animations.css:65:@keyframes pulse {
+src/styles/animations.css:106:.text-gradient-animate {
+src/styles/animations.css:107:  background: linear-gradient(135deg, #0A004A 0%, #21A8B0 50%, #69BCC1 100%);
+src/styles/animations.css:112:  animation: gradientShift 4s ease infinite;
+src/styles/animations.css:176:@keyframes skeleton {
+src/styles/animations.css:186:  background: linear-gradient(
+src/styles/animations.css:193:  animation: skeleton 1.5s infinite;
+src/styles/animations.css:203:.gradient-border {
+src/styles/animations.css:209:.gradient-border::before {
+src/styles/animations.css:215:  background: linear-gradient(135deg, #0A004A, #21A8B0, #69BCC1);
+src/styles/animations.css:216:  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+src/styles/animations.css:223:.gradient-border:hover::before {
+src/styles/animations.css:228:.mesh-gradient {
+src/styles/animations.css:229:  background: linear-gradient(135deg, #0A004A 0%, #3B336E 25%, #21A8B0 50%, #69BCC1 75%, #DEF2F2 100%);
+src/styles/animations.css:231:  animation: gradientShift 15s ease infinite;
+src/styles/themes.css:33:  --gradient-primary: linear-gradient(135deg, #0A004A 0%, #3B336E 25%, #21A8B0 50%, #69BCC1 75%, #DEF2F2 100%);
+src/styles/themes.css:34:  --gradient-overlay: linear-gradient(180deg, rgba(10, 0, 74, 0.8) 0%, rgba(10, 0, 74, 0.4) 100%);
+src/styles/themes.css:69:  --gradient-primary: linear-gradient(135deg, #0A004A 0%, #1A155C 25%, #21A8B0 50%, #3B336E 75%, #69BCC1 100%);
+src/styles/themes.css:70:  --gradient-overlay: linear-gradient(180deg, rgba(10, 0, 74, 0.95) 0%, rgba(10, 0, 74, 0.6) 100%);
+src/styles/responsive.css:88:  /* Mobile-first animations */
+src/styles/responsive.css:91:      animation: slideUpMobile 0.4s ease-out;
+src/styles/responsive.css:94:    @keyframes slideUpMobile {
+src/styles/design-tokens.css:335:.gradient-brand {
+src/styles/design-tokens.css:336:  background: linear-gradient(
+src/styles/design-tokens.css:346:/* Subtle gradient overlay for images */
+src/styles/design-tokens.css:347:.gradient-overlay {
+src/styles/design-tokens.css:351:.gradient-overlay::before {
+src/styles/design-tokens.css:355:  background: linear-gradient(
+src/components/ui/trust-section.tsx:93:        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-indigo-900/20" />
+src/components/ui/trust-section.tsx:95:        <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: "2s" }} />
+src/components/ui/trust-section.tsx:107:            Trusted by <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">50,000+</span> Learners
+src/components/ui/typewriter-effect.tsx:48:        // After animation, wait, then go to next word
+src/components/ui/gradient-mesh.tsx:17:      {/* Base gradient layer */}
+src/components/ui/gradient-mesh.tsx:18:      <div className="absolute inset-0 bg-gradient-to-br from-[#0A0C2A] via-[#1e3a8a]/20 to-[#0A0C2A]" />
+src/components/ui/gradient-mesh.tsx:20:      {/* Animated mesh blobs */}
+src/components/ui/gradient-mesh.tsx:26:            background: `radial-gradient(circle, ${getColorValue(color)} 0%, transparent 70%)`,
+src/components/ui/sparkles.tsx:4:import Particles, { initParticlesEngine } from "@tsparticles/react";
+src/components/ui/sparkles.tsx:5:import type { Container, SingleOrMultiple } from "@tsparticles/engine";
+src/components/ui/sparkles.tsx:6:import { loadSlim } from "@tsparticles/slim";
+src/components/ui/sparkles.tsx:42:  const particlesLoaded = async (container?: Container) => {
+src/components/ui/sparkles.tsx:60:          particlesLoaded={particlesLoaded}
+src/components/ui/sparkles.tsx:95:            particles: {
+src/components/ui/sparkles.tsx:126:                animation: {
+src/components/ui/sparkles.tsx:240:                animation: {
+src/components/ui/sparkles.tsx:275:                animation: {
+src/components/ui/sparkles.tsx:328:                animation: {
+src/components/ui/sparkles.tsx:343:                particles: {
+src/components/ui/sparkles.tsx:370:                animation: {
+src/components/ui/sparkles.tsx:380:                animation: {
+src/components/ui/evervault-card.tsx:61:  let maskImage = useMotionTemplate`radial-gradient(250px at ${mouseX}px ${mouseY}px, white, transparent)`;
+src/components/ui/evervault-card.tsx:66:      <div className="absolute inset-0 rounded-2xl  [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
+src/components/ui/evervault-card.tsx:68:        className="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-blue-700 opacity-0  group-hover/card:opacity-100 backdrop-blur-xl transition duration-500"
+src/components/ui/glowing-effect.tsx:13:  glow?: boolean;
+src/components/ui/glowing-effect.tsx:26:    glow = false,
+src/components/ui/glowing-effect.tsx:34:    const animationFrameRef = useRef<number>(0);
+src/components/ui/glowing-effect.tsx:40:        if (animationFrameRef.current) {
+src/components/ui/glowing-effect.tsx:41:          cancelAnimationFrame(animationFrameRef.current);
+src/components/ui/glowing-effect.tsx:44:        animationFrameRef.current = requestAnimationFrame(() => {
+src/components/ui/glowing-effect.tsx:112:        if (animationFrameRef.current) {
+src/components/ui/glowing-effect.tsx:113:          cancelAnimationFrame(animationFrameRef.current);
+src/components/ui/glowing-effect.tsx:125:            glow && "opacity-100",
+src/components/ui/glowing-effect.tsx:138:              "--glowingeffect-border-width": `${borderWidth}px`,
+src/components/ui/glowing-effect.tsx:139:              "--repeating-conic-gradient-times": "5",
+src/components/ui/glowing-effect.tsx:140:              "--gradient":
+src/components/ui/glowing-effect.tsx:142:                  ? `repeating-conic-gradient(
+src/components/ui/glowing-effect.tsx:145:                  var(--black) calc(25% / var(--repeating-conic-gradient-times))
+src/components/ui/glowing-effect.tsx:147:                  : `radial-gradient(circle, #dd7bbb 10%, #dd7bbb00 20%),
+src/components/ui/glowing-effect.tsx:148:                radial-gradient(circle at 40% 40%, #d79f1e 5%, #d79f1e00 15%),
+src/components/ui/glowing-effect.tsx:149:                radial-gradient(circle at 60% 60%, #5a922c 10%, #5a922c00 20%), 
+src/components/ui/glowing-effect.tsx:150:                radial-gradient(circle at 40% 60%, #4c7894 10%, #4c789400 20%),
+src/components/ui/glowing-effect.tsx:151:                repeating-conic-gradient(
+src/components/ui/glowing-effect.tsx:154:                  #d79f1e calc(25% / var(--repeating-conic-gradient-times)),
+src/components/ui/glowing-effect.tsx:155:                  #5a922c calc(50% / var(--repeating-conic-gradient-times)), 
+src/components/ui/glowing-effect.tsx:156:                  #4c7894 calc(75% / var(--repeating-conic-gradient-times)),
+src/components/ui/glowing-effect.tsx:157:                  #dd7bbb calc(100% / var(--repeating-conic-gradient-times))
+src/components/ui/glowing-effect.tsx:163:            glow && "opacity-100",
+src/components/ui/glowing-effect.tsx:171:              "glow",
+src/components/ui/glowing-effect.tsx:173:              'after:content-[""] after:rounded-[inherit] after:absolute after:inset-[calc(-1*var(--glowingeffect-border-width))]',
+src/components/ui/glowing-effect.tsx:174:              "after:[border:var(--glowingeffect-border-width)_solid_transparent]",
+src/components/ui/glowing-effect.tsx:175:              "after:[background:var(--gradient)] after:[background-attachment:fixed]",
+src/components/ui/glowing-effect.tsx:179:              "after:[mask-image:linear-gradient(#0000,#0000),conic-gradient(from_calc((var(--start)-var(--spread))*1deg),#00000000_0deg,#fff,#00000000_calc(var(--spread)*2deg))]"
+src/components/ui/container-scroll-animation-demo.tsx:3:import { ContainerScroll } from "@/components/ui/container-scroll-animation";
+src/components/ui/container-scroll-animation-demo.tsx:14:              <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+src/components/ui/aurora-background-demo.tsx:5:import { AuroraBackground } from "../ui/aurora-background";
+src/components/ui/background-gradient-animation.tsx:6:  gradientBackgroundStart = "rgb(108, 0, 162)",
+src/components/ui/background-gradient-animation.tsx:7:  gradientBackgroundEnd = "rgb(0, 17, 82)",
+src/components/ui/background-gradient-animation.tsx:21:  gradientBackgroundStart?: string;
+src/components/ui/background-gradient-animation.tsx:22:  gradientBackgroundEnd?: string;
+src/components/ui/background-gradient-animation.tsx:44:      "--gradient-background-start",
+src/components/ui/background-gradient-animation.tsx:45:      gradientBackgroundStart
+src/components/ui/background-gradient-animation.tsx:48:      "--gradient-background-end",
+src/components/ui/background-gradient-animation.tsx:49:      gradientBackgroundEnd
+src/components/ui/background-gradient-animation.tsx:59:  }, [blendingValue, fifthColor, firstColor, fourthColor, gradientBackgroundEnd, gradientBackgroundStart, pointerColor, secondColor, size, thirdColor]);
+src/components/ui/background-gradient-animation.tsx:92:        "h-screen w-screen relative overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
+src/components/ui/background-gradient-animation.tsx:117:          "gradients-container h-full w-full blur-lg",
+src/components/ui/background-gradient-animation.tsx:123:            `absolute [background:radial-gradient(circle_at_center,_var(--first-color)_0,_var(--first-color)_50%)_no-repeat]`,
+src/components/ui/background-gradient-animation.tsx:132:            `absolute [background:radial-gradient(circle_at_center,_rgba(var(--second-color),_0.8)_0,_rgba(var(--second-color),_0)_50%)_no-repeat]`,
+src/components/ui/background-gradient-animation.tsx:141:            `absolute [background:radial-gradient(circle_at_center,_rgba(var(--third-color),_0.8)_0,_rgba(var(--third-color),_0)_50%)_no-repeat]`,
+src/components/ui/background-gradient-animation.tsx:150:            `absolute [background:radial-gradient(circle_at_center,_rgba(var(--fourth-color),_0.8)_0,_rgba(var(--fourth-color),_0)_50%)_no-repeat]`,
+src/components/ui/background-gradient-animation.tsx:159:            `absolute [background:radial-gradient(circle_at_center,_rgba(var(--fifth-color),_0.8)_0,_rgba(var(--fifth-color),_0)_50%)_no-repeat]`,
+src/components/ui/background-gradient-animation.tsx:172:              `absolute [background:radial-gradient(circle_at_center,_rgba(var(--pointer-color),_0.8)_0,_rgba(var(--pointer-color),_0)_50%)_no-repeat]`,
+src/components/ui/cover.tsx:6:import { SparklesCore } from "@/components/ui/sparkles";
+src/components/ui/cover.tsx:183:          gradientUnits="userSpaceOnUse"
+src/components/ui/brand-gradient-background.tsx:19:  const gradients = {
+src/components/ui/brand-gradient-background.tsx:20:    primary: "bg-gradient-to-br from-navy via-light-navy to-teal",
+src/components/ui/brand-gradient-background.tsx:21:    navy: "bg-gradient-to-b from-navy to-light-navy",
+src/components/ui/brand-gradient-background.tsx:22:    teal: "bg-gradient-to-b from-teal to-muted-teal",
+src/components/ui/brand-gradient-background.tsx:23:    subtle: "bg-gradient-to-br from-navy via-navy to-light-navy",
+src/components/ui/brand-gradient-background.tsx:30:        gradients[variant],
+src/components/ui/brand-gradient-background.tsx:31:        animated && "animate-gradient-shift",
+src/components/ui/brand-gradient-background.tsx:35:      {/* Subtle mesh overlay for depth */}
+src/components/ui/brand-gradient-background.tsx:37:        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent" />
+src/components/ui/shooting-stars.tsx:113:    const animationFrame = requestAnimationFrame(moveStar);
+src/components/ui/shooting-stars.tsx:114:    return () => cancelAnimationFrame(animationFrame);
+src/components/ui/shooting-stars.tsx:129:          fill="url(#gradient)"
+src/components/ui/shooting-stars.tsx:136:        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+src/components/ui/study-app-scroll-demo.tsx:3:import { ContainerScroll } from "@/components/ui/container-scroll-animation";
+src/components/ui/background-gradient-animation-demo.tsx:2:import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
+src/components/ui/background-gradient-animation-demo.tsx:7:      gradientBackgroundStart="rgb(0, 0, 0)"
+src/components/ui/background-gradient-animation-demo.tsx:8:      gradientBackgroundEnd="rgb(15, 15, 15)"
+src/components/ui/background-gradient-animation-demo.tsx:19:        <p className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
+src/components/ui/aurora-background.tsx:28:              "--aurora":
+src/components/ui/aurora-background.tsx:29:                "repeating-linear-gradient(100deg,#1e3a8a_10%,#0f766e_15%,#eab308_20%,#1e3a8a_25%,#0f766e_30%)",
+src/components/ui/aurora-background.tsx:30:              "--dark-gradient":
+src/components/ui/aurora-background.tsx:31:                "repeating-linear-gradient(100deg,#000_0%,#000_7%,transparent_10%,transparent_12%,#000_16%)",
+src/components/ui/aurora-background.tsx:32:              "--white-gradient":
+src/components/ui/aurora-background.tsx:33:                "repeating-linear-gradient(100deg,#fff_0%,#fff_7%,transparent_10%,transparent_12%,#fff_16%)",
+src/components/ui/aurora-background.tsx:47:              `after:animate-aurora pointer-events-none absolute -inset-[10px] [background-image:var(--white-gradient),var(--aurora)] [background-size:300%,_200%] [background-position:50%_50%,50%_50%] opacity-50 blur-[10px] invert filter will-change-transform [--aurora:repeating-linear-gradient(100deg,var(--navy-blue)_10%,var(--teal)_15%,var(--yellow)_20%,var(--navy-blue)_25%,var(--teal)_30%)] [--dark-gradient:repeating-linear-gradient(100deg,var(--black)_0%,var(--black)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--black)_16%)] [--white-gradient:repeating-linear-gradient(100deg,var(--white)_0%,var(--white)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--white)_16%)] after:absolute after:inset-0 after:[background-image:var(--white-gradient),var(--aurora)] after:[background-size:200%,_100%] after:[background-attachment:fixed] after:mix-blend-difference after:content-[""] dark:[background-image:var(--dark-gradient),var(--aurora)] dark:invert-0 after:dark:[background-image:var(--dark-gradient),var(--aurora)]`,
+src/components/ui/aurora-background.tsx:50:                `[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,var(--transparent)_70%)]`,
+src/components/ui/3d-phones-demo.tsx:8:      {/* Subtle gradient overlay to blend spotlight */}
+src/components/ui/3d-phones-demo.tsx:12:          background: 'radial-gradient(ellipse at center, rgba(30, 58, 138, 0.3) 0%, rgba(30, 58, 138, 0.1) 50%, transparent 100%)',
+src/components/ui/brand-card.tsx:111:      <div className="w-16 h-16 bg-gradient-to-br from-teal to-navy rounded-full flex items-center justify-center mb-8">
+src/components/ui/bento-grid.tsx:180:      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#7AB8BD] to-[#F1D632] opacity-30 blur-xl" />
+src/components/ui/bento-grid.tsx:192:            className="flex-1 bg-gradient-to-t from-[#7AB8BD] to-[#F1D632] rounded-t"
+src/components/ui/bento-grid.tsx:252:                absolute inset-0 rounded-3xl bg-gradient-to-br ${item.color} 
+src/components/ui/features-section-demo-3.tsx:9:import { GlowingEffect } from "@/components/ui/glowing-effect";
+src/components/ui/features-section-demo-3.tsx:307:        <div className="relative overflow-hidden rounded-xl h-28 w-28 bg-gradient-to-br from-blue-500/10 to-purple-600/10 flex-shrink-0">
+src/components/ui/features-section-demo-3.tsx:354:      glowColor: [1, 1, 1],
+src/components/ui/features-section-demo-3.tsx:361:        // Called on every animation frame.
+src/components/ui/features-section-demo-3.tsx:390:        + (hovered ? ' aptly-glow-border' : '')
+src/components/ui/features-section-demo-3.tsx:392:      style={{ minWidth: 180, background: 'linear-gradient(90deg, rgba(124,58,237,0.7) 0%, rgba(236,72,153,0.7) 50%, rgba(253,224,71,0.7) 100%)' }}
+src/components/ui/features-section-demo-3.tsx:397:      {/* Animated border/glow on hover */}
+src/components/ui/features-section-demo-3.tsx:399:      {/* Subtle animated gradient shine on hover */}
+src/components/ui/features-section-demo-3.tsx:400:      <span className={`pointer-events-none absolute left-[-60%] top-0 h-full w-2/3 bg-gradient-to-r from-transparent via-white/30 to-transparent rounded-full ${hovered ? 'animate-aptly-shine' : ''}`}></span>
+src/components/ui/features-section-demo-3.tsx:423:        @keyframes fadeinout {
+src/components/ui/features-section-demo-3.tsx:430:          animation: fadeinout 2.5s linear;
+src/components/ui/features-section-demo-3.tsx:438:// @keyframes aptly-shine {
+src/components/ui/features-section-demo-3.tsx:442:// .animate-aptly-shine { animation: aptly-shine 1.1s cubic-bezier(0.4,0,0.2,1) 1; }
+src/components/ui/features-section-demo-3.tsx:443:// .aptly-glow-border { box-shadow: 0 0 0 4px #21a8b055, 0 0 32px 8px #21a8b044; } 
+src/components/ui/stars-background.tsx:111:    let animationFrameId: number;
+src/components/ui/stars-background.tsx:128:      animationFrameId = requestAnimationFrame(render);
+src/components/ui/stars-background.tsx:134:      cancelAnimationFrame(animationFrameId);
+src/components/ui/skeleton.tsx:8:  animation?: 'pulse' | 'wave' | 'none';
+src/components/ui/skeleton.tsx:16:  animation = 'pulse',
+src/components/ui/skeleton.tsx:20:  const animationStyles = {
+src/components/ui/skeleton.tsx:39:      className={`${baseStyles} ${variantStyles[variant]} ${animationStyles[animation]} ${className}`}
+src/components/magicui/pulsating-button.tsx:24:        "relative px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-normal rounded-full text-lg animate-button-pulse",
+src/components/magicui/line-shadow-text.tsx:8:  gradientFrom?: string;
+src/components/magicui/line-shadow-text.tsx:9:  gradientTo?: string;
+src/components/magicui/line-shadow-text.tsx:16:  gradientFrom = "#60a5fa",
+src/components/magicui/line-shadow-text.tsx:17:  gradientTo = "#a855f7",
+src/components/magicui/line-shadow-text.tsx:33:        "--gradient-from": gradientFrom,
+src/components/magicui/line-shadow-text.tsx:34:        "--gradient-to": gradientTo
+src/components/magicui/line-shadow-text.tsx:39:        "after:bg-[linear-gradient(45deg,transparent_40%,var(--gradient-from)_40%,var(--gradient-to)_60%,transparent_0)]",
+src/components/magicui/shiny-button.tsx:7:const animationProps = {
+src/components/magicui/shiny-button.tsx:43:        "relative cursor-pointer rounded-lg px-6 py-2 font-medium backdrop-blur-xl border transition-shadow duration-300 ease-in-out hover:shadow dark:bg-[radial-gradient(circle_at_50%_0%,var(--primary)/10%_0%,transparent_60%)] dark:hover:shadow-[0_0_20px_var(--primary)/10%]",
+src/components/magicui/shiny-button.tsx:55:            "linear-gradient(-75deg,var(--primary) calc(var(--x) + 20%),transparent calc(var(--x) + 30%),var(--primary) calc(var(--x) + 100%))",
+src/components/magicui/shiny-button.tsx:62:          mask: "linear-gradient(rgb(0,0,0), rgb(0,0,0)) content-box exclude,linear-gradient(rgb(0,0,0), rgb(0,0,0))",
+src/components/magicui/shiny-button.tsx:64:            "linear-gradient(rgb(0,0,0), rgb(0,0,0)) content-box exclude,linear-gradient(rgb(0,0,0), rgb(0,0,0))",
+src/components/magicui/shiny-button.tsx:66:            "linear-gradient(-75deg,var(--primary)/10% calc(var(--x)+20%),var(--primary)/50% calc(var(--x)+25%),var(--primary)/10% calc(var(--x)+100%))",
+src/components/SubtleLogo.tsx:6:  variant?: "navy" | "teal" | "yellow" | "gradient";
+src/components/SubtleLogo.tsx:12:  variant = "gradient" 
+src/components/SubtleLogo.tsx:24:    gradient: "opacity-5"
+src/components/SubtleLogo.tsx:36:          filter: variant === 'gradient' ? 'drop-shadow(0 0 8px rgba(122, 184, 189, 0.3))' : 'none',
+src/components/TestimonialCard.tsx:21:          <div className="w-12 h-12 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center">
+src/components/Footer.tsx:70:      <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-secondary)]/5 via-transparent to-[var(--color-muted-teal)]/5" />
+src/components/Footer.tsx:72:      {/* Decorative gradient orbs */}
+src/components/Footer.tsx:81:              <div className="bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-md rounded-2xl p-8 md:p-10 border border-white/10">
+src/components/Footer.tsx:162:                    <div className="h-px flex-1 bg-gradient-to-r from-secondary/30 to-transparent" />
+src/components/Footer.tsx:184:            <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-8" />
+src/components/ScrollAnimatedSection.tsx:8:  animation?: 'fadeIn' | 'slideUp' | 'slideLeft' | 'slideRight' | 'scale';
+src/components/ScrollAnimatedSection.tsx:16:  animation = 'fadeIn',
+src/components/ScrollAnimatedSection.tsx:26:    const animationClasses = {
+src/components/ScrollAnimatedSection.tsx:39:              entry.target.classList.add(animationClasses[animation]);
+src/components/ScrollAnimatedSection.tsx:60:  }, [animation, delay, threshold]);
+src/components/Performance/LazyImage.tsx:36:        <div className="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 animate-pulse" />
+src/components/Navigation.tsx:9:import '@/styles/animations.css';
+src/design-system/index.tsx:162:  background?: 'transparent' | 'navy' | 'light-navy' | 'white' | 'gradient';
+src/design-system/index.tsx:179:    gradient: 'bg-gradient-to-br from-navy via-light-navy to-teal'

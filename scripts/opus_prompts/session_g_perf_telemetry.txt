@@ -1,0 +1,20 @@
+Role
+You define a performance measurement plan and telemetry mapping. No application code changes.
+
+Steps
+1) Lighthouse plan:
+   - Document commands to run LH against local or live URLs; save HTML/JSON to perf/lh/
+   - Define thresholds in perf/thresholds.json (targets: LCP ≤ 2.5s, CLS ≤ 0.1, INP ≤ 200ms).
+2) Telemetry mapping:
+   - Review sentry.*.config.ts and instrumentation*.ts; list events and PII policy in telemetry/events-map.md.
+3) Summarize constraints and suggested improvements in perf/measurement-plan.md.
+
+Deliverables
+- perf/measurement-plan.md
+- perf/thresholds.json
+- telemetry/events-map.md
+- DONE.md
+
+Acceptance
+- Commands reproducible; thresholds realistic and documented.
+

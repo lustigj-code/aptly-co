@@ -1,0 +1,28 @@
+Role
+You compile all outputs into a proof bundle and define review gates. No application code changes.
+
+Steps
+1) docs/review-gates.md:
+   - Labels: brand, a11y, perf, content, tokens
+   - Required reviewers per change type; blocking criteria
+2) docs/release-checklist.md:
+   - Align with CLAUDE.md and docs/brand-spec.json
+3) docs/proof-bundle.md linking to:
+   - docs/brand-spec.json, docs/brand-deviations.md
+   - audits/* reports
+   - research/* artifacts
+   - qa/* plans and thresholds
+   - content/* audits
+   - perf/* and telemetry/*
+   - Include go/no-go recommendation with residual risk notes
+4) DONE.md: summarize confidence and open risks.
+
+Deliverables
+- docs/review-gates.md
+- docs/release-checklist.md
+- docs/proof-bundle.md
+- DONE.md
+
+Acceptance
+- Proof bundle links resolve; review gates cover all domains; clear recommendation.
+
