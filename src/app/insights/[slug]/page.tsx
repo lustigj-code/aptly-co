@@ -68,7 +68,7 @@ export default function BlogPostPage({ params }: Props) {
       <Section background="gradient" spacing="lg">
         <Container size="md">
           <div className="text-center">
-            <Badge variant="info" size="md" className="mb-4">
+            <Badge variant="info" size="md">
               {blogCategories[post.category].label}
             </Badge>
             <Heading as="h1" size="3xl" className="mb-6">
@@ -166,7 +166,7 @@ export default function BlogPostPage({ params }: Props) {
                   variant="bordered"
                   className="h-full hover:border-teal/40 transition-colors"
                 >
-                  <Badge variant="info" size="sm" className="mb-3">
+                  <Badge variant="info" size="sm">
                     {blogCategories[relatedPost.category].label}
                   </Badge>
                   <Heading as="h3" size="md" weight="medium" className="mb-3">

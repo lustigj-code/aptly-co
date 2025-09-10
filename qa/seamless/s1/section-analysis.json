@@ -1,0 +1,93 @@
+[
+  {
+    "index": 0,
+    "firstLine": "Partner with Meta & GoogleTransform Your Career wi",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": {
+      "x": 8,
+      "y": 811,
+      "width": 1424,
+      "height": 151.8125
+    },
+    "aboveFold": true
+  },
+  {
+    "index": 1,
+    "firstLine": "Success by NumbersJoin thousands of professionals ",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": {
+      "x": 8,
+      "y": 982.71875,
+      "width": 1424,
+      "height": 336.90625
+    },
+    "aboveFold": false
+  },
+  {
+    "index": 2,
+    "firstLine": "Professional Certificate Programs6-month programs ",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": {
+      "x": 8,
+      "y": 1339.53125,
+      "width": 1424,
+      "height": 527.21875
+    },
+    "aboveFold": false
+  },
+  {
+    "index": 3,
+    "firstLine": "The Aptly AdvantageWe don't just teach skills - we",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": {
+      "x": 8,
+      "y": 1886.65625,
+      "width": 1424,
+      "height": 584.34375
+    },
+    "aboveFold": false
+  },
+  {
+    "index": 4,
+    "firstLine": "Trusted PartnersLearn from industry leaders with r",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": {
+      "x": 8,
+      "y": 2490.90625,
+      "width": 1424,
+      "height": 212.90625
+    },
+    "aboveFold": false
+  },
+  {
+    "index": 5,
+    "firstLine": "How It WorksYour journey from enrollment to employ",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": {
+      "x": 8,
+      "y": 2723.71875,
+      "width": 1424,
+      "height": 510.65625
+    },
+    "aboveFold": false
+  },
+  {
+    "index": 6,
+    "firstLine": "Ready to Transform Your Career?Join thousands of s",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "bgImage": "none",
+    "position": {
+      "x": 8,
+      "y": 3254.28125,
+      "width": 1424,
+      "height": 101.90625
+    },
+    "aboveFold": false
+  }
+]

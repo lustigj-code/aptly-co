@@ -193,12 +193,12 @@ export default function FAQPage() {
               >
                 <Link
                   href="/courses"
-                  className="card-standard text-center block group">
+                  className="card-standard text-center block group"
                 >
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-teal to-navy rounded-full flex items-center justify-center mx-auto mb-6">
                     <div className="text-2xl text-white">C</div>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-teal transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                     Browse Courses
                   </h3>
                   <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
@@ -213,12 +213,12 @@ export default function FAQPage() {
               >
                 <Link
                   href="/study-app"
-                  className="card-standard text-center block group">
+                  className="card-standard text-center block group"
                 >
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-teal to-navy rounded-full flex items-center justify-center mx-auto mb-6">
                     <div className="text-2xl text-white">S</div>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-teal transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                     Study App
                   </h3>
                   <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
@@ -233,12 +233,12 @@ export default function FAQPage() {
               >
                 <Link
                   href="/services"
-                  className="card-standard text-center block group">
+                  className="card-standard text-center block group"
                 >
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-teal to-navy rounded-full flex items-center justify-center mx-auto mb-6">
                     <div className="text-2xl text-white">E</div>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-teal transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                     Enterprise Solutions
                   </h3>
                   <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>

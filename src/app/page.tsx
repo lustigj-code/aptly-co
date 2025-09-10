@@ -16,7 +16,7 @@ import {
 import { getFeaturedCourses } from '@/lib/data/courses';
 import { getFeaturedTestimonial } from '@/lib/data/testimonials';
 import { AptlyLogo } from '@/components/AptlyLogo';
-import { ButtonRipple } from '@/components/ui/button-ripple';
+// Replace ripple with brand-compliant Button
 import { useScrollAnimation, useParallax } from '@/hooks/useScrollAnimation';
 import { 
   ChevronRight, 
@@ -47,7 +47,7 @@ export default function HomePage() {
       <Section background="transparent" spacing="xl" className="relative overflow-hidden">
         <Container size="lg">
           <div className={`text-center max-w-4xl mx-auto ${mounted ? 'animate-[fadeInUp_0.8s_ease-out]' : 'opacity-0'}`}>
-            <Badge variant="info" size="md" className="animate-[fadeInScale_0.6s_ease-out_0.2s_both]">Partner with Meta & Google</Badge>
+            <Badge variant="info" size="md">Partner with Meta & Google</Badge>
             
             <Heading as="h1" size="3xl" className="mt-6 mb-6 animate-[fadeInUp_0.8s_ease-out_0.3s_both] text-primary">
               Transform Your Career with
@@ -60,14 +60,14 @@ export default function HomePage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-[fadeInUp_0.8s_ease-out_0.5s_both]">
-              <ButtonRipple size="lg" variant="primary" className="btn-primary">
+              <Button size="lg" variant="primary">
                 Browse Programs
                 <ChevronRight className="inline-block ml-2 w-5 h-5" />
-              </ButtonRipple>
-              <ButtonRipple size="lg" variant="outline" className="btn-secondary">
+              </Button>
+              <Button size="lg" variant="outline">
                 Talk to Advisor
                 <ArrowRight className="inline-block ml-2 w-5 h-5" />
-              </ButtonRipple>
+              </Button>
             </div>
           </div>
         </Container>
@@ -151,30 +151,30 @@ export default function HomePage() {
                   <p className="text-secondary mb-6 line-clamp-2">
                     {course.description}
                   </p>
-                  <ButtonRipple 
+                  <Button 
                     variant="secondary" 
                     size="sm" 
                     className="w-full"
-                    onClick={() => window.open(course.link, '_blank')}
+                    href={course.link}
+                    external
                   >
                     Learn More
                     <ArrowRight className="inline-block ml-2 w-4 h-4" />
-                  </ButtonRipple>
+                  </Button>
                 </Card>
               </div>
             ))}
           </Grid>
 
           <div className="text-center mt-10">
-            <ButtonRipple 
+            <Button 
               variant="outline" 
               size="lg"
-              className="btn-secondary"
-              onClick={() => window.location.href = '/programs'}
+              href="/programs"
             >
               View All Programs
               <ChevronRight className="inline-block ml-2 w-5 h-5" />
-            </ButtonRipple>
+            </Button>
           </div>
         </Container>
       </Section>
@@ -211,7 +211,7 @@ export default function HomePage() {
             </div>
 
             <div className="relative">
-              <Card variant="default" padding="lg" className="card-standard animate-[float_6s_ease-in-out_infinite]">
+              <Card variant="default" padding="lg" className="card-standard">
                 <div className="text-center">
                   <Heading as="h3" size="xl" className="mb-4">
                     Success Story

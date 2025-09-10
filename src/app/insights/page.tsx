@@ -125,10 +125,9 @@ export default function InsightsPage() {
                       padding="md"
                       className="h-full card-standard hover:bg-light-navy/50 transition-colors"
                     >
-                      <Badge 
+                      <Badge
                         variant="info" 
                         size="sm"
-                        className="mb-3"
                       >
                         {blogCategories[post.category].label}
                       </Badge>

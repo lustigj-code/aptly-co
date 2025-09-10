@@ -13,8 +13,8 @@ interface LineShadowTextProps
 export function LineShadowText({
   children,
   shadowColor = "black",
-  gradientFrom = "#60a5fa",
-  gradientTo = "#a855f7",
+  gradientFrom = "var(--color-navy)",
+  gradientTo = "var(--color-teal)",
   className,
   as: Component = "span",
   ...props

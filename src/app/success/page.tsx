@@ -110,7 +110,6 @@ export default function SuccessPage() {
                       <Badge
                         key={industry}
                         variant="info"
-                        className="hover:scale-105 transition-transform"
                       >
                         {industry}
                       </Badge>

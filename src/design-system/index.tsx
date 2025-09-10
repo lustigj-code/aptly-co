@@ -86,17 +86,20 @@ export function Button({
   external = false,
   type = 'button'
 }: ButtonProps) {
-  const baseClasses = "inline-flex items-center justify-center font-sans font-medium rounded-3xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2";
+  const baseClasses = "inline-flex items-center justify-center font-sans font-medium rounded-brand-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2";
   
   const variantClasses = {
-    primary: "bg-teal text-white hover:bg-opacity-90 focus:ring-teal border-0",
-    secondary: "bg-transparent text-white hover:bg-white/10 focus:ring-white border border-white/30",
+    // Per brand: Primary = Navy bg, White text
+    primary: "bg-navy text-white hover:opacity-90 focus:ring-navy border-0",
+    // Secondary = Teal bg, White text
+    secondary: "bg-teal text-white hover:opacity-90 focus:ring-teal border-0",
+    // Outline = Transparent with teal border
     outline: "bg-transparent text-white hover:bg-white/10 focus:ring-teal border border-teal/50"
   };
   
   const sizeClasses = {
-    sm: "px-4 py-2.5 min-h-[44px] text-sm",
-    md: "px-6 py-3 min-h-[44px] text-base",
+    sm: "px-4 py-2.5 min-h-[48px] text-sm",
+    md: "px-6 py-3 min-h-[48px] text-base",
     lg: "px-8 py-4 min-h-[48px] text-lg"
   };
   

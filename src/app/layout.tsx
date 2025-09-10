@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SkipToContent from "@/components/Accessibility/SkipToContent";
+import FocusManager from "@/components/Accessibility/FocusManager";
 import { ThemeProvider } from "@/contexts/theme-context";
 // Load theme tokens first, then global styles that consume them
 import "@/styles/themes.css";
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "Aptly",
     images: [
       {
-        url: "/og-image.png",
+        url: "/aptly-logo.png",
         width: 1200,
         height: 630,
         alt: "Aptly - Professional Certificates",
@@ -37,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Aptly - Professional Certificates",
     description: "Transform your career with industry-recognized certifications",
-    images: ["/og-image.png"],
+    images: ["/aptly-logo.png"],
   },
   robots: {
     index: true,
@@ -60,13 +62,32 @@ export default function RootLayout({
   return (
     <html lang="en" className={dmSans.variable} data-theme="dark" suppressHydrationWarning>
       <body className="font-sans antialiased text-white" style={{ background: 'var(--gradient-seamless)' }} suppressHydrationWarning>
+        {/* Accessibility helpers */}
+        <SkipToContent />
+        <FocusManager />
         <ThemeProvider>
           <Navigation />
-          <main className="min-h-screen">
+          <main id="main-content" className="min-h-screen">
             {children}
           </main>
           <Footer />
         </ThemeProvider>
+        {/* Organization JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'Aptly',
+              url: 'https://aptly.co',
+              logo: '/aptly-logo.png',
+              sameAs: [
+                'https://www.linkedin.com/company/aptly',
+              ],
+            }),
+          }}
+        />
       </body>
     </html>
   );

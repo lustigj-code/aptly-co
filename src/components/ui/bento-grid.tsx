@@ -177,7 +177,7 @@ const AIStudyAppContent = () => {
       animate={{ rotate: [0, 5, -5, 0] }}
       transition={{ duration: 4, repeat: Infinity }}
     >
-      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#7AB8BD] to-[#F1D632] opacity-30 blur-xl" />
+      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[var(--color-muted-teal)] to-[var(--color-yellow)] opacity-30 blur-xl" />
     </motion.div>
   );
 };
@@ -189,7 +189,7 @@ const AnalyticsContent = () => {
         {[30, 45, 35, 60, 55, 70, 65].map((height, i) => (
           <motion.div
             key={i}
-            className="flex-1 bg-gradient-to-t from-[#7AB8BD] to-[#F1D632] rounded-t"
+            className="flex-1 bg-gradient-to-t from-[var(--color-muted-teal)] to-[var(--color-yellow)] rounded-t"
             initial={{ height: 0 }}
             animate={{ height: `${height}%` }}
             transition={{ duration: 1, delay: i * 0.1 }}

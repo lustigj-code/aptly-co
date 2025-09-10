@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { AptlyLogo } from './AptlyLogo';
 import { Container, Divider } from '@/design-system';
-import { ButtonRipple } from './ui/button-ripple';
+// Removed ripple button in favor of design-system Button
 import { 
   Mail, 
   Phone, 

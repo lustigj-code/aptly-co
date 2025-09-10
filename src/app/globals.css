@@ -445,8 +445,9 @@
 /* High Contrast Mode Support */
 @media (prefers-contrast: high) {
   :root {
-    --color-navy: #000033;
-    --color-teal: #00A0A0;
+    /* Increase contrast using existing palette */
+    --color-text-primary: #FFFFFF;
+    --color-border: #E6E6E6;
   }
 }
 

@@ -56,7 +56,7 @@ export default class ErrorBoundary extends Component<Props, State> {
         <div className="flex items-center justify-center min-h-[400px] p-8">
           <div className="text-center">
             <svg
-              className="mx-auto h-16 w-16 text-[#FA897E] mb-4"
+              className="mx-auto h-16 w-16 text-red-500 mb-4"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -76,13 +76,13 @@ export default class ErrorBoundary extends Component<Props, State> {
             </p>
             <button
               onClick={() => this.setState({ hasError: false, error: null })}
-              className="px-4 py-2 bg-[#7AB8BD] hover:bg-[#6BA3A8] text-white rounded-lg transition-colors"
+              className="px-4 py-2 bg-muted-teal hover:opacity-90 text-white rounded-lg transition-opacity"
             >
               Try Again
             </button>
             {process.env.NODE_ENV === 'development' && this.state.error && (
               <details className="mt-4 text-left max-w-xl mx-auto">
-                <summary className="text-[#FA897E] cursor-pointer text-sm">
+                <summary className="text-red-500 cursor-pointer text-sm">
                   Error details (dev only)
                 </summary>
                 <pre className="mt-2 p-3 bg-gray-800 rounded text-xs text-gray-300 overflow-auto">

@@ -28,7 +28,7 @@ export function BentoGrid({ children, className, style }: { children: React.Reac
 export function BentoCard({
   title,
   description,
-  accent = '#21a8b0',
+  accent = 'var(--color-teal)',
   background,
   className,
   gridArea,

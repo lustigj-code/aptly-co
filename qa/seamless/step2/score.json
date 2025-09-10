@@ -1,29 +1,18 @@
 {
-  "timestamp": "2025-09-09T17:30:00.000Z",
+  "timestamp": "2025-09-10T01:38:23.965Z",
   "url": "http://localhost:3002",
   "metrics": {
-    "uniqueBackgrounds": 2,
-    "transitionCount": 2,
+    "uniqueBackgrounds": 1,
+    "transitionCount": 0,
     "totalSections": 7,
     "softFades": 4,
-    "surfaceCards": 11,
+    "surfaceCards": 9,
     "aboveFoldTransitions": "PASS",
     "totalTransitions": "PASS"
   },
   "improvements": {
     "step1Transitions": 7,
-    "step2Transitions": 2,
-    "reduction": 5,
-    "percentageReduction": 71
-  },
-  "changes": [
-    "Hero section: Changed from gradient to transparent background",
-    "Success by Numbers: Changed from surface-primary to transparent with section-soft-fade",
-    "Featured Programs: Changed from surface-primary to transparent with section-soft-fade",
-    "Value Proposition: Changed from surface-primary to transparent with section-soft-fade",
-    "Trust Badges: Changed from surface-secondary to transparent",
-    "How It Works: Changed from surface-primary to transparent with section-soft-fade",
-    "CTA Section: Changed from surface-gradient to transparent with card container"
-  ],
-  "result": "SUCCESS - Achieved seamless pattern with only 2 background transitions"
+    "step2Transitions": 0,
+    "reduction": 7
+  }
 }

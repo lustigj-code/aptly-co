@@ -160,7 +160,7 @@ export default function TermsOfService() {
         <div className="mt-12 pt-8 border-t border-gray-700">
           <Link 
             href="/" 
-            className="text-[#7AB8BD] hover:text-[#6BA3A8] transition-colors"
+            className="text-muted-teal hover:opacity-90 transition-opacity"
           >
             ← Back to Home
           </Link>

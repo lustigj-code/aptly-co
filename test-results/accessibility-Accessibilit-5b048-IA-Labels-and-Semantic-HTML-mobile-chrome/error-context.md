@@ -1,0 +1,165 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "aptly":
+    - /url: /
+    - img
+    - text: aptly
+  - link "Programs":
+    - /url: /programs
+  - link "For Business":
+    - /url: /business
+  - link "Success Stories":
+    - /url: /success
+  - link "About":
+    - /url: /about
+  - link "Get Started":
+    - /url: /enroll
+  - button "Toggle menu":
+    - img
+- main:
+  - heading "404" [level=1]
+  - heading "Page Not Found" [level=2]
+  - paragraph: Looks like this page took a different learning path. Let's get you back on track!
+  - link "Go Home":
+    - /url: /
+  - link "Browse Courses":
+    - /url: /courses
+  - link "Study App":
+    - /url: /study-app
+  - link "Services":
+    - /url: /services
+  - link "About":
+    - /url: /about
+  - link "FAQ":
+    - /url: /faq
+- contentinfo:
+  - heading "Stay Updated" [level=3]
+  - paragraph: Get the latest updates on new programs, career tips, and exclusive offers.
+  - textbox "Enter your email"
+  - button "Subscribe":
+    - text: Subscribe
+    - img
+  - img
+  - text: aptly
+  - paragraph: Prepare for the jobs of tomorrow, today.
+  - link "info@aptly.co":
+    - /url: mailto:info@aptly.co
+    - img
+    - text: info@aptly.co
+  - link "(123) 456-7890":
+    - /url: tel:+1234567890
+    - img
+    - text: (123) 456-7890
+  - img
+  - text: 123 Learning Ave San Francisco, CA 94105
+  - link "LinkedIn":
+    - /url: "#"
+    - img
+  - link "Twitter":
+    - /url: "#"
+    - img
+  - link "Facebook":
+    - /url: "#"
+    - img
+  - link "Instagram":
+    - /url: "#"
+    - img
+  - heading "Programs" [level=3]
+  - list:
+    - listitem:
+      - link "All Certificates":
+        - /url: /programs
+        - text: All Certificates
+        - img
+    - listitem:
+      - link "Meta Programs":
+        - /url: /programs#meta
+        - text: Meta Programs
+        - img
+    - listitem:
+      - link "Google Programs":
+        - /url: /programs#google
+        - text: Google Programs
+        - img
+    - listitem:
+      - link "AI Courses":
+        - /url: /programs#ai
+        - text: AI Courses
+        - img
+  - heading "Resources" [level=3]
+  - list:
+    - listitem:
+      - link "Career Guide":
+        - /url: /resources/career-guide
+        - text: Career Guide
+        - img
+    - listitem:
+      - link "Blog":
+        - /url: /blog
+        - text: Blog
+        - img
+    - listitem:
+      - link "FAQ":
+        - /url: /faq
+        - text: FAQ
+        - img
+    - listitem:
+      - link "Support":
+        - /url: /support
+        - text: Support
+        - img
+  - heading "Company" [level=3]
+  - list:
+    - listitem:
+      - link "About":
+        - /url: /about
+        - text: About
+        - img
+    - listitem:
+      - link "Careers":
+        - /url: /careers
+        - text: Careers
+        - img
+    - listitem:
+      - link "Partners":
+        - /url: /partners
+        - text: Partners
+        - img
+    - listitem:
+      - link "Contact":
+        - /url: /contact
+        - text: Contact
+        - img
+  - heading "Legal" [level=3]
+  - list:
+    - listitem:
+      - link "Privacy Policy":
+        - /url: /privacy
+        - text: Privacy Policy
+        - img
+    - listitem:
+      - link "Terms of Service":
+        - /url: /terms
+        - text: Terms of Service
+        - img
+    - listitem:
+      - link "Accessibility":
+        - /url: /accessibility
+        - text: Accessibility
+        - img
+  - paragraph: © 2025 Aptly. All rights reserved.
+  - text: "Trusted by: Meta Google Coursera"
+  - link "Sitemap":
+    - /url: /sitemap
+  - text: •
+  - link "Cookie Policy":
+    - /url: /cookie-policy
+  - text: •
+  - link "Accessibility Statement":
+    - /url: /accessibility
+  - text: •
+  - link "GDPR Compliance":
+    - /url: /compliance
+```

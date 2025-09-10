@@ -1,25 +1,26 @@
 :root {
   /* Light Mode - Default */
   --color-primary: #0A004A;        /* Deep Navy */
-  --color-primary-hover: #0B0055;  /* Slightly lighter navy for hover */
+  /* Hover states follow opacity change policy; keep same base color */
+  --color-primary-hover: var(--color-primary);
   --color-secondary: #21A8B0;      /* Teal */
-  --color-secondary-hover: #25B9C2; /* Lighter teal for hover */
+  --color-secondary-hover: var(--color-secondary);
   --color-accent: #FFDE00;         /* Yellow */
-  --color-accent-muted: #FFE534;   /* Lighter yellow */
+  --color-accent-muted: var(--color-accent);
   
   --color-background: #FFFFFF;     /* White */
-  --color-surface: #F8F9FA;        /* Light surface */
+  --color-surface: #FFFFFF;        /* Use brand neutrals */
   --color-surface-elevated: #FFFFFF;
   --color-card: #FFFFFF;
-  --color-card-hover: #F8F9FA;
+  --color-card-hover: #E6E6E6;
   
   --color-text-primary: #333333;   /* Rich Black */
-  --color-text-secondary: #666666; /* Grey */
-  --color-text-muted: #999999;     /* Light Grey */
+  --color-text-secondary: #CCCCCC; /* Brand grey */
+  --color-text-muted: #E6E6E6;     /* Light Grey */
   --color-text-inverse: #FFFFFF;   /* White text on dark */
   
   --color-border: #E6E6E6;         /* Light Grey */
-  --color-border-muted: #F0F0F0;
+  --color-border-muted: var(--color-border);
   --color-divider: #E6E6E6;
   
   --color-light-navy: #3B336E;     /* Light Navy */
@@ -30,6 +31,7 @@
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   
+  /* Brand gradient: exact stops per brand-spec */
   --gradient-primary: linear-gradient(135deg, #0A004A 0%, #3B336E 25%, #21A8B0 50%, #69BCC1 75%, #DEF2F2 100%);
   --gradient-overlay: linear-gradient(180deg, rgba(10, 0, 74, 0.8) 0%, rgba(10, 0, 74, 0.4) 100%);
   
@@ -43,17 +45,17 @@
 [data-theme='dark'] {
   /* Dark Mode */
   --color-primary: #21A8B0;        /* Teal becomes primary in dark mode */
-  --color-primary-hover: #25B9C2;
+  --color-primary-hover: var(--color-primary);
   --color-secondary: #69BCC1;      /* Muted Teal as secondary */
-  --color-secondary-hover: #7BCCD1;
+  --color-secondary-hover: var(--color-secondary);
   --color-accent: #FFDE00;         /* Yellow stays as accent */
-  --color-accent-muted: #E6C800;
+  --color-accent-muted: var(--color-accent);
   
   --color-background: #0A004A;     /* Deep Navy background */
-  --color-surface: #151052;        /* Slightly lighter navy */
-  --color-surface-elevated: #1A155C;
-  --color-card: #1A155C;
-  --color-card-hover: #221D68;
+  --color-surface: #3B336E;        /* Light navy */
+  --color-surface-elevated: #3B336E;
+  --color-card: #3B336E;
+  --color-card-hover: #3B336E;
   
   --color-text-primary: #FFFFFF;   /* White text */
   --color-text-secondary: #DEF2F2; /* Light Teal text */
@@ -61,7 +63,7 @@
   --color-text-inverse: #0A004A;   /* Navy text on light */
   
   --color-border: #3B336E;         /* Light Navy borders */
-  --color-border-muted: #2A2260;
+  --color-border-muted: var(--color-border);
   --color-divider: #3B336E;
   
   --color-light-navy: #3B336E;
@@ -72,7 +74,8 @@
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
   
-  --gradient-primary: linear-gradient(135deg, #0A004A 0%, #1A155C 25%, #21A8B0 50%, #3B336E 75%, #69BCC1 100%);
+  /* Use same brand gradient stops for consistency */
+  --gradient-primary: linear-gradient(135deg, #0A004A 0%, #3B336E 25%, #21A8B0 50%, #69BCC1 75%, #DEF2F2 100%);
   --gradient-overlay: linear-gradient(180deg, rgba(10, 0, 74, 0.95) 0%, rgba(10, 0, 74, 0.6) 100%);
   
   /* Seamless Background Gradient - Dark Mode */

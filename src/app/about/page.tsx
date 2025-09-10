@@ -112,7 +112,7 @@ export default function AboutPage() {
             </ScrollAnimatedSection>
             
             <ScrollAnimatedSection animation="slideRight">
-              <Card variant="default" padding="lg" className="card-standard animate-[float_6s_ease-in-out_infinite]">
+              <Card variant="default" padding="lg" className="card-standard">
                 <div className="space-y-6">
                   <div className="border-l-4 border-secondary pl-6 group hover:translate-x-2 transition-transform">
                     <div className="text-4xl font-bold text-secondary mb-2 group-hover:scale-110 transition-transform">1000s</div>
