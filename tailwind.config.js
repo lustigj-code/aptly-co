@@ -1,72 +1,115 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/app/**/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx}",
-    "./src/design-system/**/*.{js,ts,jsx,tsx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/design-system/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
+      maxWidth: {
+        // Design system container width
+        container: '1280px',
+      },
+      borderRadius: {
+        // Brand radii used in CSS and components
+        'brand-sm': '8px',
+        'brand': '16px',
+        'brand-lg': '24px',
+      },
       colors: {
-        // Aptly Brand Colors - Primary
-        'navy': '#0A004A',
-        'teal': '#21A8B0',
-        'yellow': '#FFDE00',
+        // Primary Colors
+        navy: '#0A004A',
+        teal: '#21A8B0',
+        yellow: '#FFDE00',
         
-        // Aptly Brand Colors - Secondary
+        // Secondary Colors
         'light-navy': '#3B336E',
         'muted-teal': '#69BCC1',
         'light-teal': '#DEF2F2',
         
-        // Aptly Brand Colors - Neutral
+        // Neutral Colors
+        white: '#FFFFFF',
         'light-grey': '#E6E6E6',
-        'grey': '#CCCCCC',
+        grey: '#CCCCCC',
         'rich-black': '#333333',
         
-        // Aptly Brand Colors - Tertiary (limited use)
-        'brand-red': '#E84133',
-        'brand-orange': '#EC6726',
+        // Semantic color mappings
+        primary: 'var(--color-text-primary)',
+        secondary: 'var(--color-text-secondary)',
+        background: 'var(--color-background)',
+        surface: 'var(--color-surface)',
+        border: 'var(--color-border)',
       },
       fontFamily: {
-        'sans': ['DM Sans', 'system-ui', 'sans-serif'],
+        // Use Next.js font variable to ensure consistent font loading
+        sans: ['var(--font-dm-sans)', 'system-ui', 'sans-serif'],
       },
       spacing: {
-        // 8px grid system
-        '1': '8px',
-        '2': '16px',
-        '3': '24px',
-        '4': '32px',
-        '5': '40px',
-        '6': '48px',
-        '7': '56px',
-        '8': '64px',
-        '9': '72px',
-        '10': '80px',
-        '11': '88px',
-        '12': '96px',
-        '14': '112px',
-        '16': '128px',
-        '20': '160px',
-        '24': '192px',
+        '18': '4.5rem',
+        '88': '22rem',
+        '120': '30rem',
       },
-      borderRadius: {
-        'brand': '16px',
-        'brand-sm': '8px',
-        'brand-lg': '24px',
-        'brand-xl': '32px',
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'fade-in-up': 'fadeInUp 0.6s ease-out',
+        'fade-in-down': 'fadeInDown 0.6s ease-out',
+        'scale-in': 'scaleIn 0.5s ease-out',
+        'slide-in-right': 'slideInRight 0.5s ease-out',
+        'slide-in-left': 'slideInLeft 0.5s ease-out',
+        'float': 'float 6s ease-in-out infinite',
+        'pulse-slow': 'pulse 3s ease-in-out infinite',
+        'shimmer': 'shimmer 2s linear infinite',
+        'ripple': 'ripple 600ms linear',
       },
-      maxWidth: {
-        'container': '1280px',
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeInDown: {
+          '0%': { opacity: '0', transform: 'translateY(-20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        scaleIn: {
+          '0%': { opacity: '0', transform: 'scale(0.9)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+        slideInRight: {
+          '0%': { opacity: '0', transform: 'translateX(20px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        slideInLeft: {
+          '0%': { opacity: '0', transform: 'translateX(-20px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        shimmer: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+        ripple: {
+          '0%': { transform: 'scale(0)', opacity: '1' },
+          '100%': { transform: 'scale(4)', opacity: '0' },
+        },
       },
       backgroundImage: {
-        'brand-gradient': 'linear-gradient(135deg, #0A004A 0%, #3B336E 25%, #21A8B0 50%, #69BCC1 75%, #DEF2F2 100%)',
-        'navy-gradient': 'linear-gradient(180deg, #0A004A 0%, #3B336E 100%)',
-        'teal-gradient': 'linear-gradient(180deg, #21A8B0 0%, #69BCC1 100%)',
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-brand': 'linear-gradient(135deg, #0A004A 0%, #3B336E 25%, #21A8B0 50%, #69BCC1 75%, #DEF2F2 100%)',
+        'mesh-gradient': 'url("data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Cdefs%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="turbulence" baseFrequency="0.65" numOctaves="4" stitchTiles="stitch"/%3E%3C/filter%3E%3C/defs%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)" opacity="0.05"/%3E%3C/svg%3E")',
       },
       boxShadow: {
-        'brand-sm': '0 2px 4px rgba(10, 0, 74, 0.1)',
-        'brand': '0 4px 8px rgba(10, 0, 74, 0.15)',
-        'brand-lg': '0 8px 16px rgba(10, 0, 74, 0.2)',
+        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+        'brand': '0 4px 20px rgba(33, 168, 176, 0.15)',
       },
     },
   },

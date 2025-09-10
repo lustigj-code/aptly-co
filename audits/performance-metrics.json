@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-09-09T01:24:56.925Z",
+  "pages": [
+    {
+      "page": "homepage",
+      "url": "/",
+      "metrics": {
+        "FCP": 3324,
+        "domContentLoaded": 3173.9000000059605,
+        "loadComplete": 3716,
+        "resourceCount": 17,
+        "totalTransferSize": 2440370
+      },
+      "score": 40
+    },
+    {
+      "page": "about",
+      "url": "/about",
+      "metrics": {
+        "FCP": 1532,
+        "domContentLoaded": 1201.300000011921,
+        "loadComplete": 1473.5,
+        "resourceCount": 11,
+        "totalTransferSize": 2260764
+      },
+      "score": 100
+    },
+    {
+      "page": "services",
+      "url": "/services",
+      "metrics": {
+        "FCP": 940,
+        "domContentLoaded": 596.5999999940395,
+        "loadComplete": 873.8999999761581,
+        "resourceCount": 11,
+        "totalTransferSize": 2260992
+      },
+      "score": 100
+    },
+    {
+      "page": "success",
+      "url": "/success",
+      "metrics": {
+        "FCP": 988,
+        "domContentLoaded": 653.2999999821186,
+        "loadComplete": 920.5999999940395,
+        "resourceCount": 11,
+        "totalTransferSize": 2268396
+      },
+      "score": 100
+    },
+    {
+      "page": "contact",
+      "url": "/contact",
+      "metrics": {
+        "FCP": 1040,
+        "domContentLoaded": 730.0999999940395,
+        "loadComplete": 1008.1999999880791,
+        "resourceCount": 10,
+        "totalTransferSize": 2256071
+      },
+      "score": 100
+    }
+  ]
+}

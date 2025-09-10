@@ -1,0 +1,407 @@
+/* 
+ * APTLY DESIGN SYSTEM TOKENS - DARK MODE DEFAULT
+ * Single source of truth for all design values
+ * Enforces consistency and brand guidelines
+ */
+
+:root {
+  /* ==================== COLOR TOKENS ==================== */
+  
+  /* Primary Colors */
+  --color-navy: #0A004A;          /* Deep Navy - primary background */
+  --color-teal: #21A8B0;          /* Teal - primary accent */
+  --color-yellow: #FFDE00;        /* Yellow - highlights only */
+  
+  /* Secondary Colors */
+  --color-light-navy: #3B336E;    /* Light Navy - secondary backgrounds */
+  --color-muted-teal: #69BCC1;    /* Muted Teal - subtle accents */
+  --color-light-teal: #DEF2F2;    /* Light Teal - light backgrounds */
+  
+  /* Neutral Colors */
+  --color-white: #FFFFFF;          /* White - text on dark */
+  --color-light-grey: #E6E6E6;    /* Light Grey - borders */
+  --color-grey: #CCCCCC;          /* Grey - secondary text */
+  --color-rich-black: #333333;    /* Rich Black - text on light */
+  
+  /* DARK MODE SEMANTIC COLORS - FIXES CONTRAST ISSUES */
+  --color-text-primary: var(--color-white);           /* White on dark */
+  --color-text-secondary: rgba(255, 255, 255, 0.8);   /* 80% white */
+  --color-text-muted: rgba(255, 255, 255, 0.6);       /* 60% white */
+  --color-text-on-light: var(--color-navy);           /* Navy on light */
+  --color-bg-primary: var(--color-navy);              /* Navy background */
+  --color-bg-secondary: var(--color-light-navy);      /* Light navy */
+  --color-bg-elevated: rgba(255, 255, 255, 0.05);     /* Glass effect */
+  --color-bg-overlay: rgba(10, 0, 74, 0.95);          /* Modal overlay */
+  --color-border: rgba(255, 255, 255, 0.1);           /* Subtle border */
+  --color-border-hover: rgba(255, 255, 255, 0.2);     /* Hover border */
+  
+  /* ==================== TYPOGRAPHY TOKENS ==================== */
+  
+  /* Font Family */
+  --font-primary: 'DM Sans', sans-serif;
+  
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  
+  /* Font Sizes - Responsive with clamp() for smooth scaling */
+  --font-size-xs: clamp(0.875rem, 1.5vw, 1rem);      /* 14-16px min on mobile */
+  --font-size-sm: clamp(0.875rem, 2vw, 1rem);        /* 14-16px */
+  --font-size-base: clamp(1rem, 2.5vw, 1.125rem);    /* 16-18px */
+  --font-size-lg: clamp(1.125rem, 3vw, 1.25rem);     /* 18-20px */
+  --font-size-xl: clamp(1.25rem, 3.5vw, 1.5rem);     /* 20-24px */
+  --font-size-2xl: clamp(1.5rem, 4vw, 2rem);         /* 24-32px */
+  --font-size-3xl: clamp(1.875rem, 5vw, 2.5rem);     /* 30-40px */
+  --font-size-4xl: clamp(2.25rem, 6vw, 3rem);        /* 36-48px */
+  --font-size-5xl: clamp(3rem, 7vw, 3.5rem);         /* 48-56px */
+  --font-size-6xl: clamp(3.5rem, 8vw, 4rem);         /* 56-64px */
+  
+  /* Line Heights */
+  --line-height-tight: 1.1;
+  --line-height-snug: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  --line-height-loose: 2;
+  
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.02em;
+  
+  /* ==================== SPACING TOKENS (8px Grid) ==================== */
+  
+  --space-0: 0;
+  --space-1: 0.5rem;       /* 8px */
+  --space-2: 1rem;         /* 16px */
+  --space-3: 1.5rem;       /* 24px */
+  --space-4: 2rem;         /* 32px */
+  --space-5: 2.5rem;       /* 40px */
+  --space-6: 3rem;         /* 48px */
+  --space-7: 3.5rem;       /* 56px */
+  --space-8: 4rem;         /* 64px */
+  --space-9: 4.5rem;       /* 72px */
+  --space-10: 5rem;        /* 80px - Standard section padding */
+  --space-12: 6rem;        /* 96px */
+  --space-16: 8rem;        /* 128px */
+  --space-20: 10rem;       /* 160px */
+  
+  /* Section Padding */
+  --section-padding-mobile: var(--space-8);     /* 64px */
+  --section-padding-desktop: var(--space-10);   /* 80px */
+  
+  /* Container Padding */
+  --container-padding-mobile: var(--space-3);   /* 24px */
+  --container-padding-desktop: var(--space-6);  /* 48px */
+  
+  /* ==================== LAYOUT TOKENS ==================== */
+  
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  
+  /* Container */
+  --container-max-width: 1280px;
+  
+  /* Grid */
+  --grid-cols-mobile: 2;
+  --grid-cols-tablet: 4;
+  --grid-cols-desktop: 12;
+  --grid-gap: var(--space-3);    /* 24px */
+  
+  /* ==================== COMPONENT TOKENS ==================== */
+  
+  /* Border Radius */
+  --radius-none: 0;
+  --radius-sm: 0.25rem;      /* 4px */
+  --radius-md: 0.5rem;       /* 8px */
+  --radius-lg: 1rem;         /* 16px - Images */
+  --radius-xl: 1.5rem;       /* 24px - Buttons */
+  --radius-full: 9999px;
+  
+  /* Shadows - Elegant for dark backgrounds */
+  --shadow-none: none;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15);
+  --shadow-elegant: 0 10px 40px rgba(10, 0, 74, 0.08);
+  --shadow-elegant-hover: 0 15px 50px rgba(10, 0, 74, 0.12);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+  
+  /* Touch Targets - WCAG AA Compliance */
+  --touch-target-min: 44px;
+  --button-height: 48px;       /* Exceeds 44px minimum */
+  --input-height: 48px;        /* Exceeds 44px minimum */
+  
+  /* Z-Index Scale */
+  --z-negative: -1;
+  --z-0: 0;
+  --z-10: 10;
+  --z-20: 20;
+  --z-30: 30;
+  --z-40: 40;
+  --z-50: 50;
+  --z-modal: 100;
+
+  /* ==================== SURFACE SYSTEM ==================== */
+  
+  /* Surface Hierarchy - Semantic backgrounds for unified design */
+  --surface-primary: var(--color-navy);           /* Main content areas */
+  --surface-secondary: var(--color-light-navy);   /* Single accent section */
+  --surface-gradient: linear-gradient(135deg, var(--color-navy) 0%, var(--color-light-navy) 25%, var(--color-teal) 50%, var(--color-muted-teal) 75%, var(--color-light-teal) 100%);
+  --surface-elevated: rgba(255, 255, 255, 0.05); /* Cards and overlays */
+  
+  /* Surface Transitions */
+  --surface-border: rgba(255, 255, 255, 0.08);   /* Subtle section dividers */
+  --surface-overlay: rgba(10, 0, 74, 0.95);      /* Modal/overlay backgrounds */
+  
+  /* ==================== RESPONSIVE TYPOGRAPHY ==================== */
+  
+  /* Heading Sizes - Consistent across pages */
+  --h1-size-mobile: var(--font-size-4xl);      /* 36px */
+  --h1-size-desktop: var(--font-size-6xl);     /* 60px */
+  
+  --h2-size-mobile: var(--font-size-2xl);      /* 24px - STANDARDIZED */
+  --h2-size-desktop: var(--font-size-4xl);     /* 36px - STANDARDIZED */
+  
+  --h3-size-mobile: var(--font-size-2xl);      /* 24px */
+  --h3-size-desktop: var(--font-size-3xl);     /* 30px */
+  
+  --h4-size-mobile: var(--font-size-xl);       /* 20px */
+  --h4-size-desktop: var(--font-size-2xl);     /* 24px */
+  
+  --h5-size-mobile: var(--font-size-lg);       /* 18px */
+  --h5-size-desktop: var(--font-size-xl);      /* 20px */
+  
+  --h6-size-mobile: var(--font-size-base);     /* 16px */
+  --h6-size-desktop: var(--font-size-lg);      /* 18px */
+  
+  /* Body Text */
+  --body-size-mobile: var(--font-size-base);   /* 16px */
+  --body-size-desktop: var(--font-size-base);  /* 16px */
+}
+
+/* ==================== UTILITY CLASSES ==================== */
+
+/* GLASSMORPHISM - Core glass effect */
+.glass {
+  background: var(--color-bg-elevated);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--color-border);
+}
+
+.glass:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--color-border-hover);
+}
+
+/* SEAMLESS SECTIONS - Soft transitions */
+.section-soft-fade {
+  position: relative;
+}
+
+.section-soft-fade::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: var(--section-fade-top);
+  pointer-events: none;
+}
+
+.section-soft-fade::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: var(--section-fade-bottom);
+  pointer-events: none;
+}
+
+/* Surface utility for lightweight backgrounds */
+.surface {
+  background: var(--surface-soft);
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(2px);
+}
+
+/* BUTTON STANDARDIZATION - 2 variants only */
+.btn-primary {
+  height: var(--button-height);
+  min-width: var(--button-height);
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-xl);
+  background: var(--color-teal);
+  color: var(--color-white);
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-base);
+}
+
+.btn-secondary {
+  height: var(--button-height);
+  min-width: var(--button-height);
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-xl);
+  background: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-teal);
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-base);
+}
+
+/* CARD STANDARDIZATION */
+.card-standard {
+  padding: var(--space-3);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-elevated);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-elegant);
+  transition: all var(--transition-base);
+}
+
+.card-standard:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: var(--shadow-elegant-hover);
+  border-color: var(--color-border-hover);
+}
+
+/* Typography Utilities */
+.font-regular { font-weight: var(--font-weight-regular); }
+.font-medium { font-weight: var(--font-weight-medium); }
+.font-bold { font-weight: var(--font-weight-bold); }
+
+/* Color Utilities - Dark Mode Optimized */
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-muted { color: var(--color-text-muted); }
+
+.bg-navy { background-color: var(--color-navy); }
+.bg-teal { background-color: var(--color-teal); }
+.bg-light-navy { background-color: var(--color-light-navy); }
+.bg-light-teal { background-color: var(--color-light-teal); }
+
+/* Spacing Utilities */
+.section-padding {
+  padding-top: var(--section-padding-mobile);
+  padding-bottom: var(--section-padding-mobile);
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: var(--section-padding-desktop);
+    padding-bottom: var(--section-padding-desktop);
+  }
+}
+
+/* Touch Target Utilities */
+.touch-target {
+  min-height: var(--touch-target-min);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container Utilities */
+.container-padding {
+  padding-left: var(--container-padding-mobile);
+  padding-right: var(--container-padding-mobile);
+}
+
+@media (min-width: 768px) {
+  .container-padding {
+    padding-left: var(--container-padding-desktop);
+    padding-right: var(--container-padding-desktop);
+  }
+}
+
+/* ==================== RESPONSIVE HEADING STYLES ==================== */
+
+h1, .h1 {
+  font-size: var(--h1-size-mobile);
+  line-height: var(--line-height-tight);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h2, .h2 {
+  font-size: var(--h2-size-mobile);
+  line-height: var(--line-height-snug);
+  font-weight: var(--font-weight-bold);
+}
+
+h3, .h3 {
+  font-size: var(--h3-size-mobile);
+  line-height: var(--line-height-snug);
+  font-weight: var(--font-weight-medium);
+}
+
+h4, .h4 {
+  font-size: var(--h4-size-mobile);
+  line-height: var(--line-height-normal);
+  font-weight: var(--font-weight-medium);
+}
+
+h5, .h5 {
+  font-size: var(--h5-size-mobile);
+  line-height: var(--line-height-normal);
+  font-weight: var(--font-weight-medium);
+}
+
+h6, .h6 {
+  font-size: var(--h6-size-mobile);
+  line-height: var(--line-height-normal);
+  font-weight: var(--font-weight-regular);
+}
+
+/* Desktop Heading Sizes */
+@media (min-width: 768px) {
+  h1, .h1 { font-size: var(--h1-size-desktop); }
+  h2, .h2 { font-size: var(--h2-size-desktop); }
+  h3, .h3 { font-size: var(--h3-size-desktop); }
+  h4, .h4 { font-size: var(--h4-size-desktop); }
+  h5, .h5 { font-size: var(--h5-size-desktop); }
+  h6, .h6 { font-size: var(--h6-size-desktop); }
+}
+
+/* ==================== BRAND GRADIENT ==================== */
+
+.gradient-brand {
+  background: linear-gradient(
+    135deg, 
+    var(--color-navy) 0%, 
+    var(--color-light-navy) 25%, 
+    var(--color-teal) 50%, 
+    var(--color-muted-teal) 75%, 
+    var(--color-light-teal) 100%
+  );
+}
+
+/* Subtle gradient overlay for images */
+.gradient-overlay {
+  position: relative;
+}
+
+.gradient-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 0, 74, 0.7) 0%,
+    rgba(10, 0, 74, 0.3) 100%
+  );
+  pointer-events: none;
+}

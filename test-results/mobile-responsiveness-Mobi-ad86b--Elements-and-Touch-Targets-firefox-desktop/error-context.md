@@ -1,0 +1,202 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "aptly":
+    - /url: /
+    - img
+    - text: aptly
+  - link "Programs":
+    - /url: /programs
+  - link "For Business":
+    - /url: /business
+  - link "Success Stories":
+    - /url: /success
+  - link "About":
+    - /url: /about
+  - link "Get Started":
+    - /url: /enroll
+  - button "Toggle menu":
+    - img
+- main:
+  - main:
+    - heading "Get in Touch" [level=1]
+    - paragraph: Have questions about our programs? Want to explore enterprise solutions? We're here to help you succeed.
+    - heading "Sales Inquiries" [level=3]
+    - paragraph: Learn about enterprise solutions
+    - link "sales@aptly.co":
+      - /url: mailto:sales@aptly.co
+    - paragraph: "Response time: Within 24 hours"
+    - heading "Student Support" [level=3]
+    - paragraph: Get help with your courses
+    - link "support@aptly.co":
+      - /url: mailto:support@aptly.co
+    - paragraph: "Response time: Within 4 hours"
+    - heading "Partnerships" [level=3]
+    - paragraph: Explore collaboration opportunities
+    - link "partners@aptly.co":
+      - /url: mailto:partners@aptly.co
+    - paragraph: "Response time: Within 48 hours"
+    - heading "Media & Press" [level=3]
+    - paragraph: Media inquiries and press kit
+    - link "press@aptly.co":
+      - /url: mailto:press@aptly.co
+    - paragraph: "Response time: Within 24 hours"
+    - heading "Send Us a Message" [level=2]
+    - text: Full Name *
+    - textbox "Full Name *"
+    - text: Email Address *
+    - textbox "Email Address *"
+    - text: Company (Optional)
+    - textbox "Company (Optional)"
+    - text: Subject *
+    - combobox "Subject *":
+      - option "Select a subject" [selected]
+      - option "Course Programs"
+      - option "Enterprise Solutions"
+      - option "Technical Support"
+      - option "Partnership Opportunity"
+      - option "Other"
+    - text: Message *
+    - textbox "Message *"
+    - button "Send Message"
+    - heading "Our Offices" [level=2]
+    - heading "San Francisco" [level=3]
+    - paragraph: 123 Market Street San Francisco, CA 94105 United States
+    - heading "London" [level=3]
+    - paragraph: 456 Oxford Street London W1C 1AP United Kingdom
+    - heading "Singapore" [level=3]
+    - paragraph: 789 Orchard Road Singapore 238839 Singapore
+    - heading "Have More Questions?" [level=2]
+    - paragraph: Check our FAQ section for quick answers to common questions.
+    - link "Visit FAQ":
+      - /url: /faq
+- contentinfo:
+  - heading "Stay Updated" [level=3]
+  - paragraph: Get the latest updates on new programs, career tips, and exclusive offers.
+  - textbox "Enter your email"
+  - button "Subscribe":
+    - text: Subscribe
+    - img
+  - img
+  - text: aptly
+  - paragraph: Prepare for the jobs of tomorrow, today.
+  - link "info@aptly.co":
+    - /url: mailto:info@aptly.co
+    - img
+    - text: info@aptly.co
+  - link "(123) 456-7890":
+    - /url: tel:+1234567890
+    - img
+    - text: (123) 456-7890
+  - img
+  - text: 123 Learning Ave San Francisco, CA 94105
+  - link "LinkedIn":
+    - /url: "#"
+    - img
+  - link "Twitter":
+    - /url: "#"
+    - img
+  - link "Facebook":
+    - /url: "#"
+    - img
+  - link "Instagram":
+    - /url: "#"
+    - img
+  - heading "Programs" [level=3]
+  - list:
+    - listitem:
+      - link "All Certificates":
+        - /url: /programs
+        - text: All Certificates
+        - img
+    - listitem:
+      - link "Meta Programs":
+        - /url: /programs#meta
+        - text: Meta Programs
+        - img
+    - listitem:
+      - link "Google Programs":
+        - /url: /programs#google
+        - text: Google Programs
+        - img
+    - listitem:
+      - link "AI Courses":
+        - /url: /programs#ai
+        - text: AI Courses
+        - img
+  - heading "Resources" [level=3]
+  - list:
+    - listitem:
+      - link "Career Guide":
+        - /url: /resources/career-guide
+        - text: Career Guide
+        - img
+    - listitem:
+      - link "Blog":
+        - /url: /blog
+        - text: Blog
+        - img
+    - listitem:
+      - link "FAQ":
+        - /url: /faq
+        - text: FAQ
+        - img
+    - listitem:
+      - link "Support":
+        - /url: /support
+        - text: Support
+        - img
+  - heading "Company" [level=3]
+  - list:
+    - listitem:
+      - link "About":
+        - /url: /about
+        - text: About
+        - img
+    - listitem:
+      - link "Careers":
+        - /url: /careers
+        - text: Careers
+        - img
+    - listitem:
+      - link "Partners":
+        - /url: /partners
+        - text: Partners
+        - img
+    - listitem:
+      - link "Contact":
+        - /url: /contact
+        - text: Contact
+        - img
+  - heading "Legal" [level=3]
+  - list:
+    - listitem:
+      - link "Privacy Policy":
+        - /url: /privacy
+        - text: Privacy Policy
+        - img
+    - listitem:
+      - link "Terms of Service":
+        - /url: /terms
+        - text: Terms of Service
+        - img
+    - listitem:
+      - link "Accessibility":
+        - /url: /accessibility
+        - text: Accessibility
+        - img
+  - paragraph: © 2025 Aptly. All rights reserved.
+  - text: "Trusted by: Meta Google Coursera"
+  - link "Sitemap":
+    - /url: /sitemap
+  - text: •
+  - link "Cookie Policy":
+    - /url: /cookie-policy
+  - text: •
+  - link "Accessibility Statement":
+    - /url: /accessibility
+  - text: •
+  - link "GDPR Compliance":
+    - /url: /compliance
+```

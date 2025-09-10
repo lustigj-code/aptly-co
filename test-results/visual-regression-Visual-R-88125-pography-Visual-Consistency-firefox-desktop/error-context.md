@@ -1,0 +1,245 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "aptly":
+    - /url: /
+    - img
+    - text: aptly
+  - link "Programs":
+    - /url: /programs
+  - link "For Business":
+    - /url: /business
+  - link "Success Stories":
+    - /url: /success
+  - link "About":
+    - /url: /about
+  - link "Get Started":
+    - /url: /enroll
+  - button "Toggle menu":
+    - img
+- main:
+  - main:
+    - text: Partner with Meta & Google
+    - heading "Transform Your Career withIndustry-Leading Certifications" [level=1]
+    - paragraph: Join thousands of professionals advancing their careers through Meta and Google certificate programs.
+    - button "Browse Programs":
+      - text: Browse Programs
+      - img
+    - button "Talk to Advisor":
+      - text: Talk to Advisor
+      - img
+    - heading "Success by Numbers" [level=2]
+    - paragraph: Join thousands of professionals who have transformed their careers with Aptly
+    - img
+    - text: 10,000+ Students Enrolled
+    - img
+    - text: 4.7 Average Rating
+    - img
+    - text: Industry Recognized
+    - img
+    - text: 6-Month Programs
+    - heading "Professional Certificate Programs" [level=2]
+    - paragraph: 6-month programs designed with industry leaders. Graduate job-ready with portfolio projects and career coaching.
+    - img "Meta Social Media Marketing Professional Certificate"
+    - text: Professional Certificate
+    - heading "Meta Social Media Marketing Professional Certificate" [level=3]
+    - paragraph: Whether you've been tinkering with social media platforms or are completely new to the field of digital marketing, this program prepares you for an entry-level role in social media marketing.
+    - link "Learn More":
+      - /url: https://www.coursera.org/professional-certificates/facebook-social-media-marketing
+      - text: Learn More
+      - img
+    - img "Meta Marketing Analytics Professional Certificate"
+    - text: Professional Certificate
+    - heading "Meta Marketing Analytics Professional Certificate" [level=3]
+    - paragraph: Kickstart a career as a marketing analyst or better analyze your business with the in-demand technical skills taught in this program.
+    - link "Learn More":
+      - /url: https://www.coursera.org/professional-certificates/facebook-marketing-analytics
+      - text: Learn More
+      - img
+    - img "Meta Data Analyst Professional Certificate"
+    - text: Professional Certificate
+    - heading "Meta Data Analyst Professional Certificate" [level=3]
+    - paragraph: Prepare for a career in the high-growth field of data analytics. Build in-demand technical skills like Python, Statistics, and SQL.
+    - link "Learn More":
+      - /url: https://www.coursera.org/professional-certificates/meta-data-analyst
+      - text: Learn More
+      - img
+    - link "View All Programs":
+      - /url: /programs
+      - text: View All Programs
+      - img
+    - heading "The Aptly Advantage" [level=2]
+    - paragraph: We don't just teach skills - we transform careers. Our comprehensive approach ensures you're job-ready from day one.
+    - img
+    - paragraph: Curriculum designed by Meta and Google
+    - img
+    - paragraph: 1-on-1 career coaching and interview preparation
+    - img
+    - paragraph: Real projects from actual companies
+    - img
+    - paragraph: Career certificates recognized by top employers
+    - img
+    - paragraph: Lifetime access to course materials
+    - heading "Success Story" [level=3]
+    - blockquote: “The Meta Social Media Marketing Certificate gave me the practical skills I needed to transition into digital marketing. The hands-on projects were invaluable.”
+    - text: Program Graduate Marketing Manager
+    - heading "Trusted Partners" [level=2]
+    - paragraph: Learn from industry leaders with recognized certifications
+    - img "Meta"
+    - img "Google"
+    - img "Coursera"
+    - heading "How It Works" [level=2]
+    - paragraph: Your journey from enrollment to employment in four simple steps
+    - text: "1"
+    - heading "Choose Program" [level=3]
+    - paragraph: Select from our curated certificates
+    - text: "2"
+    - heading "Learn & Build" [level=3]
+    - paragraph: Complete projects with expert guidance
+    - text: "3"
+    - heading "Get Certified" [level=3]
+    - paragraph: Earn industry-recognized credentials
+    - text: "4"
+    - heading "Land Your Job" [level=3]
+    - paragraph: Leverage our placement support
+    - heading "Ready to Transform Your Career?" [level=2]
+    - paragraph: Join thousands of successful graduates. Start your journey today.
+    - button "Get Started"
+    - button "Download Career Guide"
+- contentinfo:
+  - heading "Stay Updated" [level=3]
+  - paragraph: Get the latest updates on new programs, career tips, and exclusive offers.
+  - textbox "Enter your email"
+  - button "Subscribe":
+    - text: Subscribe
+    - img
+  - img
+  - text: aptly
+  - paragraph: Prepare for the jobs of tomorrow, today.
+  - link "info@aptly.co":
+    - /url: mailto:info@aptly.co
+    - img
+    - text: info@aptly.co
+  - link "(123) 456-7890":
+    - /url: tel:+1234567890
+    - img
+    - text: (123) 456-7890
+  - img
+  - text: 123 Learning Ave San Francisco, CA 94105
+  - link "LinkedIn":
+    - /url: "#"
+    - img
+  - link "Twitter":
+    - /url: "#"
+    - img
+  - link "Facebook":
+    - /url: "#"
+    - img
+  - link "Instagram":
+    - /url: "#"
+    - img
+  - heading "Programs" [level=3]
+  - list:
+    - listitem:
+      - link "All Certificates":
+        - /url: /programs
+        - text: All Certificates
+        - img
+    - listitem:
+      - link "Meta Programs":
+        - /url: /programs#meta
+        - text: Meta Programs
+        - img
+    - listitem:
+      - link "Google Programs":
+        - /url: /programs#google
+        - text: Google Programs
+        - img
+    - listitem:
+      - link "AI Courses":
+        - /url: /programs#ai
+        - text: AI Courses
+        - img
+  - heading "Resources" [level=3]
+  - list:
+    - listitem:
+      - link "Career Guide":
+        - /url: /resources/career-guide
+        - text: Career Guide
+        - img
+    - listitem:
+      - link "Blog":
+        - /url: /blog
+        - text: Blog
+        - img
+    - listitem:
+      - link "FAQ":
+        - /url: /faq
+        - text: FAQ
+        - img
+    - listitem:
+      - link "Support":
+        - /url: /support
+        - text: Support
+        - img
+  - heading "Company" [level=3]
+  - list:
+    - listitem:
+      - link "About":
+        - /url: /about
+        - text: About
+        - img
+    - listitem:
+      - link "Careers":
+        - /url: /careers
+        - text: Careers
+        - img
+    - listitem:
+      - link "Partners":
+        - /url: /partners
+        - text: Partners
+        - img
+    - listitem:
+      - link "Contact":
+        - /url: /contact
+        - text: Contact
+        - img
+  - heading "Legal" [level=3]
+  - list:
+    - listitem:
+      - link "Privacy Policy":
+        - /url: /privacy
+        - text: Privacy Policy
+        - img
+    - listitem:
+      - link "Terms of Service":
+        - /url: /terms
+        - text: Terms of Service
+        - img
+    - listitem:
+      - link "Accessibility":
+        - /url: /accessibility
+        - text: Accessibility
+        - img
+  - paragraph: © 2025 Aptly. All rights reserved.
+  - text: "Trusted by: Meta Google Coursera"
+  - link "Sitemap":
+    - /url: /sitemap
+  - text: •
+  - link "Cookie Policy":
+    - /url: /cookie-policy
+  - text: •
+  - link "Accessibility Statement":
+    - /url: /accessibility
+  - text: •
+  - link "GDPR Compliance":
+    - /url: /compliance
+- heading "DM Sans Heading 1" [level=1]
+- heading "DM Sans Heading 2" [level=2]
+- heading "DM Sans Heading 3" [level=3]
+- paragraph: Regular body text using DM Sans font family. This should be readable and consistent across all pages.
+- paragraph: Smaller secondary text for captions and details.
+- button "Primary Button"
+- button "Secondary Button"
+```

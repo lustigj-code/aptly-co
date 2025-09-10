@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-09-09T01:24:56.925Z",
+  "pages": [
+    {
+      "page": "homepage",
+      "url": "/",
+      "scores": {
+        "performance": 40,
+        "accessibility": 90,
+        "bestPractices": 90,
+        "seo": 85
+      }
+    },
+    {
+      "page": "about",
+      "url": "/about",
+      "scores": {
+        "performance": 100,
+        "accessibility": 90,
+        "bestPractices": 90,
+        "seo": 85
+      }
+    },
+    {
+      "page": "services",
+      "url": "/services",
+      "scores": {
+        "performance": 100,
+        "accessibility": 90,
+        "bestPractices": 90,
+        "seo": 85
+      }
+    },
+    {
+      "page": "success",
+      "url": "/success",
+      "scores": {
+        "performance": 100,
+        "accessibility": 90,
+        "bestPractices": 90,
+        "seo": 85
+      }
+    },
+    {
+      "page": "contact",
+      "url": "/contact",
+      "scores": {
+        "performance": 100,
+        "accessibility": 87,
+        "bestPractices": 90,
+        "seo": 85
+      }
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+Binary file src/app/.page.tsx.swp matches
+src/app/privacy/page.tsx:10:    <div className="min-h-screen bg-[#0A0C2A] text-gray-100">
+src/app/privacy/page.tsx:125:            className="text-[#7AB8BD] hover:text-[#6BA3A8] transition-colors"
+src/app/faq/page.tsx:67:              <span className="text-[#21A8B0]">
+src/app/faq/page.tsx:75:              className="text-lg md:text-xl text-[#DEF2F2] max-w-4xl mx-auto leading-relaxed"
+src/app/faq/page.tsx:99:                    <h3 className="text-xl font-bold text-white group-hover:text-[#21A8B0] transition-colors pr-4" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:104:                        className={`w-6 h-6 text-[#21A8B0] transition-transform duration-300 ${
+src/app/faq/page.tsx:124:                        <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:148:              <p className="text-lg md:text-xl text-[#DEF2F2] mb-8 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:183:              <p className="text-lg md:text-xl text-[#DEF2F2] max-w-2xl mx-auto" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:198:                  <div className="w-16 h-16 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center mx-auto mb-6">
+src/app/faq/page.tsx:201:                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:204:                  <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:218:                  <div className="w-16 h-16 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center mx-auto mb-6">
+src/app/faq/page.tsx:221:                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:224:                  <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:238:                  <div className="w-16 h-16 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center mx-auto mb-6">
+src/app/faq/page.tsx:241:                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:244:                  <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/faq/page.tsx:265:              <p className="text-lg md:text-xl text-[#DEF2F2] mb-8 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/terms/page.tsx:163:            className="text-[#7AB8BD] hover:text-[#6BA3A8] transition-colors"
+src/app/careers/page.tsx:68:              <span className="text-[#21A8B0]">
+src/app/careers/page.tsx:76:              className="text-lg md:text-xl text-[#DEF2F2] max-w-4xl mx-auto mb-8 leading-relaxed"
+src/app/careers/page.tsx:117:              <p className="text-lg md:text-xl text-[#DEF2F2] max-w-2xl mx-auto" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:133:                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:136:                      <p className="text-[#21A8B0] font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:141:                      <span className="px-3 py-2 bg-[#21A8B0]/20 text-[#21A8B0] text-sm rounded-full font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:146:                  <p className="text-[#DEF2F2] mb-6 leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:150:                    <span className="text-[#DEF2F2] font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>{job.location}</span>
+src/app/careers/page.tsx:177:              <p className="text-lg md:text-xl text-[#DEF2F2] max-w-2xl mx-auto" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:191:                  <div className="w-12 h-12 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center mx-auto mb-4">
+src/app/careers/page.tsx:194:                  <p className="text-[#DEF2F2] font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:215:                <p className="text-lg text-[#DEF2F2] mb-6 leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:218:                <p className="text-lg text-[#DEF2F2] mb-6 leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:221:                <p className="text-lg text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/careers/page.tsx:251:              <p className="text-lg md:text-xl text-[#DEF2F2] mb-8 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/app/courses/page.tsx:46:              className="text-lg md:text-xl text-[#DEF2F2] max-w-4xl mx-auto leading-relaxed"
+src/app/loading.tsx:3:    <div className="min-h-screen flex items-center justify-center bg-[#0A0C2A]">
+src/app/loading.tsx:9:            <div className="w-12 h-12 rounded-full border-4 border-[#0A0C2A] animate-pulse"></div>
+src/app/loading.tsx:10:            <div className="absolute inset-0 w-12 h-12 rounded-full border-4 border-t-transparent border-[#0A0C2A] animate-spin"></div>
+src/app/loading.tsx:15:            <div className="w-12 h-12 rounded-full bg-[#7AB8BD] animate-pulse"></div>
+src/app/globals.css:38:    --color-white: #FFFFFF;
+src/app/globals.css:40:    --color-grey: #CCCCCC;
+src/app/globals.css:378:    --color-navy: #000033;
+src/app/globals.css:379:    --color-teal: #00A0A0;
+Binary file src/app/study-app/page.tsx.backup matches
+src/utils/screenshot/comparisonUtility.ts:95:              border: 2px solid #ccc;
+src/utils/screenshot/comparisonUtility.ts:99:            .image-box h3 { margin-top: 0; color: #333; }
+src/utils/screenshot/comparisonUtility.ts:104:              border: 2px solid #ff6b6b;
+src/utils/screenshot/comparisonUtility.ts:111:              background: #f8f9fa;
+src/utils/screenshot/comparisonUtility.ts:114:            .identical { color: #28a745; font-weight: bold; }
+src/utils/screenshot/comparisonUtility.ts:115:            .different { color: #dc3545; font-weight: bold; }
+src/styles/animations.css:107:  background: linear-gradient(135deg, #0A004A 0%, #21A8B0 50%, #69BCC1 100%);
+src/styles/animations.css:205:  background: #fff;
+src/styles/animations.css:215:  background: linear-gradient(135deg, #0A004A, #21A8B0, #69BCC1);
+src/styles/animations.css:216:  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+src/styles/animations.css:229:  background: linear-gradient(135deg, #0A004A 0%, #3B336E 25%, #21A8B0 50%, #69BCC1 75%, #DEF2F2 100%);
+src/styles/themes.css:3:  --color-primary: #0A004A;        /* Deep Navy */
+src/styles/themes.css:4:  --color-primary-hover: #0B0055;  /* Slightly lighter navy for hover */
+src/styles/themes.css:5:  --color-secondary: #21A8B0;      /* Teal */
+src/styles/themes.css:6:  --color-secondary-hover: #25B9C2; /* Lighter teal for hover */
+src/styles/themes.css:7:  --color-accent: #FFDE00;         /* Yellow */
+src/styles/themes.css:8:  --color-accent-muted: #FFE534;   /* Lighter yellow */
+src/styles/themes.css:10:  --color-background: #FFFFFF;     /* White */
+src/styles/themes.css:11:  --color-surface: #F8F9FA;        /* Light surface */
+src/styles/themes.css:12:  --color-surface-elevated: #FFFFFF;
+src/styles/themes.css:13:  --color-card: #FFFFFF;
+src/styles/themes.css:14:  --color-card-hover: #F8F9FA;
+src/styles/themes.css:16:  --color-text-primary: #333333;   /* Rich Black */
+src/styles/themes.css:17:  --color-text-secondary: #666666; /* Grey */
+src/styles/themes.css:18:  --color-text-muted: #999999;     /* Light Grey */
+src/styles/themes.css:19:  --color-text-inverse: #FFFFFF;   /* White text on dark */
+src/styles/themes.css:21:  --color-border: #E6E6E6;         /* Light Grey */
+src/styles/themes.css:22:  --color-border-muted: #F0F0F0;
+src/styles/themes.css:23:  --color-divider: #E6E6E6;
+src/styles/themes.css:25:  --color-light-navy: #3B336E;     /* Light Navy */
+src/styles/themes.css:26:  --color-muted-teal: #69BCC1;     /* Muted Teal */
+src/styles/themes.css:27:  --color-light-teal: #DEF2F2;     /* Light Teal */
+src/styles/themes.css:33:  --gradient-primary: linear-gradient(135deg, #0A004A 0%, #3B336E 25%, #21A8B0 50%, #69BCC1 75%, #DEF2F2 100%);
+src/styles/themes.css:39:  --color-primary: #21A8B0;        /* Teal becomes primary in dark mode */
+src/styles/themes.css:40:  --color-primary-hover: #25B9C2;
+src/styles/themes.css:41:  --color-secondary: #69BCC1;      /* Muted Teal as secondary */
+src/styles/themes.css:42:  --color-secondary-hover: #7BCCD1;
+src/styles/themes.css:43:  --color-accent: #FFDE00;         /* Yellow stays as accent */
+src/styles/themes.css:44:  --color-accent-muted: #E6C800;
+src/styles/themes.css:46:  --color-background: #0A004A;     /* Deep Navy background */
+src/styles/themes.css:47:  --color-surface: #151052;        /* Slightly lighter navy */
+src/styles/themes.css:48:  --color-surface-elevated: #1A155C;
+src/styles/themes.css:49:  --color-card: #1A155C;
+src/styles/themes.css:50:  --color-card-hover: #221D68;
+src/styles/themes.css:52:  --color-text-primary: #FFFFFF;   /* White text */
+src/styles/themes.css:53:  --color-text-secondary: #DEF2F2; /* Light Teal text */
+src/styles/themes.css:54:  --color-text-muted: #69BCC1;     /* Muted Teal text */
+src/styles/themes.css:55:  --color-text-inverse: #0A004A;   /* Navy text on light */
+src/styles/themes.css:57:  --color-border: #3B336E;         /* Light Navy borders */
+src/styles/themes.css:58:  --color-border-muted: #2A2260;
+src/styles/themes.css:59:  --color-divider: #3B336E;
+src/styles/themes.css:61:  --color-light-navy: #3B336E;
+src/styles/themes.css:62:  --color-muted-teal: #69BCC1;
+src/styles/themes.css:63:  --color-light-teal: #DEF2F2;
+src/styles/themes.css:69:  --gradient-primary: linear-gradient(135deg, #0A004A 0%, #1A155C 25%, #21A8B0 50%, #3B336E 75%, #69BCC1 100%);
+src/styles/design-tokens.css:11:  --color-navy: #0A004A;          /* Deep Navy - primary background */
+src/styles/design-tokens.css:12:  --color-teal: #21A8B0;          /* Teal - primary accent */
+src/styles/design-tokens.css:13:  --color-yellow: #FFDE00;        /* Yellow - highlights only */
+src/styles/design-tokens.css:16:  --color-light-navy: #3B336E;    /* Light Navy - secondary backgrounds */
+src/styles/design-tokens.css:17:  --color-muted-teal: #69BCC1;    /* Muted Teal - subtle accents */
+src/styles/design-tokens.css:18:  --color-light-teal: #DEF2F2;    /* Light Teal - light backgrounds */
+src/styles/design-tokens.css:21:  --color-white: #FFFFFF;          /* White - text on dark */
+src/styles/design-tokens.css:22:  --color-light-grey: #E6E6E6;    /* Light Grey - borders */
+src/styles/design-tokens.css:23:  --color-grey: #CCCCCC;          /* Grey - secondary text */
+src/styles/design-tokens.css:24:  --color-rich-black: #333333;    /* Rich Black - text on light */
+src/components/ui/gradient-mesh.tsx:18:      <div className="absolute inset-0 bg-gradient-to-br from-[#0A0C2A] via-[#1e3a8a]/20 to-[#0A0C2A]" />
+src/components/ui/gradient-mesh.tsx:57:    blue: "#3b82f6",
+src/components/ui/gradient-mesh.tsx:58:    purple: "#a855f7",
+src/components/ui/gradient-mesh.tsx:59:    pink: "#ec4899",
+src/components/ui/gradient-mesh.tsx:60:    cyan: "#06b6d4",
+src/components/ui/gradient-mesh.tsx:61:    green: "#10b981",
+src/components/ui/gradient-mesh.tsx:62:    orange: "#f97316",
+src/components/ui/gradient-mesh.tsx:63:    indigo: "#6366f1",
+src/components/ui/gradient-mesh.tsx:65:  return colorMap[color] || "#3b82f6";
+src/components/ui/sparkles.tsx:64:                value: background || "#0d47a1",
+src/components/ui/sparkles.tsx:125:                value: particleColor || "#ffffff",
+src/components/ui/sparkles.tsx:256:                  value: "#000",
+src/components/ui/sparkles.tsx:398:                  value: "#fff",
+src/components/ui/sparkles.tsx:408:                    value: "#000",
+src/components/ui/container-scroll-animation.tsx:89:          "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
+src/components/ui/container-scroll-animation.tsx:91:      className="max-w-6xl -mt-12 mx-auto h-[40rem] md:h-[50rem] w-full border-4 border-[#6C6C6C] p-2 md:p-6 bg-[#222222] rounded-[30px] shadow-2xl"
+src/components/ui/glowing-effect.tsx:147:                  : `radial-gradient(circle, #dd7bbb 10%, #dd7bbb00 20%),
+src/components/ui/glowing-effect.tsx:148:                radial-gradient(circle at 40% 40%, #d79f1e 5%, #d79f1e00 15%),
+src/components/ui/glowing-effect.tsx:149:                radial-gradient(circle at 60% 60%, #5a922c 10%, #5a922c00 20%), 
+src/components/ui/glowing-effect.tsx:150:                radial-gradient(circle at 40% 60%, #4c7894 10%, #4c789400 20%),
+src/components/ui/glowing-effect.tsx:153:                  #dd7bbb 0%,
+src/components/ui/glowing-effect.tsx:154:                  #d79f1e calc(25% / var(--repeating-conic-gradient-times)),
+src/components/ui/glowing-effect.tsx:155:                  #5a922c calc(50% / var(--repeating-conic-gradient-times)), 
+src/components/ui/glowing-effect.tsx:156:                  #4c7894 calc(75% / var(--repeating-conic-gradient-times)),
+src/components/ui/glowing-effect.tsx:157:                  #dd7bbb calc(100% / var(--repeating-conic-gradient-times))
+src/components/ui/glowing-effect.tsx:179:              "after:[mask-image:linear-gradient(#0000,#0000),conic-gradient(from_calc((var(--start)-var(--spread))*1deg),#00000000_0deg,#fff,#00000000_calc(var(--spread)*2deg))]"
+src/components/ui/cover.tsx:75:                particleColor="#FFFFFF"
+src/components/ui/cover.tsx:83:                particleColor="#FFFFFF"
+src/components/ui/cover.tsx:204:          <stop stopColor="#2EB9DF" stopOpacity="0" />
+src/components/ui/cover.tsx:205:          <stop stopColor="#3b82f6" />
+src/components/ui/cover.tsx:206:          <stop offset="1" stopColor="#3b82f6" stopOpacity="0" />
+src/components/ui/shooting-stars.tsx:49:  starColor = "#9E00FF",
+src/components/ui/shooting-stars.tsx:50:  trailColor = "#2EB9DF",
+src/components/ui/aurora-background.tsx:29:                "repeating-linear-gradient(100deg,#1e3a8a_10%,#0f766e_15%,#eab308_20%,#1e3a8a_25%,#0f766e_30%)",
+src/components/ui/aurora-background.tsx:31:                "repeating-linear-gradient(100deg,#000_0%,#000_7%,transparent_10%,transparent_12%,#000_16%)",
+src/components/ui/aurora-background.tsx:33:                "repeating-linear-gradient(100deg,#fff_0%,#fff_7%,transparent_10%,transparent_12%,#fff_16%)",
+src/components/ui/aurora-background.tsx:35:              "--navy-blue": "#1e3a8a", // Deep Navy Blue
+src/components/ui/aurora-background.tsx:36:              "--teal": "#0f766e", // Teal
+src/components/ui/aurora-background.tsx:37:              "--yellow": "#eab308", // Yellow
+src/components/ui/aurora-background.tsx:38:              "--black": "#000",
+src/components/ui/aurora-background.tsx:39:              "--white": "#fff",
+src/components/ui/bento-grid.tsx:180:      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#7AB8BD] to-[#F1D632] opacity-30 blur-xl" />
+src/components/ui/bento-grid.tsx:192:            className="flex-1 bg-gradient-to-t from-[#7AB8BD] to-[#F1D632] rounded-t"
+src/components/ui/features-section-demo-3.tsx:197:        <svg className="w-5 h-5 text-[#7AB8BD]" fill="currentColor" viewBox="0 0 24 24">
+src/components/ui/features-section-demo-3.tsx:207:        <svg className="w-5 h-5 text-[#F1D632]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+src/components/ui/features-section-demo-3.tsx:217:        <svg className="w-5 h-5 text-[#0A0C2A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+src/components/ui/features-section-demo-3.tsx:324:            className="text-[#7AB8BD] dark:text-[#7AB8BD] text-lg font-medium hover:underline mt-1"
+src/components/ui/features-section-demo-3.tsx:443:// .aptly-glow-border { box-shadow: 0 0 0 4px #21a8b055, 0 0 32px 8px #21a8b044; } 
+src/components/magicui/line-shadow-text.tsx:16:  gradientFrom = "#60a5fa",
+src/components/magicui/line-shadow-text.tsx:17:  gradientTo = "#a855f7",
+src/components/magicui/bento-grid.tsx:31:  accent = '#21a8b0',
+src/components/TestimonialCard.tsx:17:      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-[#21A8B0]/30 transition-all duration-300"
+src/components/TestimonialCard.tsx:21:          <div className="w-12 h-12 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center">
+src/components/TestimonialCard.tsx:27:            <div className="text-[#21A8B0] text-sm font-medium" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:39:          <div className="text-[#DEF2F2] text-sm" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:40:            <span className="text-[#69BCC1]">From:</span> {story.previousRole}
+src/components/TestimonialCard.tsx:44:          <div className="text-[#DEF2F2] text-sm" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:45:            <span className="text-[#21A8B0]">To:</span> {story.currentRole}
+src/components/TestimonialCard.tsx:50:      <blockquote className="text-[#DEF2F2] italic mb-6 leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/TestimonialCard.tsx:55:        <div className="text-[#21A8B0] font-medium text-sm" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+src/components/VoiceRecorder.tsx:35:          isRecording ? 'bg-red-500 hover:bg-red-600' : 'bg-[#7AB8BD] hover:bg-[#6BB3C3]'
+src/components/VoiceRecorder.tsx:51:            className="w-8 h-8 bg-[#7AB8BD] rounded-full mx-auto mb-4"
+src/components/Accessibility/SkipToContent.tsx:7:      className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 z-50 bg-[#7AB8BD] text-white px-4 py-2 rounded-md font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#7AB8BD]"
+src/components/ErrorBoundary.tsx:59:              className="mx-auto h-16 w-16 text-[#FA897E] mb-4"
+src/components/ErrorBoundary.tsx:79:              className="px-4 py-2 bg-[#7AB8BD] hover:bg-[#6BA3A8] text-white rounded-lg transition-colors"
+src/components/ErrorBoundary.tsx:85:                <summary className="text-[#FA897E] cursor-pointer text-sm">
+src/components/AptlyLogo.tsx:132:      <rect width="64" height="64" rx="12" fill="#0A004A"/>
+src/components/AptlyLogo.tsx:133:      <circle cx="24" cy="32" r="14" fill="white" stroke="#0A004A" strokeWidth="2"/>
+src/components/AptlyLogo.tsx:134:      <circle cx="40" cy="32" r="14" fill="#21A8B0"/>
+src/components/AptlyLogo.tsx:135:      <path d="M 26 32 A 14 14 0 0 0 38 32 A 14 14 0 0 0 26 32" fill="#FFDE00"/>
+src/lib/utils/sanitize.ts:13:    .replace(/'/g, "&#039;");

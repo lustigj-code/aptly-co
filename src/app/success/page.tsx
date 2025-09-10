@@ -1,4 +1,6 @@
-"use client";
+'use client';
+
+import { useEffect, useState } from 'react';
 import { 
   Container, 
   Section, 
@@ -6,244 +8,365 @@ import {
   Button, 
   Grid, 
   Card,
-  Badge,
-  Stat
+  Badge
 } from '@/design-system';
+import ScrollAnimatedSection from '@/components/ScrollAnimatedSection';
+import { 
+  successStories, 
+  successMetrics, 
+  categoryLabels, 
+  categoryDescriptions 
+} from '@/lib/data/success-stories';
+import '@/styles/animations.css';
 
-const successStories = [
-  {
-    id: 1,
-    name: "Maria Gonzalez",
-    role: "Data Analyst → Senior Data Scientist",
-    company: "Microsoft",
-    program: "Meta Data Analyst Certificate",
-    salary: "65% salary increase",
-    quote: "Aptly gave me the confidence and skills to transition from a traditional analyst role to a data science position at a top tech company.",
-    timeline: "6 months",
-    featured: true
-  },
-  {
-    id: 2,
-    name: "James Park",
-    role: "Retail Manager → Digital Marketing Manager",
-    company: "Adobe",
-    program: "Meta Social Media Marketing Certificate",
-    salary: "2x salary",
-    quote: "The structured learning path and industry connections through Aptly completely changed my career trajectory.",
-    timeline: "4 months",
-    featured: true
-  },
-  {
-    id: 3,
-    name: "Aisha Patel",
-    role: "Teacher → UX Designer",
-    company: "Spotify",
-    program: "Google UX Design Certificate",
-    salary: "80% salary increase",
-    quote: "From classroom to tech company - Aptly made an impossible dream possible.",
-    timeline: "5 months",
-    featured: true
-  },
-  {
-    id: 4,
-    name: "Robert Chen",
-    role: "Freelancer → Marketing Analytics Lead",
-    company: "Salesforce",
-    program: "Meta Marketing Analytics Certificate",
-    salary: "3x income",
-    quote: "The combination of technical skills and career coaching was exactly what I needed.",
-    timeline: "3 months"
-  },
-  {
-    id: 5,
-    name: "Sarah Williams",
-    role: "Administrative Assistant → Product Manager",
-    company: "Amazon",
-    program: "Multiple Certificates",
-    salary: "150% salary increase",
-    quote: "I completed three certificates and landed my dream job at Amazon.",
-    timeline: "8 months"
-  },
-  {
-    id: 6,
-    name: "David Lee",
-    role: "Bartender → Frontend Developer",
-    company: "Netflix",
-    program: "Web Development Specialization",
-    salary: "New career path",
-    quote: "Zero coding experience to working at Netflix - still feels surreal.",
-    timeline: "7 months"
-  }
-];
+export default function SuccessPage() {
+  const [mounted, setMounted] = useState(false);
+  const careerChangers = successStories.filter(s => s.category === 'career-changer');
+  const skillUpgraders = successStories.filter(s => s.category === 'skill-upgrader');
+  const recentGraduates = successStories.filter(s => s.category === 'recent-graduate');
 
-const statistics = [
-  { value: "87%", label: "Job Placement Rate" },
-  { value: "65%", label: "Average Salary Increase" },
-  { value: "3-6", label: "Months to New Job" },
-  { value: "95%", label: "Would Recommend" }
-];
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-export default function SuccessStoriesPage() {
   return (
-    <main className="min-h-screen bg-navy pt-20">
+    <main className="min-h-screen bg-navy text-primary">
       {/* Hero Section */}
-      <Section background="gradient" spacing="xl">
+      <Section background="gradient" spacing="xl" className="mesh-gradient grain-overlay">
         <Container size="lg">
-          <div className="text-center max-w-4xl mx-auto">
-            <Badge variant="success" size="md">50,000+ Success Stories</Badge>
-            <Heading as="h1" size="3xl" className="mt-6 mb-6">
-              Real People. Real Results.
+          <div className={`text-center max-w-4xl mx-auto ${mounted ? 'animate-[fadeInUp_0.8s_ease-out]' : 'opacity-0'}`}>
+            <Heading as="h1" size="3xl" className="mb-6">
+              Real People.{" "}
+              <span className="text-secondary">
+                Real Results.
+              </span>
             </Heading>
-            <p className="text-xl text-light-teal leading-relaxed">
-              Discover how professionals from all backgrounds have transformed 
-              their careers through Aptly&apos;s certificate programs.
+            <p className="text-xl leading-relaxed animate-[fadeInUp_0.8s_ease-out_0.2s_both] text-secondary">
+              Discover how professionals from all backgrounds have transformed their careers 
+              with Meta and Google certificates through Aptly
             </p>
           </div>
         </Container>
       </Section>
 
-      {/* Statistics Bar */}
-      <Section background="light-navy" spacing="md">
+      {/* Success Metrics Section */}
+      <Section spacing="lg" className="bg-light-navy">
         <Container size="lg">
-          <Grid cols={{ default: 2, md: 4 }} gap="md">
-            {statistics.map((stat) => (
-              <Stat key={stat.label} value={stat.value} label={stat.label} />
+          <ScrollAnimatedSection animation="fadeIn">
+            <Card variant="default" className="card-standard">
+              <Heading as="h2" size="xl" className="text-center mb-8">
+                Success by the Numbers
+              </Heading>
+              <Grid cols={{ default: 2, md: 3, lg: 6 }} gap="md">
+                <div className="text-center group hover:scale-105 transition-transform">
+                  <div className="text-3xl font-bold text-secondary">
+                    {successMetrics.averageCompletionTime}
+                  </div>
+                  <div className="text-sm mt-2 text-secondary">
+                    Average Completion
+                  </div>
+                </div>
+                <div className="text-center group hover:scale-105 transition-transform">
+                  <div className="text-3xl font-bold text-secondary">
+                    {successMetrics.careerTransitionRate}
+                  </div>
+                  <div className="text-sm mt-2 text-secondary">
+                    Career Transition Rate
+                  </div>
+                </div>
+                <div className="text-center group hover:scale-105 transition-transform">
+                  <div className="text-3xl font-bold text-secondary">
+                    {successMetrics.skillApplicationRate}
+                  </div>
+                  <div className="text-sm mt-2 text-secondary">
+                    Apply Skills at Work
+                  </div>
+                </div>
+                <div className="text-center group hover:scale-105 transition-transform">
+                  <div className="text-3xl font-bold text-secondary">
+                    {successMetrics.learnerSatisfaction}
+                  </div>
+                  <div className="text-sm mt-2 text-secondary">
+                    Learner Satisfaction
+                  </div>
+                </div>
+                <div className="text-center col-span-2 group hover:scale-105 transition-transform">
+                  <div className="text-lg font-bold text-primary mb-2">
+                    Most Popular Certificate
+                  </div>
+                  <div className="text-secondary">
+                    {successMetrics.mostPopularCertificate}
+                  </div>
+                </div>
+              </Grid>
+              
+              <div className="mt-8 pt-8 border-t border-white/10">
+                <div className="text-center">
+                  <div className="text-primary font-bold mb-3">
+                    Top Industries Hiring Our Graduates
+                  </div>
+                  <div className="flex flex-wrap justify-center gap-3">
+                    {successMetrics.topHiringIndustries.map(industry => (
+                      <Badge
+                        key={industry}
+                        variant="info"
+                      >
+                        {industry}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </ScrollAnimatedSection>
+        </Container>
+      </Section>
+
+      {/* Career Changers Section */}
+      <Section background="navy" spacing="xl">
+        <Container size="lg">
+          <ScrollAnimatedSection animation="fadeIn" className="text-center mb-12">
+            <Heading as="h2" size="2xl" className="mb-4">
+              {categoryLabels['career-changer']}
+            </Heading>
+            <p className="text-lg text-secondary max-w-2xl mx-auto">
+              {categoryDescriptions['career-changer']}
+            </p>
+          </ScrollAnimatedSection>
+          
+          <Grid cols={{ default: 1, md: 2, lg: 3 }} gap="lg" className="items-stretch">
+            {careerChangers.map((story, index) => (
+              <ScrollAnimatedSection
+                key={story.id}
+                animation="scale"
+                delay={index * 100}
+              >
+                <Card variant="default" className="h-full card-standard">
+                  <div className="flex items-start justify-between mb-6">
+                    <div className="flex items-center">
+                      <div className="w-12 h-12 bg-gradient-to-br from-secondary to-navy rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <span className="text-primary font-bold">
+                          {story.initials}
+                        </span>
+                      </div>
+                      <div className="ml-4">
+                        <div className="text-secondary text-sm font-medium">
+                          {story.completionTime}
+                        </div>
+                        <div className="text-primary font-bold">
+                          {story.certificateCompleted}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mb-6">
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="text-secondary text-sm">
+                        <span className="text-secondary">From:</span> {story.previousRole}
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="text-secondary text-sm">
+                        <span className="text-secondary">To:</span> {story.currentRole}
+                      </div>
+                    </div>
+                  </div>
+
+                  <blockquote className="text-secondary italic mb-6 leading-relaxed">
+                    &ldquo;{story.quote}&rdquo;
+                  </blockquote>
+
+                  <div className="pt-6 border-t border-white/10">
+                    <div className="text-secondary font-medium text-sm">
+                      Key Outcome
+                    </div>
+                    <div className="text-primary mt-2">
+                      {story.keyOutcome}
+                    </div>
+                  </div>
+                </Card>
+              </ScrollAnimatedSection>
             ))}
           </Grid>
         </Container>
       </Section>
 
-      {/* Featured Success Stories */}
-      <Section background="navy" spacing="xl">
-        <Container size="lg">
-          <div className="text-center mb-12">
-            <Heading as="h2" size="2xl" className="mb-4">
-              Featured Success Stories
-            </Heading>
-            <p className="text-lg text-light-teal max-w-2xl mx-auto">
-              These graduates went from career uncertainty to landing roles at 
-              the world&apos;s leading tech companies.
-            </p>
-          </div>
-
-          {/* Featured Cards */}
-          <Grid cols={{ default: 1, lg: 3 }} gap="lg">
-            {successStories
-              .filter(story => story.featured)
-              .map((story, idx) => (
-                <div key={story.id}>
-                  <Card variant="bordered" padding="lg" className="h-full">
-                    <Badge variant="success" size="sm">{story.timeline} to success</Badge>
-                    
-                    <div className="mt-6 mb-4">
-                      <Heading as="h3" size="md" weight="medium">{story.name}</Heading>
-                      <p className="text-teal text-sm mt-1">{story.company}</p>
-                    </div>
-                    
-                    <div className="mb-6">
-                      <p className="text-light-teal text-sm mb-2">{story.role}</p>
-                      <p className="text-2xl font-bold text-white">{story.salary}</p>
-                    </div>
-                    
-                    <blockquote className="text-light-teal italic mb-6">
-                      &ldquo;{story.quote}&rdquo;
-                    </blockquote>
-                    
-                    <div className="text-sm text-muted-teal">
-                      Program: {story.program}
-                    </div>
-                  </Card>
-                </div>
-              ))}
-          </Grid>
-        </Container>
-      </Section>
-
-      {/* All Success Stories Grid */}
-      <Section background="white" spacing="xl">
-        <Container size="lg">
-          <div className="text-center mb-12">
-            <Heading as="h2" size="2xl" color="navy" className="mb-4">
-              More Success Stories
-            </Heading>
-          </div>
-
-          <Grid cols={{ default: 1, md: 2 }} gap="md">
-            {successStories
-              .filter(story => !story.featured)
-              .map((story) => (
-                <Card key={story.id} variant="elevated" padding="md">
-                  <div className="flex justify-between items-start mb-4">
-                    <div>
-                      <Heading as="h3" size="sm" color="navy" weight="medium">
-                        {story.name}
-                      </Heading>
-                      <p className="text-teal text-sm">{story.company}</p>
-                    </div>
-                    <Badge variant="info" size="sm">{story.timeline}</Badge>
-                  </div>
-                  <p className="text-rich-black text-sm mb-3">{story.role}</p>
-                  <p className="text-navy font-bold mb-3">{story.salary}</p>
-                  <p className="text-rich-black text-sm italic">
-                    &ldquo;{story.quote}&rdquo;
-                  </p>
-                </Card>
-              ))}
-          </Grid>
-        </Container>
-      </Section>
-
-      {/* Career Transitions Section */}
+      {/* Skill Upgraders Section */}
       <Section background="light-navy" spacing="xl">
         <Container size="lg">
-          <div className="text-center mb-12">
+          <ScrollAnimatedSection animation="fadeIn" className="text-center mb-12">
             <Heading as="h2" size="2xl" className="mb-4">
-              Every Background Welcome
+              {categoryLabels['skill-upgrader']}
             </Heading>
-            <p className="text-lg text-light-teal max-w-2xl mx-auto">
-              Our graduates come from diverse backgrounds and successfully 
-              transition into tech careers.
+            <p className="text-lg text-secondary max-w-2xl mx-auto">
+              {categoryDescriptions['skill-upgrader']}
             </p>
-          </div>
+          </ScrollAnimatedSection>
+          
+          <Grid cols={{ default: 1, md: 2, lg: 3 }} gap="lg" className="items-stretch">
+            {skillUpgraders.map((story, index) => (
+              <ScrollAnimatedSection
+                key={story.id}
+                animation="scale"
+                delay={index * 100}
+              >
+                <Card variant="default" className="h-full glass card-hover shadow-elegant-hover">
+                  <div className="flex items-start justify-between mb-6">
+                    <div className="flex items-center">
+                      <div className="w-12 h-12 bg-gradient-to-br from-teal to-navy rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                        <span className="text-primary font-bold">
+                          {story.initials}
+                        </span>
+                      </div>
+                      <div className="ml-4">
+                        <div className="text-secondary text-sm font-medium">
+                          {story.completionTime}
+                        </div>
+                        <div className="text-primary font-bold">
+                          {story.certificateCompleted}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-          <Grid cols={{ default: 2, md: 3, lg: 6 }} gap="sm">
-            {[
-              "Teacher → Developer",
-              "Nurse → Data Analyst",
-              "Retail → UX Designer",
-              "Military → Cyber Security",
-              "Artist → Product Manager",
-              "Chef → Digital Marketer"
-            ].map((transition) => (
-              <Card key={transition} variant="default" padding="sm">
-                <p className="text-white text-center text-sm font-medium">
-                  {transition}
-                </p>
-              </Card>
+                  <div className="mb-6">
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="text-secondary text-sm">
+                        <span className="text-secondary">From:</span> {story.previousRole}
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="text-secondary text-sm">
+                        <span className="text-secondary">To:</span> {story.currentRole}
+                      </div>
+                    </div>
+                  </div>
+
+                  <blockquote className="text-secondary italic mb-6 leading-relaxed">
+                    &ldquo;{story.quote}&rdquo;
+                  </blockquote>
+
+                  <div className="pt-6 border-t border-white/10">
+                    <div className="text-secondary font-medium text-sm">
+                      Key Outcome
+                    </div>
+                    <div className="text-primary mt-2">
+                      {story.keyOutcome}
+                    </div>
+                  </div>
+                </Card>
+              </ScrollAnimatedSection>
+            ))}
+          </Grid>
+        </Container>
+      </Section>
+
+      {/* Recent Graduates Section */}
+      <Section background="navy" spacing="xl">
+        <Container size="lg">
+          <ScrollAnimatedSection animation="fadeIn" className="text-center mb-12">
+            <Heading as="h2" size="2xl" className="mb-4">
+              {categoryLabels['recent-graduate']}
+            </Heading>
+            <p className="text-lg text-secondary max-w-2xl mx-auto">
+              {categoryDescriptions['recent-graduate']}
+            </p>
+          </ScrollAnimatedSection>
+          
+          <Grid cols={{ default: 1, md: 2, lg: 3 }} gap="lg" className="items-stretch">
+            {recentGraduates.map((story, index) => (
+              <ScrollAnimatedSection
+                key={story.id}
+                animation="scale"
+                delay={index * 100}
+              >
+                <Card variant="default" className="h-full card-standard">
+                  <div className="flex items-start justify-between mb-6">
+                    <div className="flex items-center">
+                      <div className="w-12 h-12 bg-gradient-to-br from-secondary to-navy rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <span className="text-primary font-bold">
+                          {story.initials}
+                        </span>
+                      </div>
+                      <div className="ml-4">
+                        <div className="text-secondary text-sm font-medium">
+                          {story.completionTime}
+                        </div>
+                        <div className="text-primary font-bold">
+                          {story.certificateCompleted}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mb-6">
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="text-secondary text-sm">
+                        <span className="text-secondary">From:</span> {story.previousRole}
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="text-secondary text-sm">
+                        <span className="text-secondary">To:</span> {story.currentRole}
+                      </div>
+                    </div>
+                  </div>
+
+                  <blockquote className="text-secondary italic mb-6 leading-relaxed">
+                    &ldquo;{story.quote}&rdquo;
+                  </blockquote>
+
+                  <div className="pt-6 border-t border-white/10">
+                    <div className="text-secondary font-medium text-sm">
+                      Key Outcome
+                    </div>
+                    <div className="text-primary mt-2">
+                      {story.keyOutcome}
+                    </div>
+                  </div>
+                </Card>
+              </ScrollAnimatedSection>
             ))}
           </Grid>
         </Container>
       </Section>
 
       {/* CTA Section */}
-      <Section background="gradient" spacing="lg">
+      <Section background="gradient" spacing="lg" className="mesh-gradient">
         <Container size="md">
-          <div className="text-center">
-            <Heading as="h2" size="2xl" className="mb-6">
-              Write Your Success Story
-            </Heading>
-            <p className="text-lg text-light-teal mb-8">
-              Join thousands who have already transformed their careers. 
-              Your success story starts today.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="primary">
-                Start Your Journey
-              </Button>
-              <Button size="lg" variant="outline">
-                Talk to Graduate
-              </Button>
-            </div>
+          <div className={`text-center ${mounted ? 'animate-[fadeInScale_1s_ease-out]' : 'opacity-0'}`}>
+            <Card variant="default" className="card-standard">
+              <Heading as="h2" size="2xl" className="mb-6">
+                Start Your Success Story Today
+              </Heading>
+              <p className="text-lg text-secondary mb-8 max-w-2xl mx-auto leading-relaxed">
+                Join thousands of learners who have transformed their careers with industry-recognized certificates from Meta and Google.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <Button
+                  href="/programs"
+                  variant="primary"
+                  size="lg"
+                  className="btn-primary"
+                >
+                  View Course Catalog
+                </Button>
+                <Button
+                  href="/demo"
+                  variant="outline"
+                  size="lg"
+                  className="btn-secondary"
+                >
+                  Start Free Course Preview
+                </Button>
+              </div>
+              <div className="mt-8 pt-8 border-t border-white/10">
+                <p className="text-secondary text-sm">
+                  Have questions? Visit our <a href="/faq" className="text-secondary hover:underline">FAQ</a> or <a href="/contact" className="text-secondary hover:underline">contact us</a> for personalized guidance.
+                </p>
+              </div>
+            </Card>
           </div>
         </Container>
       </Section>

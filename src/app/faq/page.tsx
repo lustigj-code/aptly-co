@@ -54,7 +54,7 @@ export default function FAQPage() {
       
       <div className="relative z-10">
         {/* Hero Section */}
-        <section className="pt-32 pb-16 px-8">
+        <section className="section-padding container-padding pt-32">
           <div className="max-w-7xl mx-auto text-center">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -81,7 +81,7 @@ export default function FAQPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="pb-24 px-8">
+        <section className="section-padding container-padding">
           <div className="max-w-5xl mx-auto">
             <div className="space-y-6">
               {faqs.map((faq, index) => (
@@ -90,11 +90,11 @@ export default function FAQPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: index * 0.1 }}
-                  className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-[#21A8B0]/30 transition-all duration-300"
+                  className="card-standard group"
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="w-full p-8 text-left flex items-center justify-between"
+                    className="w-full text-left flex items-center justify-between p-6"
                   >
                     <h3 className="text-xl font-bold text-white group-hover:text-[#21A8B0] transition-colors pr-4" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                       {faq.question}
@@ -118,7 +118,7 @@ export default function FAQPage() {
                       animate={{ opacity: 1, height: 'auto' }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="px-8 pb-8"
+                      className="px-6 pb-6"
                     >
                       <div className="border-t border-white/10 pt-6">
                         <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
@@ -134,13 +134,13 @@ export default function FAQPage() {
         </section>
 
         {/* Contact Section */}
-        <section className="py-24 px-8">
+        <section className="section-padding container-padding">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-12"
+              className="card-standard"
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                 Still Have Questions?
@@ -169,7 +169,7 @@ export default function FAQPage() {
         </section>
 
         {/* Quick Links Section */}
-        <section className="py-24 px-8">
+        <section className="section-padding container-padding">
           <div className="max-w-6xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -193,12 +193,12 @@ export default function FAQPage() {
               >
                 <Link
                   href="/courses"
-                  className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-[#21A8B0]/30 transition-all duration-300 p-8 text-center block"
+                  className="card-standard text-center block group"
                 >
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-teal to-navy rounded-full flex items-center justify-center mx-auto mb-6">
                     <div className="text-2xl text-white">C</div>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-teal transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                     Browse Courses
                   </h3>
                   <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
@@ -213,12 +213,12 @@ export default function FAQPage() {
               >
                 <Link
                   href="/study-app"
-                  className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-[#21A8B0]/30 transition-all duration-300 p-8 text-center block"
+                  className="card-standard text-center block group"
                 >
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-teal to-navy rounded-full flex items-center justify-center mx-auto mb-6">
                     <div className="text-2xl text-white">S</div>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-teal transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                     Study App
                   </h3>
                   <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
@@ -233,12 +233,12 @@ export default function FAQPage() {
               >
                 <Link
                   href="/services"
-                  className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-[#21A8B0]/30 transition-all duration-300 p-8 text-center block"
+                  className="card-standard text-center block group"
                 >
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#21A8B0] to-[#0A004A] rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-teal to-navy rounded-full flex items-center justify-center mx-auto mb-6">
                     <div className="text-2xl text-white">E</div>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#21A8B0] transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-teal transition-colors" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                     Enterprise Solutions
                   </h3>
                   <p className="text-[#DEF2F2] leading-relaxed" style={{ fontFamily: 'DM Sans, sans-serif' }}>
@@ -251,13 +251,13 @@ export default function FAQPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 px-8">
+        <section className="section-padding container-padding">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.0 }}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-12"
+              className="card-standard"
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8" style={{ fontFamily: 'DM Sans, sans-serif' }}>
                 Ready to Start Learning?

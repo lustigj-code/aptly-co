@@ -32,7 +32,7 @@ export default function VoiceRecorder() {
       <button
         onClick={isRecording ? handleStopRecording : handleStartRecording}
         className={`w-full py-2 px-4 rounded-full ${
-          isRecording ? 'bg-red-500 hover:bg-red-600' : 'bg-[#7AB8BD] hover:bg-[#6BB3C3]'
+          isRecording ? 'bg-red-500 hover:bg-red-600' : 'bg-muted-teal hover:opacity-90'
         } text-white font-bold`}
       >
         {isRecording ? 'Stop Recording' : 'Start Recording'}
@@ -48,7 +48,7 @@ export default function VoiceRecorder() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="w-8 h-8 bg-[#7AB8BD] rounded-full mx-auto mb-4"
+            className="w-8 h-8 bg-muted-teal rounded-full mx-auto mb-4"
           />
           <p className="text-sm text-gray-600">{realtimeTranscript}</p>
         </div>

@@ -7,18 +7,18 @@ export const metadata = {
 
 export default function TermsOfService() {
   return (
-    <div className="min-h-screen bg-[#0A0C2A] text-gray-100">
-      <div className="max-w-4xl mx-auto px-4 py-24">
+    <div className="min-h-screen bg-navy text-primary">
+      <div className="max-w-4xl mx-auto px-4 py-20">
         <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
         
-        <p className="text-gray-300 mb-6">
+        <p className="text-secondary mb-6">
           Effective Date: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
         </p>
 
         <section className="space-y-8">
           <div>
-            <h2 className="text-2xl font-semibold mb-4">1. Acceptance of Terms</h2>
-            <p className="text-gray-300">
+            <h2 className="h2 mb-4">1. Acceptance of Terms</h2>
+            <p className="text-secondary">
               By accessing or using Aptly&apos;s services, you agree to be bound by these Terms of 
               Service and our Privacy Policy. If you do not agree to these terms, please do not 
               use our services.
@@ -26,8 +26,8 @@ export default function TermsOfService() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">2. Description of Service</h2>
-            <p className="text-gray-300">
+            <h2 className="h2 mb-4">2. Description of Service</h2>
+            <p className="text-secondary">
               Aptly provides digital learning solutions, including AI-powered study tools, 
               interactive flashcards, and certification preparation materials. We reserve the 
               right to modify, suspend, or discontinue any aspect of our services at any time.
@@ -35,7 +35,7 @@ export default function TermsOfService() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">3. User Accounts</h2>
+            <h2 className="h2 mb-4">3. User Accounts</h2>
             <p className="text-gray-300 mb-4">To use certain features, you may need to create an account. You agree to:</p>
             <ul className="list-disc list-inside text-gray-300 space-y-2 ml-4">
               <li>Provide accurate and complete information</li>
@@ -47,7 +47,7 @@ export default function TermsOfService() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">4. Acceptable Use</h2>
+            <h2 className="h2 mb-4">4. Acceptable Use</h2>
             <p className="text-gray-300 mb-4">You agree not to:</p>
             <ul className="list-disc list-inside text-gray-300 space-y-2 ml-4">
               <li>Violate any laws or regulations</li>
@@ -61,8 +61,8 @@ export default function TermsOfService() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">5. Intellectual Property</h2>
-            <p className="text-gray-300">
+            <h2 className="h2 mb-4">5. Intellectual Property</h2>
+            <p className="text-secondary">
               All content, features, and functionality of our services, including but not limited 
               to text, graphics, logos, and software, are owned by Aptly or our licensors and are 
               protected by intellectual property laws. You may not copy, modify, distribute, or 
@@ -71,8 +71,8 @@ export default function TermsOfService() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">6. User Content</h2>
-            <p className="text-gray-300">
+            <h2 className="h2 mb-4">6. User Content</h2>
+            <p className="text-secondary">
               By submitting content to our services, you grant Aptly a non-exclusive, worldwide, 
               royalty-free license to use, reproduce, modify, and distribute your content in 
               connection with our services. You represent that you have the right to grant this 
@@ -81,8 +81,8 @@ export default function TermsOfService() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">7. Payment Terms</h2>
-            <p className="text-gray-300">
+            <h2 className="h2 mb-4">7. Payment Terms</h2>
+            <p className="text-secondary">
               If you purchase any paid services, you agree to pay all fees and applicable taxes. 
               Payments are non-refundable except as required by law or as explicitly stated in 
               our refund policy. We reserve the right to change our prices at any time.
@@ -90,8 +90,8 @@ export default function TermsOfService() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">8. Disclaimers</h2>
-            <p className="text-gray-300">
+            <h2 className="h2 mb-4">8. Disclaimers</h2>
+            <p className="text-secondary">
               OUR SERVICES ARE PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND. 
               WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS 
               FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT GUARANTEE THAT OUR 
@@ -100,8 +100,8 @@ export default function TermsOfService() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">9. Limitation of Liability</h2>
-            <p className="text-gray-300">
+            <h2 className="h2 mb-4">9. Limitation of Liability</h2>
+            <p className="text-secondary">
               TO THE MAXIMUM EXTENT PERMITTED BY LAW, APTLY SHALL NOT BE LIABLE FOR ANY INDIRECT, 
               INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR 
               REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, 
@@ -110,8 +110,8 @@ export default function TermsOfService() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">10. Indemnification</h2>
-            <p className="text-gray-300">
+            <h2 className="h2 mb-4">10. Indemnification</h2>
+            <p className="text-secondary">
               You agree to indemnify and hold harmless Aptly and its officers, directors, 
               employees, and agents from any claims, damages, losses, liabilities, and expenses 
               arising out of your use of our services or violation of these terms.
@@ -119,8 +119,8 @@ export default function TermsOfService() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">11. Termination</h2>
-            <p className="text-gray-300">
+            <h2 className="h2 mb-4">11. Termination</h2>
+            <p className="text-secondary">
               We may terminate or suspend your account and access to our services at any time, 
               without prior notice or liability, for any reason, including breach of these terms. 
               Upon termination, your right to use our services will immediately cease.
@@ -128,8 +128,8 @@ export default function TermsOfService() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">12. Governing Law</h2>
-            <p className="text-gray-300">
+            <h2 className="h2 mb-4">12. Governing Law</h2>
+            <p className="text-secondary">
               These terms shall be governed by and construed in accordance with the laws of 
               [Your Jurisdiction], without regard to its conflict of law provisions. You agree 
               to submit to the exclusive jurisdiction of the courts located in [Your Jurisdiction].
@@ -137,8 +137,8 @@ export default function TermsOfService() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">13. Changes to Terms</h2>
-            <p className="text-gray-300">
+            <h2 className="h2 mb-4">13. Changes to Terms</h2>
+            <p className="text-secondary">
               We reserve the right to modify these terms at any time. We will notify you of any 
               material changes by posting the new terms on our website. Your continued use of our 
               services after such modifications constitutes acceptance of the updated terms.
@@ -146,8 +146,8 @@ export default function TermsOfService() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-4">14. Contact Information</h2>
-            <p className="text-gray-300">
+            <h2 className="h2 mb-4">14. Contact Information</h2>
+            <p className="text-secondary">
               If you have any questions about these Terms of Service, please contact us at:
             </p>
             <p className="text-gray-300 mt-2">
@@ -160,7 +160,7 @@ export default function TermsOfService() {
         <div className="mt-12 pt-8 border-t border-gray-700">
           <Link 
             href="/" 
-            className="text-[#7AB8BD] hover:text-[#6BA3A8] transition-colors"
+            className="text-muted-teal hover:opacity-90 transition-opacity"
           >
             ← Back to Home
           </Link>

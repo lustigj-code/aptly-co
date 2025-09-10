@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
 import * as Sentry from '@sentry/nextjs';
+import { Button } from '@/design-system';
 
 export default function Error({
   error,
@@ -27,11 +28,11 @@ export default function Error({
   }, [error]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#0A0C2A]">
+    <div className="min-h-screen flex items-center justify-center bg-navy">
       <div className="text-center px-4 max-w-2xl mx-auto">
         <div className="mb-8">
           <svg
-            className="mx-auto h-24 w-24 text-[#7AB8BD]"
+            className="mx-auto h-24 w-24 text-secondary"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -54,19 +55,13 @@ export default function Error({
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button
-            onClick={reset}
-            className="px-6 py-3 bg-[#7AB8BD] hover:bg-[#6BB3C3] text-white font-semibold rounded-full transition-colors duration-200"
-          >
+          <Button onClick={reset} variant="primary" size="lg" className="btn-primary">
             Try Again
-          </button>
+          </Button>
           
-          <Link
-            href="/"
-            className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-full transition-colors duration-200"
-          >
+          <Button href="/" variant="outline" size="lg" className="btn-secondary">
             Go Home
-          </Link>
+          </Button>
         </div>
         
         {error.digest && (

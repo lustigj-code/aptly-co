@@ -1,0 +1,257 @@
+/* Enhanced Mobile Responsiveness */
+
+/* Touch Target Optimization */
+@media (max-width: 768px) {
+  /* Ensure all interactive elements are at least 44x44px */
+  button, 
+  a, 
+  [role="button"],
+  input,
+  select,
+  textarea {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Better spacing for mobile */
+  .section-spacing-mobile {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  /* Improved typography scaling */
+  h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+    line-height: 1.3;
+  }
+  
+  h3 {
+    font-size: clamp(1.25rem, 5vw, 2rem);
+    line-height: 1.4;
+  }
+  
+  p {
+    font-size: clamp(1rem, 4vw, 1.125rem);
+    line-height: 1.7;
+  }
+  
+  /* Card adjustments for mobile */
+  .card-mobile {
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+  
+  /* Navigation improvements */
+  nav {
+    padding: 0 1rem;
+  }
+  
+  /* Better button spacing */
+  .btn-group-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .btn-group-mobile > * {
+    width: 100%;
+  }
+  
+  /* Improved grid spacing */
+  .grid-mobile {
+    gap: 1.5rem;
+  }
+  
+  /* Swipeable cards */
+  .swipe-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  
+  .swipe-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .swipe-card {
+    scroll-snap-align: center;
+    flex: 0 0 85%;
+  }
+  
+  /* Mobile-first animations */
+  @media (prefers-reduced-motion: no-preference) {
+    .slide-up-mobile {
+      animation: slideUpMobile 0.4s ease-out;
+    }
+    
+    @keyframes slideUpMobile {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  
+  /* Improved form inputs */
+  input,
+  textarea,
+  select {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: 12px 16px;
+    border-radius: 8px;
+  }
+  
+  /* Better modal/overlay handling */
+  .modal-mobile {
+    position: fixed;
+    inset: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Optimized images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Safe area padding for notched devices */
+  .safe-area-padding {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container-tablet {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .grid-tablet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Landscape mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-landscape {
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .section-landscape {
+    padding: 2rem 0;
+  }
+}
+
+/* High resolution displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Use higher quality images */
+  .retina-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+  
+  /* Sharper text */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Hover states only for non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+  }
+  
+  .hover\:shadow-xl:hover {
+    box-shadow: 0 20px 60px rgba(10, 0, 74, 0.15);
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  /* Remove hover effects */
+  .hover\:scale-105:hover {
+    transform: none;
+  }
+  
+  /* Add active states instead */
+  button:active,
+  a:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+  }
+  
+  /* Larger tap targets */
+  .touch-target {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+/* Smooth scrolling enhancement */
+@supports (scroll-behavior: smooth) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Container queries for component-level responsiveness */
+@container (max-width: 400px) {
+  .card-compact {
+    padding: 1rem;
+  }
+  
+  .card-compact h3 {
+    font-size: 1.125rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: black;
+    background: white;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+  
+  .page-break {
+    page-break-after: always;
+  }
+}

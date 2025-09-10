@@ -1,0 +1,1513 @@
+Brand
+
+Guidelines
+
+2024
+
+Brand Guidelines
+
+Logo
+
+Typography
+
+Color
+
+Illustrations
+
+Photography
+
+Graphics
+
+Social
+
+UI Rule
+
+Print
+
+03
+
+10
+
+14
+
+18
+
+29
+
+32
+
+Index
+
+35
+
+40
+
+44
+
+Brand Guidelines
+
+Logo
+
+1.0
+
+Logo
+
+1
+
+Brand Guidelines
+
+Logo
+
+1.1
+
+Logo Concept
+
+A Venn diagram is an illustration that used circles 
+to show the relationships among things or finite 
+groups of things. Circles that overlap have a 
+commonality while circles that do not overlap do 
+not share those traits.
+
+
+
+Venn diagrams help to visually represent the 
+similarities and differences between two 
+concepts.
+
+
+
+Aptly’s logo represent the bases of their values 
+and purpose: highest quality course content 
+meets excellent student service.
+
+03
+
+Brand Guidelines
+
+Logo
+
+1.2
+
+Logo Variants
+
+Aptly’s identity’s main element is its logo. 
+The logo consists of a wordmark and a logotype.
+
+
+
+There is a vertical and horizontal option for each 
+logo variation. We recommend using the vertical
+option for when the logo needs to be aligned
+centrally on a format; the horizontal - for when the 
+logo needs to be aligned to the left or to the right.
+
+Horizontal
+
+Vertical
+
+Icon
+
+Wordmark
+
+04
+
+Brand Guidelines
+
+Logo
+
+1.3
+
+Logo Usage
+
+Aptly logo variations can be used on three 
+backgrounds - Navy, Teal and White from Aptly 
+color palette.
+
+
+
+The colors of the inverted elements depend on 
+the background, with the intersection always 
+shown in Yellow.
+
+
+
+Logo can be used in black and white for example 
+for B&W printings. However the logo can not be 
+used in white or in any other stand-alone color. 
+Use the provided monochrome logos that respect 
+the brandbook.
+
+05
+
+Brand Guidelines
+
+Logo
+
+1.4
+
+Logo Sizing
+
+Readability is important: the minimum logo size for 
+print is calculated so that the minimum logotype 
+height is 7mm for vertical logo and 5mm for 
+horizontal logo. The minimum logo height for web 
+is 24px.
+
+Clearspace
+
+a
+
+a
+
+a
+
+b
+
+b
+
+b
+
+b
+
+a
+
+b
+
+a
+
+Minimum Size
+
+for Print
+
+7mm
+
+5mm
+
+Minimum Size
+
+for Web
+
+24px
+
+b
+
+b
+
+06
+
+Icon version is used wherever long version would not be reconizable because of size or where icon version is visually more appealing. 
+
+The icon logo is designed with adaptability in mind, featuring three distinct color backgrounds to suit various presentation contexts. Each background color is carefully chosen to enhance the logo's visibility and appeal across different platforms and mediums.
+
+Example: Social Media Profile IconsIcon5:26Brand GuidelinesLogo1.507Brand Guidelines
+
+Logo
+
+1.6
+
+Improper 
+Logo Usage
+
+Do not use the logo in
+
+stand-alone color
+
+Do not apply graphic effects
+
+on the logo
+
+Do not use the logo
+
+on complex backgrounds
+
+Do not rotate
+
+the logo
+
+Do not change the colors
+
+on the logo
+
+Do not change the opacity
+
+on the logo
+
+aptly
+
+Do not change the
+
+proportions on the logo
+
+Do not change the font, font’s kerning
+
+or font spacing of the logo
+
+Do not shrink or deform
+
+the logo in any way
+
+08
+
+Brand Guidelines
+
+Logo
+
+1.7
+
+a
+
+a/2
+
+a/2
+
+a
+
+Logo Usage with
+
+Client Logos
+
+Make use of Aptly’s wordmark if you need to pair 
+
+it with a Client’s logo. The minimum space 
+between Aptly’s wordmark and the Client’s logo 
+equals the wordmark length, divided by 2.
+
+
+
+Make sure that the height of Aptly’s wordmark and 
+the Client’s logo are equal.
+
+09
+
+Brand Guidelines
+
+Typography
+
+2.0
+
+Typography
+
+2
+
+Brand Guidelines
+
+Typography
+
+2.1
+
+DM Sans
+
+Google Typeface
+
+11
+
+Brand Guidelines
+
+Typography
+
+2.2
+
+DM Sans
+
+Aptly uses DM Sans as the brand typeface.
+
+It is is available in Google Fonts which
+
+allows all users to download and respect the
+
+brand’s visual identity.  
+
+DM Sans is a low-contrast geometric sans serif design, 
+intended for use at smaller text sizes.
+
+
+
+DM Sans supports a Latin Extended glyph set, enabling 
+typesetting for English and other Western European 
+languages. It was designed by Colophon Foundry (UK), 
+who started from the Latin portion of Indian Type 
+Foundry's Poppins.
+
+
+
+In May 2023 DM Sans is updated, expanding the 
+coverage of the weight range to Thin & ExtraBlack (100–
+1000 weight range) along with a new optical size axis.
+
+Bold Aa ABCDEFGHIJKLMNÑOPQRSTUVWXYZ
+
+
+abcdefghijklmnñopqrstuvwxyz
+
+0123456789!”#$%&/()=
+
+Medium Aa ABCDEFGHIJKLMNÑOPQRSTUVWXYZ
+
+
+abcdefghijklmnñopqrstuvwxyz
+
+0123456789!”#$%&/()=
+
+Regular Aa ABCDEFGHIJKLMNÑOPQRSTUVWXYZ
+
+
+abcdefghijklmnñopqrstuvwxyz
+
+0123456789!”#$%&/()=
+
+12
+
+Brand Guidelines
+
+Typography
+
+2.3
+
+Text Hierarchy
+
+Example
+
+Type hierarchy is crucial to the Aptly brand. This 
+page acts as a reference for how to clearly scale and 
+showcase hierarchy with Aptly brand typefaces.
+
+About Aptly
+
+Prepare for 
+
+the jobs of 
+tomorrow, today!
+
+Aptly® designs and produces award-winning business 
+education programs that help learners and businesses 
+navigate digital disruption.
+
+View All Courses
+
+13
+
+Brand Guidelines
+
+Color
+
+3.0
+
+Color
+
+3
+
+Brand Guidelines
+
+Color
+
+3.1
+
+Main Color 
+
+Palette
+
+Aptly’s primary palette consists of three colors: 
+Navy, Teal and Yellow. All of them are present in 
+the logo and are used for most of the graphics for 
+digital and print materials. Additionally, Light Teal, 
+Black and White are used when needed.
+
+Navy
+
+#0A004A
+HEX:
+RGB:    
+							 RGB (10, 0, 74)
+CMYK: C100%  M95%  Y37%  K48%
+
+Teal
+
+HEX:
+RGB:    
+CMYK:
+
+Yellow
+
+#21A8B0
+							 RGB (33, 168, 176)
+C74%  M9%  Y33%  K0%
+
+HEX:
+RGB:    
+CMYK:
+
+#FFDE00
+							 RGB (255, 222, 0)
+	C2%  M9%  Y91%  K0%
+
+Light Navy
+
+Muted Teal
+
+Light Teal
+
+#3b336e
+HEX:
+RGB:    
+							 RGB (59, 51, 110)
+CMYK: C92%  M900%  Y24%  K12%
+
+HEX:
+RGB:    
+CMYK:
+
+#69BCC1
+							 RGB (105, 188, 193)
+	C59%  M5%  Y27%  K0%
+
+HEX:
+RGB:    
+CMYK:
+
+#DEF2F2
+							 RGB (222, 242, 242)
+C15%  M0%  Y7%  K0%
+
+15
+
+Brand Guidelines
+
+Color
+
+3.2
+
+Secondary Color 
+
+Palette
+
+Monochrome Palette (RGB) is mainly used for any 
+additional secondary elements on Aptly layouts 
+such as: UI elements, dividers and other details 
+within RGB color space that need to be 
+monochrome.
+
+
+
+Monochrome Palette (CMYK) is used for printed 
+Aptly materials. Make sure you use the CMYK 
+space while applying these colors to the materials.
+
+
+
+Tertiary Colors are used to make print or digital 
+materials more interesting.
+
+Light Grey
+
+Grey
+
+Rich Black
+
+HEX:
+RGB:    
+CMYK:
+
+#E6E6E6
+							 RGB (230, 230, 230)
+C0%  M0%  Y0%  K10%
+
+HEX:
+RGB:    
+CMYK:
+
+#CCCCCC
+							 RGB (204, 204, 204)
+C0%  M0%  Y0%  K20%
+
+HEX:
+RGB:    
+CMYK:
+
+#333333
+							 RGB (51, 51, 51)
+	C0%  M0%  Y0%  K80%
+
+Red
+
+HEX:
+RGB:    
+CMYK:
+
+Orange
+
+#E84133
+							 RGB (255, 73, 73)
+C0%  M85%  Y80%  K0%
+
+HEX:
+RGB:    
+CMYK:
+
+#EC6726
+							 RGB (158, 98, 255)
+C0%  M70%  Y90%  K0%
+
+16
+
+Brand Guidelines
+
+Color
+
+3.3
+
+Color Gradient
+
+The gradient in our brand identity transitions 
+smoothly from Navy to Light Teal, symbolizing our 
+values of innovation and dynamism. It should be 
+used primarily in backgrounds, overlays, and 
+interactive elements, maintaining a consistent 
+direction and ratio. 
+
+
+
+Ensure high contrast when placing text over the 
+gradient to preserve readability. Avoid altering the 
+gradient colors, introducing new gradients, or 
+using it in ways that diminish its impact or create 
+visual clutter. Consistent use of this gradient 
+enhances brand recognition and visual coherence 
+across all media.  
+
+Use this tool to create it:
+
+https://cssgradient.io/
+
+Navy
+
+#0A004A
+
+Light Navy
+
+#3B336E
+
+Teal
+
+#21A8B0
+
+Muted Teal
+
+#69BCC1
+
+Light Teal
+
+#DEF2F2
+
+17
+
+Brand Guidelines
+
+Illustrations
+
+4.0
+
+Illustrations
+
+4
+
+Brand Guidelines
+
+Illustrations
+
+4.1
+
+People Illustration 
+
+System
+
+Aptly’s characters are based on diversity and 
+inclusivity.
+
+
+
+Characters should be designed in multiple 
+situations, going from an abstract approach to a 
+more realistic one for more functional contexts.
+
+
+
+Faces and hands have to be expressive, showing 
+different emotions.
+
+
+
+Shadows are a must in clothing, and they can be 
+also included to show real light effects on the 
+characters (such as the shadow that a person 
+naturally has under the neck).
+
+19
+
+Brand Guidelines
+
+Illustrations
+
+4.2
+
+Animals 
+Illustration 
+
+System
+
+We’ve chosen some animals to represent fun 
+scenes.
+
+
+
+These animals should be consistent and they 
+should be always on a scene with context.
+
+
+
+Their bodys are always simple, flat and modern. 
+We can use gradients to add depth to their 
+bodies, such as in a tail or ears.  
+
+Animals can have human behaviors: they can be 
+reading, studying, using a phone.
+
+
+
+Their eyes are always big and expressive.
+
+20
+
+Brand Guidelines
+
+Illustrations
+
+4.3
+
+Illustrations 
+
+Color Palette
+
+Apart from Aptly’s main and secondary color 
+palettes, these hues have been added in order to 
+make the illustrations more rich and complex in 
+colors.
+
+
+
+These colors are bright and engaging, yet resonate 
+with a sense of calm and clarity. They embody the 
+energy of innovation at the heart of our brand, 
+while also providing a complementary backdrop 
+that grounds the illustrations. Every shade has 
+been carefully curated to ensure accessibility and 
+comfort for the eyes, allowing our imagery to be as 
+inclusive as it is impactful. 
+
+
+
+Through this chromatic harmony, we create a 
+visual consistency that is instantly recognizable 
+and distinctly Aptly.
+
+Light Orange
+
+Light Red
+
+Green
+
+HEX:
+RGB:    
+CMYK:
+
+#E08534
+							 RGB (224, 133, 52)
+C0%  M58%  Y96%  K0%
+
+HEX:
+RGB:    
+CMYK:
+
+#D15549
+							 RGB (209, 85, 73)
+C3%  M82%  Y72%  K0%
+
+HEX:
+RGB:    
+CMYK:
+
+#88B644
+							 RGB (136, 182, 68)
+	C58%  M0%  100%  K0%
+
+Light Purple
+
+HEX:
+RGB:    
+CMYK:
+
+#5C54D2
+							 RGB (92, 84, 210)
+C79%  M70%  Y0%  K0%
+
+Pink
+
+HEX:
+RGB:    
+CMYK:
+
+Dark Grey
+
+#ED9FE2
+							 RGB (237, 159, 226)
+C14%  M45%  Y0%  K0%
+
+HEX:
+RGB:    
+CMYK:
+
+#9B9B9A
+							 RGB (155, 155, 154)
+	C40%  M30%  Y32%  K10%
+
+21
+
+Brand Guidelines
+
+Illustrations
+
+4.4
+
+Illustrations 
+
+Skin Palette
+
+We embrace a skin color palette that reflects the 
+world's rich tapestry of human diversity. 
+
+Our illustrations portray an inclusive community, 
+offering a spectrum of skin tones that range from 
+light to dark, each with its unique warmth and 
+subtlety. 
+
+
+
+The colors are chosen to be harmonious yet 
+distinct, ensuring that all individuals can see 
+themselves represented within our visuals. By 
+thoughtfully selecting shades that resonate with a 
+global audience, we communicate our values of 
+unity and respect for all. 
+
+
+
+This palette is a celebration of diversity, 
+encouraging connections and conversations 
+across cultures and communities, integral to the 
+fabric of Aptly's identity.
+
+Light Pink
+
+Light Orange
+
+Light Brown
+
+HEX:
+RGB:    
+CMYK:
+
+#FDE4D2
+							 RGB (253, 228, 210)
+C0%  M13%  Y18%  K0%
+
+HEX:
+RGB:    
+CMYK:
+
+#FDCE96
+							 RGB (253, 206, 150)
+C0%  M23%  Y45%  K0%
+
+HEX:
+RGB:    
+CMYK:
+
+#97503C
+							 RGB (151, 80, 60)
+	C28%  M70%  72%  K27%
+
+Pink
+
+HEX:
+RGB:    
+CMYK:
+
+Orange
+
+Brown
+
+#EF9E92
+							 RGB (239, 158, 146)
+C2%  M48%  Y37%  K0%
+
+HEX:
+RGB:    
+CMYK:
+
+#FDAE7D
+							 RGB (253, 174, 125)
+C0%  M40%  Y52%  K0%
+
+HEX:
+RGB:    
+CMYK:
+
+#7D524E
+							 RGB (125, 82, 78)
+	C35%  M61%  Y52%  K40%
+
+22
+
+Brand Guidelines
+
+Illustrations
+
+4.5
+
+#HEX
+
+Illustrations 
+
+Shadows &
+
+Lights
+
+Using overlays on a color can be a powerful 
+technique for creating shadows and depth in 
+design. Here are some rules to follow for effective 
+use
+
+ Choose the Right Overlay Mode: Select a mode 
+that makes the color darker to create a realistic 
+shadow effect.
+
+ Adjust Transparency: Use transparency or 
+
+opacity settings to control the intensity of the 
+shadow. Experiment with different levels of 
+transparency to achieve the desired depth 
+without overpowering the design
+
+ Layering and Blending: Apply overlays on 
+
+separate layers and use blending modes such as 
+Multiply or Overlay to blend the shadow with the 
+base color. This technique helps create a 
+seamless transition between the two colors.
+
+Overlay: Overlay
+
+or Hard Light
+
+Overlay: Multiply
+
+23
+
+Brand Guidelines
+
+Illustrations
+
+4.6
+
+A
+
+B
+
+Examples
+
+A) Elements can go out from a frame. Body sizing 
+must be proportional.
+
+
+
+B) Make sure illustrations are inclusive and diverse.
+
+
+
+C) Elements need to have organic and handrawn 
+expressions. Secondary elements can be in grey, 
+not full colored. 
+
+
+
+D) If the color you’re using is too dark, you can use 
+a lighter color instead of shadowing.
+
+
+
+
+
+*Note for all: Illustrations must have teal, purple 
+and navy on them. But you can add any extra 
+color you think it will match.   
+
+*Try not exceed from 6 or 7 colors per illustration.
+
+24
+
+CDBrand Guidelines
+
+Illustrations
+
+4.7
+
+Overlay Shadows on
+
+Skin Color
+
+Organic shapes,
+
+handrawn look
+
+Details Matter
+
+Following these guidelines will ensure effective 
+branding communication that resonates with your 
+audience. Embracing a modern and simplistic flat 
+design style with vibrant yet cohesive colors will 
+convey professionalism and visual harmony. 
+
+
+
+Diverse and inclusive character designs, along 
+with consistent style, will enhance relatability and 
+readability.
+
+Secondary elements
+
+are not colored
+
+Overlay Shadows
+
+on Clothing
+
+25
+
+Brand Guidelines
+
+Illustrations
+
+4B.1
+
+Illustration 
+
+Guidelines
+
+Brand Guidelines
+
+Illustrations
+
+4B.2
+
+Style and Tone
+
+Composition
+
+Accessibility
+
+ ⁠Use flat design with a modern, clean, and simplistic 
+
+approach
+
+ Layouts should be balanced and clean, avoiding clutter
+ Focus on clear visual storytelling with a central point of 
+
+ ⁠Ensure high contrast for readability and accessibility
+ Consider color blindness and other visual impairments in 
+
+ Illustrations should be friendly and approachable, with a 
+
+interest.
+
+your designs.
+
+professional tone.
+
+Color Palette
+
+Typography
+
+Scalability
+
+ ⁠Employ a vibrant, yet cohesive color scheme that reflects 
+
+ ⁠Use typography that complements the illustration style – 
+
+the company’s branding
+
+clean, legible, and friendly
+
+ Use bold and saturated colors for primary elements and 
+
+ ⁠Ensure text is integrated seamlessly with images.
+
+ Illustrations should be scalable and visible at various sizes
+ Avoid intricate details that can be lost in smaller sizes.
+
+softer tones for backgrounds.
+
+Character Design
+
+Iconography
+
+Emotional Tone
+
+ ⁠Characters should be diverse, inclusive, and represent a 
+
+ Icons should be simple and easily recognizable, matching 
+
+ Illustrations should evoke the desired emotional response, 
+
+variety of roles, ages, and backgrounds
+
+the style of the illustrations
+
+whether it’s excitement, trust, or curiosity
+
+ The design of characters should be consistent with 
+
+ ⁠Use consistent stroke weights and avoid over-detailing.
+
+ Use facial expressions and body language in characters to 
+
+rounded shapes and simplified features.
+
+convey emotions.
+
+27
+
+Brand Guidelines
+
+Illustrations
+
+4B.3
+
+Branding 
+Elements
+
+Scenes and 
+Environments
+
+Usage Across 
+Platforms
+
+ ⁠Incorporate the company’s logo subtly into the 
+
+illustrations
+
+ Use branding elements consistently across all illustrations.
+
+ Create environments that are relevant to the content, such 
+as office settings for business or trees and benches for 
+outdoor scenes
+
+ ⁠Backgrounds should not distract from the main subjects 
+
+but should complement the overall message.
+
+ ⁠Illustrations should work well across different mediums – 
+
+digital, print, social media, etc
+
+ Adapt layouts and compositions accordingly.
+
+28
+
+Brand Guidelines
+
+Photography
+
+5.0
+
+Photography
+
+5
+
+Brand Guidelines
+
+Photography
+
+5.1
+
+Imagery 
+
+Selection
+
+For digital usage imagery can be found on Adobe, 
+a great source with high-quality imagery which are 
+selected by the website curators.
+
+
+
+Select imagery that showcases the content: 
+people, lifestyle, digital, devices and everything 
+that explains Aptly processes in a literal way.
+
+
+
+Try to select minimalistic pictures instead of busy. 
+The fewer elements an image includes, the more 
+focus it brings to a context.  
+
+We are about diversity (age, race, gender, 
+sexuality) and want to reflect this on our imagery.
+
+
+
+We want human-driven photos.
+
+
+
+Photos need to have rounded corners on video.
+
+30
+
+Brand Guidelines
+
+Photography
+
+5.2
+
+Imagery & 
+
+Gradients
+
+When adding text on top of an image, always 
+apply a dark gradient overlay to ensure that the 
+text remains readable and stands out clearly. This 
+technique should be used sparingly, primarily 
+when it is necessary to make the text accessible 
+on the image.  
+
+All ornamental graphics must be always designed 
+using the main color palette.
+
+31
+
+Join TodayNew course!Brand Guidelines
+
+Graphics
+
+6.0
+
+Graphics
+
+6
+
+Aptly Icon System follows the next rulesUse outlines iconUse rounded corners where possiblMake sure your icon fits in a square formaMake sure you do not have many details
+
+You can find the library here.IconsBrand GuidelinesIcons6.133Brand Guidelines
+
+Circles
+
+When using circles with fill and circles with just a 
+stroke as part of a branding element, it's 
+important to follow certain rules to maintain 
+consistency and visual appeal. 
+
+
+
+Use circles with fill and circles with stroke to 
+create contrast and hierarchy within your design. 
+For example, you can use filled circles for main 
+elements or focal points, while using stroked 
+circles for secondary or supporting elements.
+
+
+
+Coordinate the colors of filled circles and strokes 
+to create a cohesive color scheme. Consider using 
+complementary or analogous colors to enhance 
+visual impact while maintaining harmony.
+
+
+
+All ornamental graphics must be always designed 
+using the main color palette.
+
+
+
+You can find the Google Slides template here.
+
+You can find the Figma template here.
+
+Icons
+
+6.2
+
+34
+
+Brand Guidelines
+
+Social
+
+7.0
+
+Social
+
+7
+
+Brand Guidelines
+
+Social
+
+7.1
+
+Instagram
+
+Aptly's Instagram presence is a blend of 
+inspiration, education, and community 
+engagement. The feed is a visual storyboard that 
+encapsulates the commitment to learning and 
+connection, featuring rich, engaging colors and 
+inclusive illustrations. 
+
+
+
+Through thoughtfully crafted content the aim is to 
+not only inform but also empower the followers. 
+Instagram is more than a platform; it's a  
+classroom without walls, and a window into the 
+world of Aptly.
+
+
+
+Some posts may include the celebration of Aptly’s 
+milestones, announcement of new courses, 
+celebration of different holidays or festive days, 
+insightful tips about each course content.
+
+36
+
+5:26Brand Guidelines
+
+Social
+
+7.1
+
+37
+
+aptlylearningaptlylearningaptlylearningBrand Guidelines
+
+Social
+
+7.2
+
+Facebook
+
+Aptly's Facebook page offers a dynamic mix of 
+inspiration, education, and community interaction.
+
+
+
+It maintains the same guidelines as the Instagram 
+page, where the content informs and empowers 
+the followers, celebrating milestones, sharing 
+course updates, and providing insightful tips.
+
+38
+
+Brand Guidelines
+
+Social
+
+7.3
+
+LinkedIn
+
+Aptly's LinkedIn page is a hub of professional 
+engagement, connecting with employees, 
+businesses, as well as the founders and leaders.
+
+
+
+A variety of insightful blog posts and industry 
+insights are shared, fostering dialogue and 
+collaboration within the network. From thought 
+leadership pieces to updates on company 
+initiatives, Aptly's LinkedIn presence is a platform 
+for meaningful connections and knowledge sharing.
+
+39
+
+Brand Guidelines
+
+UI Rules
+
+8.0
+
+UI Rules
+
+8
+
+Brand Guidelines
+
+UI Rules
+
+8.1
+
+Phone UI
+
+All Phone UIs must have a Phone frame.
+
+
+
+Phone frames need to be placed on every 
+storyboard so the Production Team know how the 
+final video should look.
+
+41
+
+5:26Brand Guidelines
+
+UI Rules
+
+8.2
+
+Desktop UI
+
+All Desktop UIs must have a Desktop frame.
+
+
+
+Desktop frames need to be placed on every 
+storyboard so the Production Team know how the 
+final video should look.
+
+42
+
+Brand Guidelines
+
+UI Rules
+
+8.3
+
+Highlights
+
+All highlights/callouts must have the same format
+
+ Zoom in the part of the image desired for the 
+
+highligh
+
+ Add a rounded corner border in Aptly Yellow 
+color (#FFDE00) with a border weight of 
+8-12px
+
+
+
+The final look of this in each video will be done by 
+the Production Team, but the Design Team must 
+delimitate the highlight area in the storyboard.
+
+43
+
+5:26Brand Guidelines
+
+Print
+
+9.0
+
+Print
+
+9
+
+Brand Guidelines
+
+Print
+
+9.1
+
+Stickers
+
+Aptly Stickers serve as a component of the 
+brand's print materials. When crafting any printed 
+materials, it's essential to ensure that the logo is 
+displayed and easily discernible. To prevent any 
+unintended cropping or distortion of the logo, it's 
+important to include sufficient white space 
+around it.
+
+
+
+Make sure you’re working within a CMYK color 
+space to maintain consistency and accuracy in 
+color reproduction throughout the printing 
+process.
+
+45
+
+Brand Guidelines
+
+Print
+
+9.2
+
+Zip Up Hoodie
+
+The Aptly-branded zip-up hoodies are also part of 
+the merchandise lineup. It's crucial to ensure that 
+the brand identity is accurately represented.
+ 
+
+All merch is usually ordered from CustomInk, so 
+any particular guidelines regarding logo size, 
+placement, and color should be specified. This 
+ensures consistency across all our branded 
+merchandise.
+
+
+
+Communicating the brand's color palette 
+accurately is vital. CustomInk typically offers a 
+range of color options for the hoodies, so it's 
+essential to select hues that align well with Aptly’s 
+brand identity.
+
+
+
+It's advisable to review digital proofs provided by 
+CustomInk carefully. This allows to confirm that 
+the placement, size, and color of our logo meet  
+the expectations before finalizing the order.
+
+46
+
+Brand Guidelines
+
+Print
+
+9.3
+
+Water Bottle
+
+Aptly-branded water bottles are a staple in the 
+merchandise lineup.
+
+
+
+When ordering from CustomInk, ensure the logo is 
+accurately represented in terms of size, 
+placement, and color.
+
+
+
+Review digital proofs to confirm alignment with 
+the brand guidelines. By maintaining consistency 
+across merchandise, we reinforce Aptly’s brand 
+identity effectively.
+
+47
+
+2024
+
+

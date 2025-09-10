@@ -1,0 +1,222 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "aptly":
+    - /url: /
+    - img
+    - text: aptly
+  - link "Programs":
+    - /url: /programs
+  - link "For Business":
+    - /url: /business
+  - link "Success Stories":
+    - /url: /success
+  - link "About":
+    - /url: /about
+  - link "Get Started":
+    - /url: /enroll
+  - button "Toggle menu":
+    - img
+- main:
+  - main:
+    - heading "Professional Certifications" [level=1]
+    - paragraph: Advance your career with industry-recognized certificates from Meta and Google, supported by comprehensive study tools
+    - link "View Certificate Programs":
+      - /url: /programs
+    - link "Start Free Course Preview":
+      - /url: /demo
+    - heading "What We Offer" [level=2]
+    - paragraph: Complete learning ecosystem for digital skills certification and career advancement
+    - text: C
+    - heading "Professional Certificate Programs" [level=3]
+    - paragraph: Industry-recognized certifications from Meta and Google to advance your digital marketing and data career
+    - list:
+      - listitem: ✓ Meta Social Media Marketing Certificate (6 months)
+      - listitem: ✓ Meta Marketing Analytics Certificate (6 months)
+      - listitem: ✓ Meta Data Analyst Certificate (6 months)
+      - listitem: ✓ Google Search Advertising Specialization
+    - paragraph: Get job-ready with hands-on projects
+    - text: L
+    - heading "Learning Support Services" [level=3]
+    - paragraph: Comprehensive study tools designed to maximize your learning outcomes and exam success
+    - list:
+      - listitem: ✓ Aptly Study mobile app for exam preparation
+      - listitem: ✓ AI-powered flashcards and practice quizzes
+      - listitem: ✓ Offline learning capabilities
+      - listitem: ✓ Progress tracking and analytics
+    - paragraph: Study smarter with AI assistance
+    - text: E
+    - heading "Enterprise Solutions" [level=3]
+    - paragraph: Scalable learning solutions for organizations looking to upskill their teams
+    - list:
+      - listitem: ✓ Bulk enrollment for organizations
+      - listitem: ✓ Custom cohort management
+      - listitem: ✓ Team progress dashboards
+      - listitem: ✓ Dedicated support for corporate learners
+    - paragraph: Teams of 10+ get special pricing
+    - text: D
+    - heading "Career Development" [level=3]
+    - paragraph: Complete career support to help you transition into high-demand digital roles
+    - list:
+      - listitem: ✓ Industry-recognized certifications
+      - listitem: ✓ Portfolio project guidance
+      - listitem: ✓ Resume and LinkedIn optimization tips
+      - listitem: ✓ Job search resources
+    - paragraph: Build your professional portfolio
+    - heading "Flexible Pricing Options" [level=3]
+    - text: Free Access
+    - paragraph: Courses available free on Coursera (audit mode)
+    - text: Professional Certificates
+    - paragraph: Paid certificates include graded assignments and credential
+    - text: Enterprise
+    - paragraph: Enterprise pricing available for teams of 10+
+    - heading "Your Learning Journey" [level=2]
+    - paragraph: A clear path from enrollment to certification
+    - text: "1"
+    - heading "Choose Your Path" [level=3]
+    - paragraph: Select from Meta or Google certificate programs based on your career goals
+    - text: "2"
+    - heading "Learn at Your Pace" [level=3]
+    - paragraph: Access courses online with flexible scheduling and mobile study support
+    - text: "3"
+    - heading "Complete Projects" [level=3]
+    - paragraph: Build your portfolio with real-world projects and hands-on assignments
+    - text: "4"
+    - heading "Earn Your Certificate" [level=3]
+    - paragraph: Get industry-recognized credentials to showcase your new skills
+    - heading "Start Your Certification Journey" [level=2]
+    - paragraph: Join thousands of learners advancing their careers with Meta and Google certifications.
+    - link "Explore Enterprise Options":
+      - /url: /contact
+    - link "Browse All Courses":
+      - /url: /programs
+- contentinfo:
+  - heading "Stay Updated" [level=3]
+  - paragraph: Get the latest updates on new programs, career tips, and exclusive offers.
+  - textbox "Enter your email"
+  - button "Subscribe":
+    - text: Subscribe
+    - img
+  - img
+  - text: aptly
+  - paragraph: Prepare for the jobs of tomorrow, today.
+  - link "info@aptly.co":
+    - /url: mailto:info@aptly.co
+    - img
+    - text: info@aptly.co
+  - link "(123) 456-7890":
+    - /url: tel:+1234567890
+    - img
+    - text: (123) 456-7890
+  - img
+  - text: 123 Learning Ave San Francisco, CA 94105
+  - link "LinkedIn":
+    - /url: "#"
+    - img
+  - link "Twitter":
+    - /url: "#"
+    - img
+  - link "Facebook":
+    - /url: "#"
+    - img
+  - link "Instagram":
+    - /url: "#"
+    - img
+  - heading "Programs" [level=3]
+  - list:
+    - listitem:
+      - link "All Certificates":
+        - /url: /programs
+        - text: All Certificates
+        - img
+    - listitem:
+      - link "Meta Programs":
+        - /url: /programs#meta
+        - text: Meta Programs
+        - img
+    - listitem:
+      - link "Google Programs":
+        - /url: /programs#google
+        - text: Google Programs
+        - img
+    - listitem:
+      - link "AI Courses":
+        - /url: /programs#ai
+        - text: AI Courses
+        - img
+  - heading "Resources" [level=3]
+  - list:
+    - listitem:
+      - link "Career Guide":
+        - /url: /resources/career-guide
+        - text: Career Guide
+        - img
+    - listitem:
+      - link "Blog":
+        - /url: /blog
+        - text: Blog
+        - img
+    - listitem:
+      - link "FAQ":
+        - /url: /faq
+        - text: FAQ
+        - img
+    - listitem:
+      - link "Support":
+        - /url: /support
+        - text: Support
+        - img
+  - heading "Company" [level=3]
+  - list:
+    - listitem:
+      - link "About":
+        - /url: /about
+        - text: About
+        - img
+    - listitem:
+      - link "Careers":
+        - /url: /careers
+        - text: Careers
+        - img
+    - listitem:
+      - link "Partners":
+        - /url: /partners
+        - text: Partners
+        - img
+    - listitem:
+      - link "Contact":
+        - /url: /contact
+        - text: Contact
+        - img
+  - heading "Legal" [level=3]
+  - list:
+    - listitem:
+      - link "Privacy Policy":
+        - /url: /privacy
+        - text: Privacy Policy
+        - img
+    - listitem:
+      - link "Terms of Service":
+        - /url: /terms
+        - text: Terms of Service
+        - img
+    - listitem:
+      - link "Accessibility":
+        - /url: /accessibility
+        - text: Accessibility
+        - img
+  - paragraph: © 2025 Aptly. All rights reserved.
+  - text: "Trusted by: Meta Google Coursera"
+  - link "Sitemap":
+    - /url: /sitemap
+  - text: •
+  - link "Cookie Policy":
+    - /url: /cookie-policy
+  - text: •
+  - link "Accessibility Statement":
+    - /url: /accessibility
+  - text: •
+  - link "GDPR Compliance":
+    - /url: /compliance
+```

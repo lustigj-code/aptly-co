@@ -7,8 +7,8 @@ export const metadata = {
 
 export default function PrivacyPolicy() {
   return (
-    <div className="min-h-screen bg-[#0A0C2A] text-gray-100">
-      <div className="max-w-4xl mx-auto px-4 py-24">
+    <div className="min-h-screen bg-navy text-gray-100">
+      <div className="max-w-4xl mx-auto px-4 py-20">
         <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
         
         <p className="text-gray-300 mb-6">
@@ -122,7 +122,7 @@ export default function PrivacyPolicy() {
         <div className="mt-12 pt-8 border-t border-gray-700">
           <Link 
             href="/" 
-            className="text-[#7AB8BD] hover:text-[#6BA3A8] transition-colors"
+            className="text-muted-teal hover:opacity-90 transition-opacity"
           >
             ← Back to Home
           </Link>

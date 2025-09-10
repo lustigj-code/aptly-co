@@ -26,5 +26,19 @@
       "fullPage": true,
       "deviceScaleFactor": 2
     }
+  },
+  {
+    "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/courses_mobile_2025-09-09T17-27-50-065Z.png",
+    "timestamp": "2025-09-09T17-27-50-065Z",
+    "url": "http://localhost:3000/courses",
+    "hash": "662df758b67c60ffb06206ea2eb58fb88535af5a1d619c4fdb139aa035b79c92",
+    "metadata": {
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "fullPage": true,
+      "deviceScaleFactor": 2
+    }
   }
 ]

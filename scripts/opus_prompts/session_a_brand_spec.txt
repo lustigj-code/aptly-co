@@ -1,0 +1,43 @@
+Role
+You extract the authoritative brand spec from docs/aptly-brand-guidelines-2024.pdf and reconcile it with token files. No application code changes.
+
+Steps
+1) Prove file integrity:
+   - Run: shasum -a 256 docs/aptly-brand-guidelines-2024.pdf | tee docs/brand-pdf.sha256
+   - Run: wc -c docs/aptly-brand-guidelines-2024.pdf | tee -a docs/brand-pdf.sha256
+2) Extract text (choose one):
+   - If pdftotext exists: pdftotext -layout docs/aptly-brand-guidelines-2024.pdf docs/brand-guidelines.txt
+   - Else install: python3 -m pip install --user pdfminer.six
+     Then:
+     python3 - << 'PY' 
+from pdfminer.high_level import extract_text
+print(extract_text('docs/aptly-brand-guidelines-2024.pdf'))
+PY
+     > docs/brand-guidelines.txt
+3) Author docs/brand-spec.json with keys:
+   - palette: [{name, hex, usage}]
+   - typography: {family:"DM Sans", weights:[400,500,700], sources}
+   - spacing: 8px grid units, container/section paddings
+   - gradient: {angle:135, stops:[{hex, pct}]}
+   - logo: {variants, clearspace, doNots}
+   - buttons: {primary:"navy", secondary:"teal", radius, minHeights}
+   - accessibility: {contrastTargets}
+   - animationPolicy: link docs/animation-policy.md
+4) Reconcile with tokens and tailwind (read):
+   - src/styles/design-tokens.css
+   - src/styles/themes.css
+   - tailwind.config.js
+   Write docs/brand-deviations.md: value mismatches with file:line and proposed fix.
+5) Define docs/animation-policy.md: durations, easing, opacity, permitted patterns; forbid non-brand palettes.
+
+Deliverables
+- docs/brand-pdf.sha256
+- docs/brand-guidelines.txt
+- docs/brand-spec.json
+- docs/brand-deviations.md
+- docs/animation-policy.md
+- DONE.md (summary and key decisions)
+
+Acceptance
+- JSON has exact hexes/weights/gradient; deviations have file:line with proposed resolution.
+

@@ -40,5 +40,47 @@
       "fullPage": true,
       "deviceScaleFactor": 2
     }
+  },
+  {
+    "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/home_laptop_2025-09-09T17-27-26-118Z.png",
+    "timestamp": "2025-09-09T17-27-26-118Z",
+    "url": "http://localhost:3000/",
+    "hash": "1b7b8589f0f0e124bc63e7d7fb7191caf1d08b0e2337a119e1d247e5959d1a85",
+    "metadata": {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "fullPage": true,
+      "deviceScaleFactor": 2
+    }
+  },
+  {
+    "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/home_laptop_2025-09-09T17-30-01-732Z.png",
+    "timestamp": "2025-09-09T17-30-01-732Z",
+    "url": "http://localhost:3000/",
+    "hash": "c98d6c218ce328aca1336eab25c863987f1228078d1ac502787cacd6f9759e68",
+    "metadata": {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "fullPage": true,
+      "deviceScaleFactor": 2
+    }
+  },
+  {
+    "filePath": "/Users/juleslustig/Hubs/FX_Shield/Code_Archive/Projects/aptly.co/screenshots/before/home_laptop_2025-09-09T17-30-30-235Z.png",
+    "timestamp": "2025-09-09T17-30-30-235Z",
+    "url": "http://localhost:3000/",
+    "hash": "ce079ee2f648af0ba0a46b66d0c63bd740e295a52a82accee218fde8a9300001",
+    "metadata": {
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "fullPage": true,
+      "deviceScaleFactor": 2
+    }
   }
 ]

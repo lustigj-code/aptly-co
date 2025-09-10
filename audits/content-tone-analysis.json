@@ -1,0 +1,323 @@
+{
+  "contentToneAnalysis": {
+    "meta": {
+      "auditDate": "2025-09-09",
+      "auditor": "Session F - Content & Tone Analysis",
+      "scope": "All website content for brand voice compliance",
+      "brandStandards": {
+        "voiceCharacteristics": [
+          "Professional and authoritative",
+          "Clear and concise",
+          "Educational but accessible",
+          "No casual language or slang",
+          "No exclamation marks unless in CTAs"
+        ],
+        "approvedCTAs": [
+          "Get Started (not Start Now!)",
+          "Learn More (not Check it Out)",
+          "View Courses (not Browse Our Awesome Courses)"
+        ]
+      }
+    },
+    "overallCompliance": {
+      "score": "B+ (Good)",
+      "summary": "Content generally follows brand voice guidelines with some minor violations",
+      "strengths": [
+        "Professional tone maintained across pages",
+        "Educational content written clearly",
+        "CTAs use approved language patterns",
+        "No slang or overly casual language detected",
+        "Company name usage consistent (Aptly)"
+      ],
+      "violations": [
+        "Some contractions that could be expanded",
+        "One instance of casual phrasing in careers page",
+        "FAQ page has one grammatical contraction that reduces formality",
+        "Email placeholders use casual examples"
+      ]
+    },
+    "pageAnalysis": {
+      "homepage": {
+        "file": "src/app/page.tsx",
+        "compliance": "Excellent",
+        "findings": {
+          "positives": [
+            "Professional hero messaging: 'Transform Your Career with Industry-Leading Certifications'",
+            "Educational tone: 'Join thousands of professionals advancing their careers'",
+            "Clear value propositions without hyperbole",
+            "Approved CTAs: 'Browse Programs', 'Learn More', 'Get Started'"
+          ],
+          "concerns": [
+            "Line 194: 'We don't just teach skills' - contraction should be 'We do not just teach skills'",
+            "Line 194: 'you're job-ready' - contraction should be 'you are job-ready'"
+          ],
+          "tone": "Professional, authoritative, educational",
+          "voiceAlignment": "High"
+        }
+      },
+      "aboutPage": {
+        "file": "src/app/about/page.tsx",
+        "compliance": "Excellent",
+        "findings": {
+          "positives": [
+            "Professional mission statement",
+            "Clear educational focus",
+            "Values section maintains authoritative tone",
+            "Timeline content is factual and professional"
+          ],
+          "concerns": [
+            "Line 252: 'you're looking to transform' - contraction should be 'you are looking to transform'"
+          ],
+          "tone": "Professional, educational, authoritative",
+          "voiceAlignment": "High"
+        }
+      },
+      "servicesPage": {
+        "file": "src/app/services/page.tsx",
+        "compliance": "Excellent",
+        "findings": {
+          "positives": [
+            "Professional service descriptions",
+            "Clear value propositions",
+            "Educational approach to explaining offerings",
+            "Approved CTAs used consistently"
+          ],
+          "concerns": [],
+          "tone": "Professional, informative, authoritative",
+          "voiceAlignment": "High"
+        }
+      },
+      "successPage": {
+        "file": "src/app/success/page.tsx",
+        "compliance": "Good",
+        "findings": {
+          "positives": [
+            "Professional success story presentation",
+            "Testimonials maintain authentic but professional tone",
+            "Data-driven content approach",
+            "Clear categorization of success types"
+          ],
+          "concerns": [
+            "Line 367: 'Have questions?' - could be more formal as 'Do you have questions?'"
+          ],
+          "tone": "Professional with human stories, authoritative",
+          "voiceAlignment": "High"
+        }
+      },
+      "contactPage": {
+        "file": "src/app/contact/page.tsx",
+        "compliance": "Good",
+        "findings": {
+          "positives": [
+            "Professional contact approach",
+            "Clear service categorization",
+            "Business-appropriate language throughout"
+          ],
+          "concerns": [
+            "Line 71: 'We're here to help' - contraction should be 'We are here to help'",
+            "Line 127: Placeholder 'John Doe' could be more professional",
+            "Line 143: Placeholder email 'john@example.com' is casual"
+          ],
+          "tone": "Professional, helpful, business-appropriate",
+          "voiceAlignment": "Good"
+        }
+      },
+      "faqPage": {
+        "file": "src/app/faq/page.tsx",
+        "compliance": "Good",
+        "findings": {
+          "positives": [
+            "Clear, professional question and answer format",
+            "Educational content approach",
+            "Helpful without being overly casual"
+          ],
+          "concerns": [
+            "Line 29: 'You'll need a computer' - contraction should be 'You will need a computer'",
+            "Line 149: 'Cannot find what you are looking for?' - good formal phrasing",
+            "Line 252: 'Do not see the perfect role?' - good formal phrasing"
+          ],
+          "tone": "Professional, helpful, educational",
+          "voiceAlignment": "Good"
+        }
+      },
+      "insightsPage": {
+        "file": "src/app/insights/page.tsx",
+        "compliance": "Excellent",
+        "findings": {
+          "positives": [
+            "Professional blog/content approach",
+            "Educational positioning",
+            "Clear categorization and structure"
+          ],
+          "concerns": [],
+          "tone": "Professional, educational, authoritative",
+          "voiceAlignment": "High"
+        }
+      },
+      "careersPage": {
+        "file": "src/app/careers/page.tsx",
+        "compliance": "Good",
+        "findings": {
+          "positives": [
+            "Professional job descriptions",
+            "Clear company culture messaging",
+            "Benefits listed professionally"
+          ],
+          "concerns": [
+            "Line 252: 'Do not see the perfect role?' - actually good formal phrasing",
+            "Overall tone could be slightly more authoritative to match brand standards"
+          ],
+          "tone": "Professional, engaging, slightly informal",
+          "voiceAlignment": "Good"
+        }
+      },
+      "studyAppPage": {
+        "file": "src/app/study-app/page.tsx",
+        "compliance": "Excellent",
+        "findings": {
+          "positives": [
+            "Professional product marketing tone",
+            "Feature descriptions are clear and educational",
+            "Benefits communicated without hyperbole"
+          ],
+          "concerns": [],
+          "tone": "Professional, informative, product-focused",
+          "voiceAlignment": "High"
+        }
+      }
+    },
+    "componentAnalysis": {
+      "navbar": {
+        "file": "src/components/Navbar.tsx",
+        "compliance": "Excellent",
+        "findings": {
+          "positives": [
+            "Clean, professional navigation labels",
+            "No casual language in interface text"
+          ],
+          "concerns": [],
+          "tone": "Professional, clean",
+          "voiceAlignment": "High"
+        }
+      },
+      "footer": {
+        "file": "src/components/Footer.tsx",
+        "compliance": "Excellent",
+        "findings": {
+          "positives": [
+            "Professional footer messaging: 'Prepare for the jobs of tomorrow, today.'",
+            "Business-appropriate contact information",
+            "Professional link categorization"
+          ],
+          "concerns": [],
+          "tone": "Professional, business-appropriate",
+          "voiceAlignment": "High"
+        }
+      }
+    },
+    "dataContentAnalysis": {
+      "servicesData": {
+        "file": "src/lib/data/services.ts",
+        "compliance": "Excellent",
+        "findings": {
+          "positives": [
+            "Professional service descriptions",
+            "Clear feature lists",
+            "Educational approach to explaining value"
+          ],
+          "concerns": [],
+          "tone": "Professional, informative",
+          "voiceAlignment": "High"
+        }
+      },
+      "testimonialsData": {
+        "file": "src/lib/data/testimonials.ts",
+        "compliance": "Good",
+        "findings": {
+          "positives": [
+            "Authentic but professional testimonial content",
+            "Educational focus in quotes"
+          ],
+          "concerns": [
+            "Could use more formal attribution (full names vs. 'Program Graduate')"
+          ],
+          "tone": "Professional with human authenticity",
+          "voiceAlignment": "Good"
+        }
+      },
+      "successStoriesData": {
+        "file": "src/lib/data/success-stories.ts",
+        "compliance": "Excellent",
+        "findings": {
+          "positives": [
+            "Professional success story narratives",
+            "Clear categorization and structure",
+            "Data-driven approach to success metrics"
+          ],
+          "concerns": [],
+          "tone": "Professional, data-driven, authoritative",
+          "voiceAlignment": "High"
+        }
+      }
+    },
+    "ctaAnalysis": {
+      "approvedCTAsFound": [
+        "Get Started",
+        "Learn More", 
+        "Browse Programs",
+        "View Courses",
+        "Talk to Advisor",
+        "Contact Support",
+        "Subscribe",
+        "Apply Now",
+        "Read Article"
+      ],
+      "violations": [],
+      "recommendations": [
+        "Ensure consistent capitalization across all CTAs",
+        "Consider standardizing button hierarchy (primary vs secondary)"
+      ]
+    },
+    "terminologyConsistency": {
+      "companyName": {
+        "standard": "Aptly",
+        "violations": [],
+        "notes": "Consistently used across all content"
+      },
+      "productNames": {
+        "studyApp": "Aptly Study App",
+        "violations": [],
+        "notes": "Consistently referenced"
+      },
+      "certificates": {
+        "metaPrograms": [
+          "Meta Social Media Marketing Certificate",
+          "Meta Marketing Analytics Certificate", 
+          "Meta Data Analyst Certificate"
+        ],
+        "googlePrograms": [
+          "Google Data Analytics Certificate",
+          "Google Search Advertising Specialization"
+        ],
+        "consistency": "High - program names used consistently"
+      }
+    },
+    "recommendations": {
+      "immediate": [
+        "Expand contractions to maintain formal tone (don't → do not, you're → you are, we're → we are)",
+        "Update contact form placeholders to more professional examples",
+        "Review FAQ answers for consistent formal tone"
+      ],
+      "strategic": [
+        "Consider developing a content style guide for consistency",
+        "Implement content review process for new pages",
+        "Create template language for common sections"
+      ],
+      "monitoring": [
+        "Regular audits of new content for voice compliance",
+        "Team training on brand voice guidelines",
+        "Establish content approval workflow"
+      ]
+    }
+  }
+}

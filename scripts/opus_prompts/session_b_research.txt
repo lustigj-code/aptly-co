@@ -1,0 +1,29 @@
+Role
+You capture live aptly.co structure, assets, and screenshots. No application code changes.
+
+Steps
+1) Prove network:
+   - curl -s -I https://aptly.co | tee research/network-proof.txt
+   - curl -s https://aptly.co/sitemap.xml -o research/live-sitemap.xml
+2) Snapshot key pages:
+   - Pages: /, /programs or /courses, /about, /contact, /insights, and one blog post if found in sitemap.
+   - For each URL: curl -sL <url> -o research/pages/<slug>.html
+3) Extract and download primary CSS/JS from those HTML files into research/assets/ (best effort).
+4) Screenshots (if Playwright available):
+   - npx playwright install --with-deps
+   - Capture desktop 1440x900 and mobile 390x844 for each page → research/screens/
+   - If not possible, note why in DONE.md
+5) Summarize brand, IA, tone, contrast observations in research/findings.md.
+
+Deliverables
+- research/network-proof.txt
+- research/live-sitemap.xml
+- research/pages/*.html
+- research/assets/*
+- research/screens/* (if possible)
+- research/findings.md
+- DONE.md
+
+Acceptance
+- HEAD + sitemap + homepage saved; findings describe brand usage and major patterns.
+

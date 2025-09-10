@@ -1,0 +1,437 @@
+{
+  "brandRules": {
+    "meta": {
+      "documentTitle": "Aptly Brand Guidelines 2024",
+      "extractedDate": "2025-09-09",
+      "version": "2024",
+      "documentSource": "docs/aptly-brand-guidelines-2024.pdf"
+    },
+    "logo": {
+      "concept": {
+        "description": "Venn diagram representing the intersection of highest quality course content and excellent student service",
+        "symbolism": "Circles that overlap show commonality - represents Aptly's values and purpose"
+      },
+      "variants": {
+        "horizontal": {
+          "usage": "For left or right alignment",
+          "recommendation": "Use when logo needs to be aligned to the left or right"
+        },
+        "vertical": {
+          "usage": "For central alignment",
+          "recommendation": "Use when logo needs to be aligned centrally on a format"
+        },
+        "icon": {
+          "usage": "For small spaces or social media profile icons",
+          "features": "Three distinct color backgrounds for adaptability"
+        },
+        "wordmark": {
+          "usage": "Text-only version for pairing with client logos"
+        }
+      },
+      "usage": {
+        "allowedBackgrounds": ["Navy", "Teal", "White"],
+        "colorRules": {
+          "intersection": "Always shown in Yellow (#FFDE00)",
+          "invertedElements": "Colors depend on background"
+        },
+        "monochrome": {
+          "allowed": "Black and white for B&W printings only",
+          "restriction": "Cannot be used in white or any other stand-alone color"
+        }
+      },
+      "sizing": {
+        "print": {
+          "vertical": {
+            "minimumHeight": "7mm"
+          },
+          "horizontal": {
+            "minimumHeight": "5mm"
+          }
+        },
+        "web": {
+          "minimumHeight": "24px"
+        },
+        "clearspace": "Equal to logo height on all sides"
+      },
+      "clientLogos": {
+        "spacing": "Minimum space equals wordmark length divided by 2",
+        "heightRule": "Aptly wordmark and client logo must be equal height"
+      },
+      "prohibited": [
+        "Using logo in stand-alone color",
+        "Rotating the logo",
+        "Changing proportions",
+        "Applying graphic effects",
+        "Changing colors",
+        "Modifying font, kerning, or spacing",
+        "Changing opacity",
+        "Using on complex backgrounds",
+        "Shrinking or deforming"
+      ]
+    },
+    "typography": {
+      "primaryFont": {
+        "name": "DM Sans",
+        "source": "Google Fonts",
+        "description": "Low-contrast geometric sans serif design for smaller text sizes",
+        "coverage": "Latin Extended glyph set for English and Western European languages",
+        "designer": "Colophon Foundry (UK)",
+        "baseFont": "Latin portion of Indian Type Foundry's Poppins",
+        "update": "May 2023 - expanded to Thin & ExtraBlack (100-1000 weight range) with optical size axis"
+      },
+      "weights": {
+        "regular": {
+          "weight": 400,
+          "characterSet": "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ abcdefghijklmnñopqrstuvwxyz 0123456789!\"#$%&/()="
+        },
+        "medium": {
+          "weight": 500,
+          "characterSet": "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ abcdefghijklmnñopqrstuvwxyz 0123456789!\"#$%&/()="
+        },
+        "bold": {
+          "weight": 700,
+          "characterSet": "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ abcdefghijklmnñopqrstuvwxyz 0123456789!\"#$%&/()="
+        }
+      },
+      "hierarchy": {
+        "importance": "Crucial to the Aptly brand",
+        "purpose": "Clear scaling and hierarchy showcase"
+      }
+    },
+    "colors": {
+      "primary": {
+        "navy": {
+          "hex": "#0A004A",
+          "rgb": "RGB(10, 0, 74)",
+          "cmyk": "C100% M95% Y37% K48%"
+        },
+        "teal": {
+          "hex": "#21A8B0",
+          "rgb": "RGB(33, 168, 176)",
+          "cmyk": "C74% M9% Y33% K0%"
+        },
+        "yellow": {
+          "hex": "#FFDE00",
+          "rgb": "RGB(255, 222, 0)",
+          "cmyk": "C2% M9% Y91% K0%"
+        }
+      },
+      "secondary": {
+        "lightNavy": {
+          "hex": "#3B336E",
+          "rgb": "RGB(59, 51, 110)",
+          "cmyk": "C92% M90% Y24% K12%"
+        },
+        "mutedTeal": {
+          "hex": "#69BCC1",
+          "rgb": "RGB(105, 188, 193)",
+          "cmyk": "C59% M5% Y27% K0%"
+        },
+        "lightTeal": {
+          "hex": "#DEF2F2",
+          "rgb": "RGB(222, 242, 242)",
+          "cmyk": "C15% M0% Y7% K0%"
+        }
+      },
+      "monochrome": {
+        "lightGrey": {
+          "hex": "#E6E6E6",
+          "rgb": "RGB(230, 230, 230)",
+          "cmyk": "C0% M0% Y0% K10%",
+          "usage": "UI elements, dividers, secondary elements"
+        },
+        "grey": {
+          "hex": "#CCCCCC",
+          "rgb": "RGB(204, 204, 204)",
+          "cmyk": "C0% M0% Y0% K20%"
+        },
+        "richBlack": {
+          "hex": "#333333",
+          "rgb": "RGB(51, 51, 51)",
+          "cmyk": "C0% M0% Y0% K80%"
+        }
+      },
+      "tertiary": {
+        "red": {
+          "hex": "#E84133",
+          "rgb": "RGB(232, 65, 51)",
+          "cmyk": "C0% M85% Y80% K0%"
+        },
+        "orange": {
+          "hex": "#EC6726",
+          "rgb": "RGB(236, 103, 38)",
+          "cmyk": "C0% M70% Y90% K0%"
+        }
+      },
+      "gradient": {
+        "description": "Transitions smoothly from Navy to Light Teal",
+        "symbolism": "Innovation and dynamism",
+        "usage": "Backgrounds, overlays, and interactive elements",
+        "direction": "Consistent direction and ratio",
+        "stops": [
+          { "color": "#0A004A", "position": "0%", "name": "Navy" },
+          { "color": "#3B336E", "position": "25%", "name": "Light Navy" },
+          { "color": "#21A8B0", "position": "50%", "name": "Teal" },
+          { "color": "#69BCC1", "position": "75%", "name": "Muted Teal" },
+          { "color": "#DEF2F2", "position": "100%", "name": "Light Teal" }
+        ],
+        "requirements": "Ensure high contrast when placing text over gradient",
+        "restrictions": "Avoid altering gradient colors or introducing new gradients",
+        "tool": "https://cssgradient.io/"
+      }
+    },
+    "illustrations": {
+      "people": {
+        "principles": "Based on diversity and inclusivity",
+        "situations": "Multiple situations from abstract to realistic",
+        "expressions": "Faces and hands must be expressive, showing different emotions",
+        "shadows": "Must in clothing, can include natural light effects",
+        "diversity": "Represent variety of roles, ages, and backgrounds"
+      },
+      "animals": {
+        "style": "Simple, flat and modern bodies",
+        "eyes": "Always big and expressive",
+        "context": "Always in scenes with context",
+        "behavior": "Can have human behaviors (reading, studying, using phone)",
+        "gradients": "Can use gradients to add depth to bodies (tails, ears)"
+      },
+      "colorPalette": {
+        "lightOrange": {
+          "hex": "#E08534",
+          "rgb": "RGB(224, 133, 52)",
+          "cmyk": "C0% M58% Y96% K0%"
+        },
+        "lightRed": {
+          "hex": "#D15549",
+          "rgb": "RGB(209, 85, 73)",
+          "cmyk": "C3% M82% Y72% K0%"
+        },
+        "green": {
+          "hex": "#88B644",
+          "rgb": "RGB(136, 182, 68)",
+          "cmyk": "C58% M0% Y100% K0%"
+        },
+        "lightPurple": {
+          "hex": "#5C54D2",
+          "rgb": "RGB(92, 84, 210)",
+          "cmyk": "C79% M70% Y0% K0%"
+        },
+        "pink": {
+          "hex": "#ED9FE2",
+          "rgb": "RGB(237, 159, 226)",
+          "cmyk": "C14% M45% Y0% K0%"
+        },
+        "darkGrey": {
+          "hex": "#9B9B9A",
+          "rgb": "RGB(155, 155, 154)",
+          "cmyk": "C40% M30% Y32% K10%"
+        }
+      },
+      "skinPalette": {
+        "lightPink": {
+          "hex": "#FDE4D2",
+          "rgb": "RGB(253, 228, 210)",
+          "cmyk": "C0% M13% Y18% K0%"
+        },
+        "lightOrange": {
+          "hex": "#FDCE96",
+          "rgb": "RGB(253, 206, 150)",
+          "cmyk": "C0% M23% Y45% K0%"
+        },
+        "lightBrown": {
+          "hex": "#97503C",
+          "rgb": "RGB(151, 80, 60)",
+          "cmyk": "C28% M70% Y72% K27%"
+        },
+        "pink": {
+          "hex": "#EF9E92",
+          "rgb": "RGB(239, 158, 146)",
+          "cmyk": "C2% M48% Y37% K0%"
+        },
+        "orange": {
+          "hex": "#FDAE7D",
+          "rgb": "RGB(253, 174, 125)",
+          "cmyk": "C0% M40% Y52% K0%"
+        },
+        "brown": {
+          "hex": "#7D524E",
+          "rgb": "RGB(125, 82, 78)",
+          "cmyk": "C35% M61% Y52% K40%"
+        }
+      },
+      "shadowsAndLights": {
+        "overlayModes": ["Overlay", "Multiply", "Hard Light"],
+        "transparency": "Use to control shadow intensity",
+        "layering": "Apply overlays on separate layers with blending modes"
+      },
+      "rules": {
+        "colorRequirement": "Must have teal, purple and navy on them",
+        "colorLimit": "Try not exceed from 6 or 7 colors per illustration",
+        "elements": "Can go out from frame with proportional body sizing",
+        "expressions": "Need organic and handrawn expressions",
+        "secondaryElements": "Can be in grey, not full colored",
+        "darkColors": "Use lighter color instead of shadowing if too dark"
+      },
+      "guidelines": {
+        "styleAndTone": "Flat design with modern, clean, simplistic approach; friendly and approachable with professional tone",
+        "composition": "Balanced and clean layouts avoiding clutter; focus on clear visual storytelling",
+        "colorPalette": "Vibrant yet cohesive color scheme reflecting branding; bold colors for primary elements, softer tones for backgrounds",
+        "typography": "Clean, legible, friendly typography that complements illustration style",
+        "characterDesign": "Diverse, inclusive characters with consistent rounded shapes and simplified features",
+        "iconography": "Simple, recognizable icons with consistent stroke weights avoiding over-detailing",
+        "accessibility": "High contrast for readability; consider color blindness and visual impairments",
+        "scalability": "Scalable at various sizes; avoid intricate details lost in smaller sizes",
+        "emotionalTone": "Evoke desired emotional response using facial expressions and body language"
+      }
+    },
+    "photography": {
+      "selection": {
+        "source": "Adobe - high-quality imagery selected by curators",
+        "content": "People, lifestyle, digital, devices explaining Aptly processes literally",
+        "style": "Minimalistic pictures instead of busy; fewer elements for more focus",
+        "diversity": "Age, race, gender, sexuality representation",
+        "approach": "Human-driven photos",
+        "treatment": "Rounded corners on video"
+      },
+      "gradients": {
+        "usage": "Apply dark gradient overlay when adding text on images",
+        "purpose": "Ensure text remains readable and stands out clearly",
+        "frequency": "Use sparingly, primarily for text accessibility",
+        "graphics": "All ornamental graphics must use main color palette"
+      }
+    },
+    "icons": {
+      "system": {
+        "style": "Outline icons",
+        "corners": "Rounded corners where possible",
+        "format": "Must fit in square format",
+        "details": "No excessive details",
+        "library": "Available icon library referenced"
+      },
+      "circles": {
+        "usage": "Fill and stroke circles for branding elements",
+        "hierarchy": "Filled circles for main elements, stroked for secondary",
+        "colors": "Coordinate colors for cohesive scheme",
+        "palette": "Must use main color palette",
+        "templates": {
+          "googleSlides": "Available template",
+          "figma": "Available template"
+        }
+      }
+    },
+    "social": {
+      "instagram": {
+        "approach": "Blend of inspiration, education, and community engagement",
+        "style": "Rich, engaging colors and inclusive illustrations",
+        "content": [
+          "Celebration of milestones",
+          "Announcement of new courses",
+          "Holiday celebrations",
+          "Insightful tips about course content"
+        ],
+        "purpose": "Classroom without walls"
+      },
+      "facebook": {
+        "approach": "Dynamic mix of inspiration, education, and community interaction",
+        "guidelines": "Same as Instagram",
+        "content": "Milestones, course updates, insightful tips"
+      },
+      "linkedin": {
+        "approach": "Professional engagement hub",
+        "audience": "Employees, businesses, founders, leaders",
+        "content": [
+          "Insightful blog posts",
+          "Industry insights",
+          "Thought leadership pieces",
+          "Company initiative updates"
+        ],
+        "purpose": "Meaningful connections and knowledge sharing"
+      }
+    },
+    "uiRules": {
+      "phoneUI": {
+        "requirement": "All Phone UIs must have Phone frame",
+        "purpose": "Production Team needs frames for final video look",
+        "storyboard": "Place frames on every storyboard"
+      },
+      "desktopUI": {
+        "requirement": "All Desktop UIs must have Desktop frame",
+        "purpose": "Production Team needs frames for final video look",
+        "storyboard": "Place frames on every storyboard"
+      },
+      "highlights": {
+        "format": "Same format for all highlights/callouts",
+        "process": [
+          "Zoom in the part of image desired for highlight",
+          "Add rounded corner border in Aptly Yellow (#FFDE00)",
+          "Border weight of 8-12px"
+        ],
+        "responsibility": "Design Team delimits highlight area in storyboard; Production Team creates final look"
+      }
+    },
+    "print": {
+      "stickers": {
+        "role": "Component of brand's print materials",
+        "requirements": [
+          "Logo must be displayed and easily discernible",
+          "Include sufficient white space around logo",
+          "Work within CMYK color space for printing consistency"
+        ]
+      },
+      "merchandise": {
+        "zipUpHoodie": {
+          "vendor": "CustomInk",
+          "requirements": [
+            "Accurate brand identity representation",
+            "Specified logo size, placement, and color guidelines",
+            "Color palette alignment with brand identity",
+            "Review digital proofs before finalizing"
+          ]
+        },
+        "waterBottle": {
+          "vendor": "CustomInk",
+          "requirements": [
+            "Accurate logo representation in size, placement, and color",
+            "Review digital proofs for brand guideline alignment",
+            "Maintain consistency across merchandise"
+          ]
+        }
+      },
+      "colorSpace": "CMYK for all print materials"
+    },
+    "voiceAndTone": {
+      "characteristics": [
+        "Professional and authoritative",
+        "Clear and concise",
+        "Educational but accessible",
+        "No casual language or slang",
+        "No exclamation marks unless in CTAs"
+      ],
+      "callToAction": [
+        "Get Started (not Start Now!)",
+        "Learn More (not Check it Out)",
+        "View Courses (not Browse Our Awesome Courses)"
+      ]
+    },
+    "restrictions": {
+      "prohibited": [
+        "Using colors outside brand palette",
+        "Non-DM Sans fonts",
+        "Emojis in professional contexts",
+        "Complex animations",
+        "Drop shadows (use subtle overlays only)",
+        "Non-brand approved stock illustrations",
+        "Gradients outside specified brand gradient"
+      ],
+      "required": [
+        "Brand color consistency",
+        "DM Sans font family",
+        "Professional tone",
+        "Accessibility compliance (WCAG AA)",
+        "8px spacing grid system",
+        "Next.js Image component for web",
+        "Semantic HTML and ARIA labels"
+      ]
+    }
+  }
+}

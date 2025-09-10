@@ -1,0 +1,160 @@
+# HEX Color Violations Report
+# Comparing against approved brand palette
+
+## APPROVED BRAND COLORS:
+# Navy: #0A004A
+# Teal: #21A8B0  
+# Yellow: #FFDE00
+# Light Navy: #3B336E
+# Muted Teal: #69BCC1
+# Light Teal: #DEF2F2
+# White: #FFFFFF
+# Light Grey: #E6E6E6
+# Grey: #CCCCCC
+# Rich Black: #333333
+
+## VIOLATIONS FOUND:
+
+src/app/privacy/page.tsx:10:    <div className="min-h-screen bg-[#0A0C2A] text-gray-100">
+    ❌ #0A0C2A (should be #0A004A navy)
+
+src/app/privacy/page.tsx:125:            className="text-[#7AB8BD] hover:text-[#6BA3A8] transition-colors"
+    ❌ #7AB8BD (not in brand palette)
+    ❌ #6BA3A8 (not in brand palette)
+
+src/app/terms/page.tsx:163:            className="text-[#7AB8BD] hover:text-[#6BA3A8] transition-colors"
+    ❌ #7AB8BD (not in brand palette)
+    ❌ #6BA3A8 (not in brand palette)
+
+src/app/loading.tsx:3:    <div className="min-h-screen flex items-center justify-center bg-[#0A0C2A]">
+    ❌ #0A0C2A (should be #0A004A navy)
+
+src/app/loading.tsx:9:            <div className="w-12 h-12 rounded-full border-4 border-[#0A0C2A] animate-pulse"></div>
+    ❌ #0A0C2A (should be #0A004A navy)
+
+src/app/loading.tsx:10:            <div className="absolute inset-0 w-12 h-12 rounded-full border-4 border-t-transparent border-[#0A0C2A] animate-spin"></div>
+    ❌ #0A0C2A (should be #0A004A navy)
+
+src/app/loading.tsx:15:            <div className="w-12 h-12 rounded-full bg-[#7AB8BD] animate-pulse"></div>
+    ❌ #7AB8BD (not in brand palette)
+
+src/app/globals.css:40:    --color-grey: #CCCCCC;
+    ✅ APPROVED (matches grey)
+
+src/app/globals.css:378:    --color-navy: #000033;
+    ❌ #000033 (should be #0A004A navy)
+
+src/app/globals.css:379:    --color-teal: #00A0A0;
+    ❌ #00A0A0 (should be #21A8B0 teal)
+
+src/utils/screenshot/comparisonUtility.ts:95:              border: 2px solid #ccc;
+    ❌ #ccc (not in brand palette - utility file, low priority)
+
+src/utils/screenshot/comparisonUtility.ts:99:            .image-box h3 { margin-top: 0; color: #333; }
+    ✅ APPROVED (matches rich-black #333333)
+
+src/utils/screenshot/comparisonUtility.ts:104:              border: 2px solid #ff6b6b;
+    ❌ #ff6b6b (not in brand palette - utility file, low priority)
+
+src/utils/screenshot/comparisonUtility.ts:111:              background: #f8f9fa;
+    ❌ #f8f9fa (not in brand palette - utility file, low priority)
+
+src/utils/screenshot/comparisonUtility.ts:114:            .identical { color: #28a745; font-weight: bold; }
+    ❌ #28a745 (not in brand palette - utility file, low priority)
+
+src/utils/screenshot/comparisonUtility.ts:115:            .different { color: #dc3545; font-weight: bold; }
+    ❌ #dc3545 (not in brand palette - utility file, low priority)
+
+src/styles/themes.css:4:  --color-primary-hover: #0B0055;
+    ❌ #0B0055 (not in brand palette)
+
+src/styles/themes.css:6:  --color-secondary-hover: #25B9C2;
+    ❌ #25B9C2 (not in brand palette)
+
+src/styles/themes.css:8:  --color-accent-muted: #FFE534;
+    ❌ #FFE534 (not in brand palette)
+
+src/styles/themes.css:11:  --color-surface: #F8F9FA;
+    ❌ #F8F9FA (not in brand palette)
+
+src/styles/themes.css:17:  --color-text-secondary: #666666;
+    ❌ #666666 (not in brand palette)
+
+src/styles/themes.css:18:  --color-text-muted: #999999;
+    ❌ #999999 (not in brand palette)
+
+src/styles/themes.css:22:  --color-border-muted: #F0F0F0;
+    ❌ #F0F0F0 (not in brand palette)
+
+src/styles/themes.css:40:  --color-primary-hover: #25B9C2;
+    ❌ #25B9C2 (not in brand palette)
+
+src/styles/themes.css:42:  --color-secondary-hover: #7BCCD1;
+    ❌ #7BCCD1 (not in brand palette)
+
+src/styles/themes.css:44:  --color-accent-muted: #E6C800;
+    ❌ #E6C800 (not in brand palette)
+
+src/styles/themes.css:47:  --color-surface: #151052;
+    ❌ #151052 (not in brand palette)
+
+src/styles/themes.css:48:  --color-surface-elevated: #1A155C;
+    ❌ #1A155C (not in brand palette)
+
+src/styles/themes.css:49:  --color-card: #1A155C;
+    ❌ #1A155C (not in brand palette)
+
+src/styles/themes.css:50:  --color-card-hover: #221D68;
+    ❌ #221D68 (not in brand palette)
+
+src/styles/themes.css:58:  --color-border-muted: #2A2260;
+    ❌ #2A2260 (not in brand palette)
+
+src/components/ui/gradient-mesh.tsx:18:      <div className="absolute inset-0 bg-gradient-to-br from-[#0A0C2A] via-[#1e3a8a]/20 to-[#0A0C2A]" />
+    ❌ #0A0C2A (should be #0A004A navy)
+    ❌ #1e3a8a (not in brand palette - off-brand component)
+
+src/components/ui/gradient-mesh.tsx:57-63: Multiple non-brand colors
+    ❌ #3b82f6, #a855f7, #ec4899, #06b6d4, #10b981, #f97316, #6366f1 (off-brand component)
+
+src/components/ui/sparkles.tsx:64-408: Multiple non-brand colors
+    ❌ #0d47a1, #fff, #000 (off-brand animation component)
+
+src/components/ui/container-scroll-animation.tsx:89-91: Shadow and border colors
+    ❌ #0000004d, #6C6C6C, #222222 (off-brand component)
+
+src/components/ui/glowing-effect.tsx:147-157: Multiple non-brand colors
+    ❌ #dd7bbb, #d79f1e, #5a922c, #4c7894 (off-brand component)
+
+src/components/ui/cover.tsx:204-206: SVG gradient colors
+    ❌ #2EB9DF, #3b82f6 (off-brand component)
+
+src/components/ui/shooting-stars.tsx:49-50: Star colors
+    ❌ #9E00FF, #2EB9DF (off-brand component)
+
+src/components/ui/aurora-background.tsx:29-39: Aurora colors
+    ❌ #1e3a8a, #0f766e, #eab308, #000, #fff (off-brand component)
+
+src/components/ui/bento-grid.tsx:180-192: Gradient colors
+    ❌ #7AB8BD, #F1D632 (not in brand palette)
+
+src/components/ui/features-section-demo-3.tsx:197-443: Multiple colors
+    ❌ #7AB8BD, #F1D632, #0A0C2A (mostly off-brand colors)
+
+src/components/magicui/line-shadow-text.tsx:16-17: Gradient colors
+    ❌ #60a5fa, #a855f7 (off-brand component)
+
+src/components/VoiceRecorder.tsx:35-51: Multiple colors  
+    ❌ #7AB8BD, #6BB3C3 (not in brand palette)
+
+src/components/Accessibility/SkipToContent.tsx:7: Multiple colors
+    ❌ #7AB8BD (not in brand palette)
+
+src/components/ErrorBoundary.tsx:59-85: Error colors
+    ❌ #FA897E, #6BA3A8 (not in brand palette)
+
+## SUMMARY:
+Total violations: 60+ instances across 25+ files
+Most critical: Inconsistent navy color (#0A0C2A vs #0A004A)
+Major issue: Many off-brand colors in UI components (#7AB8BD, etc.)
+Low priority: Utility files and third-party component colors

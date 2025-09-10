@@ -18,22 +18,22 @@ interface Testimonial {
 
 const trustBadges: TrustBadge[] = [
   {
-    icon: "🔒",
+    icon: "SECURITY",
     title: "SOC 2 Certified",
     description: "Enterprise-grade security"
   },
   {
-    icon: "🛡️",
+    icon: "PRIVACY",
     title: "GDPR Compliant",
     description: "Your data is protected"
   },
   {
-    icon: "✓",
+    icon: "STANDARD",
     title: "ISO 27001",
     description: "International standards"
   },
   {
-    icon: "🎓",
+    icon: "SUCCESS",
     title: "95% Success Rate",
     description: "Verified completions"
   }
@@ -126,7 +126,7 @@ export default function TrustSection() {
               whileHover={{ scale: 1.05, rotate: [0, -1, 1, -1, 0] }}
               className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 hover:border-white/20 transition-all duration-300"
             >
-              <div className="text-4xl mb-3">{badge.icon}</div>
+              <div className="text-xs font-bold text-teal mb-3 px-2 py-1 bg-teal/20 rounded-full">{badge.icon}</div>
               <h3 className="text-lg font-semibold text-white mb-1">{badge.title}</h3>
               <p className="text-sm text-white/60">{badge.description}</p>
             </motion.div>
@@ -150,7 +150,7 @@ export default function TrustSection() {
             >
               <div className="flex mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <span key={i} className="text-yellow-400">★</span>
+                  <span key={i} className="text-yellow-400">•</span>
                 ))}
               </div>
               <p className="text-white/90 mb-6 italic">&ldquo;{testimonial.quote}&rdquo;</p>
